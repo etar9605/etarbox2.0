@@ -4,18 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "bash -c 'npx eleventy'",
-  "start": "bash -c 'npx eleventy --serve'",
-  "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2"
-  },
-  "engines": {
-  "node": "18.x"
-}
-
+  }
 }
