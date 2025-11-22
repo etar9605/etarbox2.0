@@ -1,0 +1,18 @@
+#sortButton {
+    position: fixed; /* Đặt vị trí của nút là cố định */
+    bottom: 20px; /* Đặt vị trí dưới cùng 20px */
+    right: 20px; /* Đặt vị trí phải cùng 20px */
+    z-index: 999; /* Đặt z-index để nút luôn hiển thị trên các phần tử khác */
+    padding: 10px 20px; /* Điều chỉnh khoảng cách nội dung của nút */
+    background-color: rgba(255, 255, 255, 0.089);
+    color: #fff; /* Màu chữ của nút */
+    border: none; /* Loại bỏ đường viền của nút */
+    border-radius: 10px; /* Bo góc của nút */
+    backdrop-filter: blur(50%); /* Mức độ mờ */
+    cursor: pointer; /* Biến con trỏ thành bàn phím khi di chuyển qua nút */
+    
+}
+
+#sortButton:hover {
+    background-color: #6381c2;
+}

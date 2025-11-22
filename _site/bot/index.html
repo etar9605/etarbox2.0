@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Etar Ai</title>
+
+    <meta property="og:title" content="Etar's manuscripts" />
+    <meta property="og:description" content="Hộp giấy có nhiều thứ linh tinh" />
+    <meta property="og:image" content="https://etarbox.onrender.com/static/etarheh.png" />
+    <meta property="og:url" content="https://etarbox.onrender.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" href="/static/etarmm.png" draggable="false" oncontextmenu="return false;">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/styles/header and footer.css">
+    <link rel="stylesheet" href="/styles/search-container.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/container.css">
+    <link rel="stylesheet" href="/styles/table.css">
+    <link rel="stylesheet" href="/styles/label.css">
+    <link rel="stylesheet" href="/styles/body and content styles.css">
+    <link rel="stylesheet" href="/styles/top scroll button.css">
+    <link rel="stylesheet" href="/styles/filter button.css">
+    <link rel="stylesheet" href="/styles/intro.css">
+    <link rel="stylesheet" href="/styles/button large.css">
+    <link rel="stylesheet" href="/styles/black highlight.css">
+    <script src="/script/sakura.js"></script>
+    <script src="/script/magic-circle.js"></script>
+    <link rel="stylesheet" href="/styles/magic-circle.css">
+    <link rel="stylesheet" href="/styles/passcheck.css">
+    <link rel="stylesheet" href="/styles/list.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="/" style="text-decoration: none; color: inherit;">
+            <img src="/static/etarheh.png" alt="Etar" height="120">
+            <h1>Hộp giấy của Etar</h1>
+            <p style="font-family: 'Allura', cursive; font-style: italic">Loài người thật kỳ quặc</p>
+        </a>
+    </header>
+    
+    <nav>
+        <div class="nav-wrapper navbar-expand-lg navbar-light">
+            <button title="Mở taskbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="home" href="/">Home</a>
+                    <a class="nav-item nav-link" id="commission" href="/commission/">Commission</a>
+                    <a class="nav-item nav-link" id="dnd" href="/dnd/">DnD</a>
+                    <a class="nav-item nav-link" id="library" href="/library/">Thư viện</a>
+                    <a class="nav-item nav-link" id="bot" href="/bot/">Discord bot</a>
+                </div>
+                
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Tìm trong trang..." title="Nếu không tìm được thì thử click nút A-Z để sắp xếp rồi tìm lại">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+ 
+    <div class="magic-circle" id="magic-circle"></div>
+    <script src="/script/mousemove.js"></script>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Trượt về đầu trang">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <main>
+        
+<div id="intro-container" class="stage">
+    <div class="wrapper">
+    <div class="slash"></div>
+    <div class="sides">
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+    </div>
+    <div class="text">
+        <div class="text--backing">ETAR.AI</div>
+        <div class="text--left">
+        <div class="inner">ETAR.AI</div>
+        </div>
+        <div class="text--right">
+        <div class="inner">ETAR.AI</div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="main-content" id="main-content" style="font-family: 'Nunito';">
+
+    <div class="container divider">
+        <h2>UPDATE 4.1</h2>
+        <div class="p-divider"></div>
+        <p>Tính năng mới: Starry Sea Card - Game thẻ bài. Sử dụng <span class="black-highlight">.help cardgame</span> để xem luật chơi và các lệnh.</p>
+        <span class="new-label">New!</span>
+    </div>
+
+    <div class="container divider">
+        <h2>COMMANDS</h2>
+        <div class="p-divider"></div>
+
+        <div class="container divider">
+            <div><h2 style="text-align: left;">Bộ emoji Etar</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Chỉ cần add bot vào server của bạn là có thể sử dụng rồi</p>
+            </div>
+        </div>  
+        
+        <div class="container divider">
+            <div><h2 style="text-align: left;">Không cần nitro</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Sử dụng emoji của các server khác mà bot cũng tham gia</p>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Roleplay character</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Tạo nhân vật hỗ trợ roleplay</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">stt tul</span>
+                    <p>Bật/tắt tính năng này. Mặc định là tắt nên hãy bật lên để dùng nhé!</p></li>
+                <li><span class="black-highlight">tul register [char prefix] [tên nhân vật] [link avatar]</span>
+                    <p>Đăng kí một nhân vật</p></li>
+                <li><span class="black-highlight">edit [nội dung mới]</span>
+                    <p>Đây là một lệnh đứng ngay sau prefix của bot, không có tiền tố tul. Trả lời vào tin nhắn gốc sau đó dùng lệnh</p></li>
+                <li><span class="black-highlight">tul avatar [char prefix] [link avatar]</span>
+                    <p>Set avatar cho nhân vật</p></li>
+                <li><span class="black-highlight">tul name [char prefix] [tên nhân vật]</span>
+                    <p>Set tên cho nhân vật</p></li>
+                <li><span class="black-highlight">tul image | img [hình ảnh hoặc link hình ảnh]</span>
+                    <p>Thiết lập ngoại hình nhân vật</p></li>
+                <li><span class="black-highlight">tul class [char prefix] [tên chức nghiệp]</span>
+                    <p>Thiết lập chức nghiệp của nhân vật</p></li>
+                <li><span class="black-highlight">tul list</span>
+                    <p>Xem danh sách các nhân vật của bạn</p></li>
+                <li><span class="black-highlight">tul remove [char prefix]</span>
+                    <p>Xóa nhân vật</p></li>
+                <li><span class="black-highlight">tul auto [char prefix]</span>
+                    <p>Set chế độ auto sử dụng nhân vật này cho mọi tin nhắn của bạn</p></li>
+                <li><span class="black-highlight">tul autooff [char prefix]</span>
+                    <p>Tắt chế độ auto sử dụng nhân vật</p></li>
+                <li><span class="black-highlight">tul find [tên nhân vật]</span>
+                    <p>Tìm một character</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Các mini game</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Những mini game nho nhỏ</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li>Blackjack <span class="black-highlight">.blackjack | bj [số]</span>
+                    <p>Nếu tổng điểm của bạn lớn hơn 21 thì sập bài, nhà cái sẽ rút bài nếu tổng của nhà cái chưa lớn hơn 17. Sau đó ai điểm cao hơn nhưng không quá 21 thì thắng. Tỉ lệ 1:2</p></li>
+                <li>Chẵn lẻ <span class="black-highlight">.sicbo [chẵn | lẻ] [số]</span>
+                    <p>Tổng 3d6 ra chẵn hoặc lẻ như bạn cược trước đó thì bạn thắng. Tỷ lệ 1:3</p></li>
+                <li>Hoặc giàu, hoặc bán nhà!<span class="black-highlight">.hilo [số]</span>
+                    <p>Nếu 3d6 ra 2 số giống nhau, bạn thắng được x4 tiền cược, nếu 3d6 ra 3 số giống nhau, bạn được x11 tiền cược. Nếu ra 3 số khác nhau, bạn thua và mất x5 tiền cược.</p></li>
+                <li>Cờ caro<span class="black-highlight">.caro [ping 2 player]</span>
+                    <p>Vị trí số đánh từ 1 đến 9. Lệnh .place [số vị trí] để đánh dấu.</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Dnd 5e</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Các homebrew dnd 5e của Etar</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">roll | r [dice +|- mod] [ghi chú nếu có]</span>
+                    <p>Tung xúc xắc hoặc thực hiện phép tính thông thường</p></li>
+                <li><span class="black-highlight">rr [số lần roll] [dice +|- mod]</span>
+                    <p>Roll nhiều lượt của cùng một roll</p></li>
+                <li><span class="black-highlight">class [tên class]</span>
+                    <p>Thông tin về chức nghiệp</p></li>
+                <li><span class="black-highlight">subclass | sc [tên subclass]</span>
+                    <p>Thông tin về chuyên chức</p></li>
+                <li><span class="black-highlight">classfeature | cf [tên classfeature]
+                </span>
+                    <p>Thông tin về tính năng chức nghiệp</p></li>
+                <li><span class="black-highlight">condition [tên debuff]</span>
+                    <p>Các hiệu ứng cường hóa và phản cường hóa</p></li>
+                <li><span class="black-highlight">item [tên item]</span>
+                    <p>Thông tin vật phẩm</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Quotes</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Dùng 2 dấu prefix hiện tại của bot để gọi quotes</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">stt res</span>
+                    <p>Bật/tắt tính năng phản hồi quotes. Mặc định là tắt đấy nên hãy nhớ bật lên nhé!</p></li>
+                <li><span class="black-highlight">response | res set [lệnh] [câu]</span>
+                    <p>Thiết lập lệnh và câu trả lời</p></li>
+                <li><span class="black-highlight">response | res edit [lệnh] [câu]</span>
+                    <p>Sửa nội dung một lệnh đã có</p></li>
+                <li><span class="black-highlight">response | res delete [lệnh] </span>
+                    <p>Xóa lệnh và câu trả lời</p></li>
+                <li><span class="black-highlight">response | res list </span>
+                    <p>Danh sách lệnh và câu trả lời</p></li>
+                <li><span class="black-highlight">[2 dấu prefix] [lệnh] </span>
+                    <p>Sử dụng một lệnh để Etar Ai trả về câu trả lời tương ứng</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Owner-commands</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Các lệnh hỗ trợ owner của server</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">color change [member] [mã HEX]</span>
+                    <p>Đổi màu cho thành viên</p></li>
+                <li><span class="black-highlight">ban [member] [lí do]</span>
+                    <p>Ban thành viên</p></li>
+                <li><span class="black-highlight">role [member] [role]</span>
+                    <p>Add role cho thành viên</p></li>
+                <li><span class="black-highlight">clearall</span>
+                    <p>Xóa số lượng nhiều (hên xui) tin nhắn trong kênh</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Archon</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Tạo role tên là Archon để có thể sử dụng những lệnh này</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">create_channel [Tên danh mục trong ngoặc kép] [Tên kênh]</span>
+                    <p>Tạo kênh</p></li>
+                <li><span class="black-highlight">delete_channel [Tên danh mục trong ngoặc kép] [Tên kênh]</span>
+                    <p>Xóa kênh</p></li>
+                <li><span class="black-highlight">create_thread [Tên chủ đề] public/private</span>
+                    <p>Tạo chủ đề</p></li>
+                <li><span class="black-highlight">add_item Tên item | Loại item | Mô tả | Link hình ảnh</span>
+                    <p>Tạo item</p></li>
+                <li><span class="black-highlight">color list</span>
+                    <p>Xem 20 mã màu hex cơ bản (không cần Archon-role)</p></li>
+                <li><span class="black-highlight">clear [số]</span>
+                    <p>Xóa số lượng tin nhắn chỉ định (Admin Server-command, not Archon-role)</p></li>
+                <li><span class="black-highlight">clear [số] [ping channel]</span>
+                    <p>Xóa số lượng tin nhắn chỉ định ở những kênh chỉ định (Admin Server-command, not Archon-role)</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Tiền tệ</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Đơn vị tiền tệ mặc định là PRa</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">pra + | - [số]</span>
+                    <p>Thêm hoặc trừ tiền</p></li>
+                <li><span class="black-highlight">give [user] [số]</span>
+                    <p>Cộng PRa cho một người khác</p></li>
+                <li><span class="black-highlight">setcur</span>
+                    <p>Set đơn vị tiền tệ</p></li>
+                <li><span class="black-highlight">resetmoney</span>
+                    <p>Xóa toàn bộ dữ liệu trong hồng bao</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Level</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Hệ thống level 27 cấp độ</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">exp chart</span>
+                    <p>Level và số kinh nghiệm yêu cầu</p></li>
+                <li><span class="black-highlight">reset</span>
+                    <p>Reset toàn bộ exp</p></li>
+                <li><span class="black-highlight">exp + | - [số]</span>
+                    <p>Cộng hoặc trừ exp</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Commission</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Đặt đơn cơm sườn</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">order</span>
+                    <p>Đặt cơm sườn</p></li>
+                <li><span class="black-highlight">commission</span>
+                    <p>Quản lý đơn hàng của bạn</p></li>
+                <li><span class="black-highlight">payment [id customer]</span>
+                    <p>Cập nhật trạng thái thanh toán</p></li>
+                <li><span class="black-highlight">customer</span>
+                    <p>Danh sách khách hàng</p></li>
+                <li><span class="black-highlight">complete [tên char]</span>
+                    <p>Đánh dấu xong đơn</p></li>
+                <li><span class="black-highlight">delete [tên char]</span>
+                    <p>Xóa đơn hàng</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Campaign</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Cái nào không nhắc phải ghi trong ngoặc thì viết bình thường nhé</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">create [Tên campaign trong ngoặc kép] [role]</span>
+                    <p>Tạo một campaign mới. Role có thể trống | không mention | role id. Gán/đè role cho campaign cũ.</p></li>
+                <li><span class="black-highlight">player [mention player] [Tên campaign]</span>
+                    <p>Thêm người chơi vào campaign. Có thể bỏ trống tên campaign.</p></li>
+                <li><span class="black-highlight">remove_player [mention player] [Tên campaign]</span>
+                    <p>Thêm người chơi vào campaign. Có thể bỏ trống tên campaign.</p></li>
+                <li><span class="black-highlight">rename [Tên cũ trong ngoặc kép] [Tên mới]</span>
+                    <p>Đổi tên campaign</p></li>
+                <li><span class="black-highlight">rename_role [Tên cũ trong ngoặc kép] [Tên mới]</span>
+                    <p>Đổi tên role gắn với campaign</p></li>
+                <li><span class="black-highlight">delete [Tên campaign]</span>
+                    <p>Xóa campaign</p></li>
+                <li><span class="black-highlight">info [Tên campaign]</span>
+                    <p>Xem thông tin campaign</p></li>
+                <li><span class="black-highlight">list</span>
+                    <p>Danh sách các campaign trong server</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Quest</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Cái nào không nhắc phải ghi trong ngoặc thì viết bình thường nhé</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">add [Tên ủy thác trong ngoặc kép] [channel] [role] [Mô tả ủy thác]</span>
+                    <p>Thêm ủy thác vào danh sách. Channel hoặc role có thể bỏ trống. Nếu dùng lệnh mà không thấy bot phản hồi thì bỏ trống phần mô tả ủy thác, khi bot yêu cầu nhập thì nhập mô tả</p></li>
+                <li><span class="black-highlight">member [Tên ủy thác trong ngoặc kép] [player]</span>
+                    <p>Thêm các thành viên vào nhiệm vụ</p></li>
+                <li><span class="black-highlight">remove [Tên ủy thác trong ngoặc kép] [player]</span>
+                    <p>Xóa các thành viên khỏi nhiệm vụ</p></li>
+                <li><span class="black-highlight">ping [Tên role]</span>
+                    <p>Nhờ bot ping role</p></li>
+                <li><span class="black-highlight">status [Tên ủy thác trong ngoặc kép] [channel]</span>
+                    <p>Sửa trạng thái của ủy thác</p></li>
+                <li><span class="black-highlight">repost [Tên ủy thác trong ngoặc kép] [channel] [Lời nhắn kèm]</span>
+                    <p>Đăng lại ủy thác đã có trong danh sách. Có thể bỏ trống lời nhắn.</p></li>
+                <li><span class="black-highlight">edit [Tên ủy thác trong ngoặc kép] [Trường cần chỉnh sửa] [channel] [Nội dung chỉnh sửa]</span>
+                    <p>Chỉnh sửa ủy thác. Tên các trường có thể chỉnh sửa bao gồm: <span class="black-highlight">name</span>, <span class="black-highlight">details</span>, <span class="black-highlight">status</span> và <span class="black-highlight">message_id</span>. Giá trị của trường status là <span class="black-highlight">Chạy</span>, <span class="black-highlight">Tuyển</span> hoặc <span class="black-highlight">Xong</span>. Bỏ trống channel nếu quest không được dán ở đâu đó.</p></li>
+                <li><span class="black-highlight">delete [Tên ủy thác]</span>
+                    <p>Xóa ủy thác khỏi danh sách</p></li>
+                <li><span class="black-highlight">list [campaign]</span>
+                    <p>Xem danh sách các ủy thác trong campaign</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Garden</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Game trồng cây</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">shop</span>
+                    <p>Mở cửa hàng</p></li>
+                <li><span class="black-highlight">garden</span>
+                    <p>Xem vườn của bạn</p></li>
+                <li><span class="black-highlight">buy [tên] [số lượng]</span>
+                    <p>Mua vật phẩm</p></li>
+                <li><span class="black-highlight">plant [tên] [số lượng]</span>
+                    <p>Trồng cây</p></li>
+                <li><span class="black-highlight">bag</span>
+                    <p>Mở túi hạt giống</p></li>
+                <li><span class="black-highlight">status [tên cây]</span>
+                    <p>Xem trạng thái các cây cùng tên</p></li>
+                <li><span class="black-highlight">harvest</span>
+                    <p>Thu hoạch toàn bộ cây đã chín</p></li>
+                <li><span class="black-highlight">disroot [tên cây]</span>
+                    <p>Nhổ cây</p></li>
+                <li><span class="black-highlight">visit [ping bạn]</span>
+                    <p>Thăm vườn người khác</p></li>
+                <li><span class="black-highlight">reset_seeds</span>
+                    <p>Vứt hết hạt trong túi</p></li>
+            </div>
+        </div>
+
+        <div class="item-container container divider">
+            <div><h2 style="text-align: left;" onclick="expandContainer(this)">Card Game</h2></div>
+            <div class="p-divider"></div>
+            <div>
+                <p style="font-style: italic;">Game thẻ bài</p>
+            </div>
+            <div class="p-divider"></div>
+            <div>
+                <li><span class="black-highlight">card [mention 4 players | @you alone]</span>
+                    <p>Tạo bàn chơi mới. Sử dụng cú pháp @bản thân alone để vào chế độ một mình bạn cô lập xã hội :v</p></li>
+                <li><span class="black-highlight">garden</span>
+                    <p>Xem vườn của bạn</p></li>
+                <li><span class="black-highlight">mode [easy | medium | hard | asian]</span>
+                    <p>Chọn chế độ chơi</p></li>
+                <li><span class="black-highlight">start</span>
+                    <p>Bắt đầu ván chơi</p></li>
+                <li><span class="black-highlight">askgm [mention player] [card number] [god | knight | white]</span>
+                    <p>GM hỏi thay cho người chơi</p></li>
+                <li><span class="black-highlight">next</span>
+                    <p>GM chuyển lượt thủ công</p></li>
+                <li><span class="black-highlight">end [card number]</span>
+                    <p>Kết thúc ván chơi, đoán số thứ tự của lá bài Trắng</p></li>
+                <li><span class="black-highlight">deck</span>
+                    <p>GM kiểm tra toàn bộ deck (gửi riêng qua DM)</p></li>
+                <li><span class="black-highlight">rules</span>
+                    <p>Xem luật chơi</p></li>
+                <li><span class="black-highlight">setstate [card number] [truth | lie]</span>
+                    <p>GM chỉnh trạng thái Thật/Dối của lá bài (dùng cho Hard mode)</p></li>
+            </div>
+        </div>
+
+
+        <div style="text-align: center;"><h3 style="margin: auto;">"Và rất nhiều tính năng linh tinh tào lao khác..."</h3></div>
+    </div>
+
+    <div class="container divider">
+        <h2>INVITE</h2>
+        <div class="p-divider"></div>
+        <a href="https://discord.com/oauth2/authorize?client_id=991218456940793986&permissions=533381737552&integration_type=0&scope=bot"></a>
+            <button class="rounded-button" style="display: flex; justify-content: center;"> 
+                <img src="/static/discord icon.png" alt="Discord" height="30">
+            </button>
+        </a>
+    </div>
+</div>
+    </main>
+
+    <script src="/script/intro.js"></script>
+    <script src="/script/hide html.js"></script>
+    <script src="/script/scroll to top.js"></script>
+    <script src="/script/search.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="/script/overlay slide.js"></script>
+    <script src="/script/un click in container.js"></script>
+    <script src="/script/slide show.js"></script>
+    <script src="/script/expland container.js"></script>
+    <script src="/script/filter button.js"></script>
+    <script src="/script/slide show.js"></script>
+    
+    <footer>
+        <p style="text-align: center;">&copy; 2024, Etar Ai</p>
+        <a title="Tham gia server discord" href="https://discord.gg/pQK5pCm2hC">
+            <img src="/static/dc.png" alt="Discord" height="30">
+        </a>
+        <a title="Liên hệ: tieuthienbinhngoc@gmail.com">
+            <img src="/static/mail icon.png" alt="Gmail" height="20">
+        </a>
+    </footer>  
+</body>
+</html>

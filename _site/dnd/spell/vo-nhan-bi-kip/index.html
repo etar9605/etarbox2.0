@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Etar Ai</title>
+
+    <meta property="og:title" content="Etar's manuscripts" />
+    <meta property="og:description" content="Hộp giấy có nhiều thứ linh tinh" />
+    <meta property="og:image" content="https://etarbox.onrender.com/static/etarheh.png" />
+    <meta property="og:url" content="https://etarbox.onrender.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" href="/static/etarmm.png" draggable="false" oncontextmenu="return false;">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/styles/header and footer.css">
+    <link rel="stylesheet" href="/styles/search-container.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/container.css">
+    <link rel="stylesheet" href="/styles/table.css">
+    <link rel="stylesheet" href="/styles/label.css">
+    <link rel="stylesheet" href="/styles/body and content styles.css">
+    <link rel="stylesheet" href="/styles/top scroll button.css">
+    <link rel="stylesheet" href="/styles/filter button.css">
+    <link rel="stylesheet" href="/styles/intro.css">
+    <link rel="stylesheet" href="/styles/button large.css">
+    <link rel="stylesheet" href="/styles/black highlight.css">
+    <script src="/script/sakura.js"></script>
+    <script src="/script/magic-circle.js"></script>
+    <link rel="stylesheet" href="/styles/magic-circle.css">
+    <link rel="stylesheet" href="/styles/passcheck.css">
+    <link rel="stylesheet" href="/styles/list.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="/" style="text-decoration: none; color: inherit;">
+            <img src="/static/etarheh.png" alt="Etar" height="120">
+            <h1>Hộp giấy của Etar</h1>
+            <p style="font-family: 'Allura', cursive; font-style: italic">Loài người thật kỳ quặc</p>
+        </a>
+    </header>
+    
+    <nav>
+        <div class="nav-wrapper navbar-expand-lg navbar-light">
+            <button title="Mở taskbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="home" href="/">Home</a>
+                    <a class="nav-item nav-link" id="commission" href="/commission/">Commission</a>
+                    <a class="nav-item nav-link" id="dnd" href="/dnd/">DnD</a>
+                    <a class="nav-item nav-link" id="library" href="/library/">Thư viện</a>
+                    <a class="nav-item nav-link" id="bot" href="/bot/">Discord bot</a>
+                </div>
+                
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Tìm trong trang..." title="Nếu không tìm được thì thử click nút A-Z để sắp xếp rồi tìm lại">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+ 
+    <div class="magic-circle" id="magic-circle"></div>
+    <script src="/script/mousemove.js"></script>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Trượt về đầu trang">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <main>
+        
+<div style="text-align: center; background-color: rgba(255, 255, 255, 0.089); backdrop-filter: blur(50%);
+                                        border-radius: 0px; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); padding: 1px;">
+    <h2>Etar's Manuscripts</h2>
+</div>
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Diêu Quang</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">Cantrip enchantment. (Vô nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 30ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một nhúm len hoặc chất tương tự)<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Mê Thuật che mờ tâm trí của một sinh vật hình người (humanoid) có kích thước Medium hoặc Small, những sinh vật có kích thước Large trở lên không bị ảnh hưởng. Nó phải pass Con save hoặc không thể thực hiện action cho đến turn tiếp theo của bạn.<br><br>
+        Sinh vật bị Mê Thuật ảnh hưởng không thể bị Stun vì vậy tấn công nó không có adv từ Stun. Sau khi sinh vật bị Mê Thuật ảnh hưởng nó sẽ miễn dịch với hiệu ứng này trong 1 phút.
+    </p>   
+</div>    
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Bí Ấn</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">Cantrip divination. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> Touch<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> Permanent<br>
+        <span style="font-weight: bold;">Description:</span> Quyền thuật này cho phép bạn ghi không quá sáu từ Li Ngữ (Liyu) hoặc kí tự cá nhân lên bất kỳ chất liệu nào mà không tổn hại đến đến chất liệu đó. Văn bản có thể được nhìn thấy hoặc tàng hình. Detect Magic sẽ làm những ký tự tàng hình này phát sáng và có thể nhìn thấy được mặc dù không nhất thiết sẽ hiểu được. See invisibility, true seeing, một gem of seeing, hoặc a robe of eyes cũng cho phép nhìn thấy những ký tự vô hình này.<br><br>
+        Quyền thuật Duyệt Pháp sẽ đọc được các chữ, nếu có. Bí Ấn không thể bị dispelled nhưng có thể bị xóa bỏ bởi chủ nhân Bí Ấn hoặc một phép thuật xóa bỏ.<br><br>
+        Nếu Bí Ấn được viết trên một sinh vật sống, sự mài mòn của môi trường bình thường sẽ làm nó mờ dần trong vòng một tháng. Bí Ấn này phải được thi triển trước khi thi triển những phép thuật loại triệu hồi lập tức trên cùng một đối tượng.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Thi Nhiễu</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">Cantrip necromancy. (Vô nhân, Vũ công)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 120ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Bạn tạo ra một tia ma pháp tấn công một sinh vật tầm xa, nếu trúng, sinh vật phải nhận 1d8 sát thương hoại tử.<br>
+        <span style="font-weight: bold;">At Higher Levels:</span> Từ level 5 trở lên, sát thương hoại tử gây ra là 2d8.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Duyệt Pháp</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">Cantrip divination. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> Self<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một lăng kính hoặc tinh thể trong suốt)<br>
+        <span style="font-weight: bold;">Duration:</span> 10 min<br>
+        <span style="font-weight: bold;">Description:</span> Bằng Duyệt Pháp, bạn có thể giải mã những dòng chữ ma thuật trên các đồ vật mà nếu đọc bình thường sẽ không thể hiểu được. Việc giải mã này thường không gọi ra các phép thuật trong văn bản đó trừ trường hợp cuộn giấy hoặc vật thể đó bị nguyền rủa.<br><br>
+        Sau khi dùng Duyệt Pháp và bạn đã đọc được dòng chữ ma thuật thì sau đó bạn có thể đọc lại dòng chữ mà không cần dùng Duyệt Pháp một lần nữa.<br><br>        
+        Bạn có thể đọc với tốc độ 250 từ mỗi phút. Quyền thuật này cho phép bạn giám định một Glyph of warding với INT check DC 13, một Greater glyph of warding với DC 16 hoặc bất kỳ phép thuật thuộc loại tạo ra biểu tượng nào yêu cầu INT check với DC 10 + spell level.<br><br>        
+        Duyệt Pháp có thể có tác dụng vĩnh viễn với một phép thuật vĩnh viễn.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Ngạ Quỷ Khiếu</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">Cantrip illusion. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 120ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một mẩu len hoặc một cục sáp nhỏ)<br>
+        <span style="font-weight: bold;">Duration:</span> 1 round<br>
+        <span style="font-weight: bold;">Description:</span> Ngạ Quỷ Khiếu cho phép bạn tạo ra, duy trì hoặc tăng, giảm âm thanh ở một vùng không gian hình lập phương cạnh 20ft. Hãy chọn loại âm thanh được tạo ra, sau đó bạn sẽ không thể thay đổi đặc tính của âm thanh nữa.<br><br>
+        Âm thanh được tạo ra có thể là tiếng nói chuyện, ca hát, la hét, đi bộ, diễu hành hoặc chạy... Ngạ Quỷ Khiếu có thể tạo ra bất kỳ âm thanh nào trong giới hạn âm lượng mà người bình thường có thể nghe thấy. Một bầy chuột vừa chạy vừa kêu có âm lượng tương đương tám người vừa chạy vừa la hét. Tiếng sư tử rống tương tương với mười sáu người, trong khi tiếng hổ gầm tương đương âm thanh của hai mươi người.<br><br>
+        Âm lượng của âm thanh phụ thuộc vào trình độ của bạn. Bạn có thể tạo ra tiếng ồn như bốn người bình thường ở mỗi level, tối đa 20 người.<br><br>        
+        - Ngạ Quỷ Khiếu có thể cường hóa hiệu quả của Silent image.<br><br>        
+        - Ngạ Quỷ Khiếu có thể tạo ra âm thanh vĩnh viễn bằng một phép thuật vĩnh viễn.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Khai / Bế</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">Cantrip transmutation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 60ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một chiếc chìa khóa bằng đồng)<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Bạn có thể mở hoặc đóng (bạn chọn) một cánh cửa, rương, hộp, cửa sổ, túi, balo, chai lọ, thùng hoặc bất kì vật chứa nào khác. Nếu vật thể chống lại hành động này (ví dụ ổ khóa trên chiếc rương hoặc thanh cài cửa sổ) thì quyền thuật sẽ thất bại. Ngoài ra, quyền thuật chỉ có thể đóng hoặc mở những thứ nặng từ 30 pound trở xuống, do đó cửa ra vào, rương và các đồ vật tương tự có kích thước khổng lồ có thể không bị ảnh hưởng bởi quyền thuật này.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Bạo Tạc Nguyên Tố</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level evocation. (Vô nhân, Vũ công)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 100ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Khi bạn sử dụng quyền thuật này, hãy chọn một trong số các nguyên tố của Vô Nhân. Sau đó một vụ nổ nguyên tố hình cầu bán kinh 10ft sẽ nổ ra với tâm là điểm mà bạn chỉ định trong tầm đánh. Một sinh vật trong phạm vi vụ nổ có thể Dex save hoặc nhận 2d8 sát thương, pass save nhận một nửa sát thương.<br><br>
+        <span style="font-weight: bold;">Mộc, Kim hoặc Thổ:</span> Các mảnh vật liệu sắc nhọn gây magic slashing hoặc magic piercing damage.<br><br>
+        <span style="font-weight: bold;">Hỏa:</span> Những tia lửa phát sáng nổ ra gây magic fire damage.<br><br>
+        <span style="font-weight: bold;">Thủy:</span> Một làn sóng dữ dội đánh bật các sinh vật trong khu vực khiến chúng bị prone trừ khi thành công Str save. Không chịu damage do nguyên tố này.<br><br>
+        Quyền thuật này không ảnh hưởng đáng kể đến cấu trúc hoặc hình thức của mục tiêu.<br><br>
+        <span style="font-weight: bold;">At Higher Levels:</span> Khi sử dụng spell slot cấp độ 2 trở lên, quyền thuật sẽ gây thêm 1d8 damage cho mỗi cấp.  
+    </p>     
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Nguyên Nhẫn</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level abjuration. (Vô Nhân, Vũ Công, Dòng Hội Huy)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> Touch<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> 24 hours<br>
+        <span style="font-weight: bold;">Description:</span> Một sinh vật được bảo vệ bởi Nguyên Nhẫn không bị tổn hại khi ở trong môi trường nóng hoặc lạnh. Nó có thể tồn tại thoải mái trong điều kiện từ –50 đến 140 độ F mà không cần phải Con save. Bao gồm cả trang bị của sinh vật cũng được bảo vệ.<br><br>
+        Nguyên Nhẫn không thể bảo vệ sinh vật khỏi các môi trường nguy cơ khác như khói độc, thiếu không khí, v.v. Nhưng nó giúp sinh vật kháng (resistant) cold damage và fire damage.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Nhãn Quang Liệt Diệm</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level evocation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 60ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> 1 minute<br>
+        <span style="font-weight: bold;">Description:</span> Quyền thuật này khiến đôi mắt của bạn tỏa ra ánh lửa (màu đỏ hoặc vàng do bạn chọn), chiếu sáng và đốt cháy các vật liệu dễ cháy trong một hình lập phương cạnh 5ft bằng cách cố định tầm nhìn của bạn vào một điểm trong vòng 60 feet như một hành động.<br><br>
+        Không thể đốt sinh vật sống với hiệu ứng này nhưng các sinh vật mang hoặc đeo các vật phẩm mà bạn đốt cháy sẽ nhận 1d6 fire damage nếu fail Dex save.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Hàn Dung</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level evocation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 60ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một vài tinh thể muối hoặc một nhúm bồ hóng)<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Quyền thuật này cho phép bạn làm tan băng và tuyết, hoặc gây sát thương cho những sinh vật hệ Hàn.<br><br>
+        Băng và tuyết tan bằng cách này sẽ tạo ra lượng nước có thể tích bằng 1/5 thể tích băng hoặc tuyết ban đầu. Tùy vào nhiệt độ môi trường, nước có thể đóng băng lại sau khi chảy.<br><br>
+        Gây sát thương 1d10 fire damage cho những sinh vật resistant cold damage.
+        <span style="font-weight: bold;">At Higher Levels:</span> Khi sử dụng spell slot cấp độ 2 trở lên, quyền thuật sẽ gây thêm 1d10 fire damage.<br>
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Vụ Thê</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level transmutation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 round<br>
+        <span style="font-weight: bold;">Range:</span> Touch<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một đám cháy từ gỗ màu xanh)<br>
+        <span style="font-weight: bold;">Duration:</span> 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Bạn tạo ra một chiếc thang dài tới 40ft và rộng 10ft được tạo hình từ khói tỏa ra từ ngọn lửa khi bạn niệm chú.<br><br>
+        Thang khói hầu như không có trọng lượng và có thể dễ dàng thay đổi độ dài. Luôn ổn định và cứng nhắc, thang không cần điểm tựa hay vật gì để dựa vào mà chỉ cần đặt vào vị trí mong muốn và leo lên.<br><br>
+        Bằng cách thi triển lại phép thuật này, thang khói hiện có trước đó sẽ biến mất và tạo ra một chiếc thang mới.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Thạch Vũ</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level evocation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 round<br>
+        <span style="font-weight: bold;">Range:</span> 120ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một miếng ngọc trị giá ít nhất 5 gp)<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Bạn tạo ra một cơn mưa đá gây sát thương cho sinh vật và đồ vật trong phạm vi hình trụ bán kính 5ft, cao 40ft.<br><br>
+        Sinh vật trong phạm vi ảnh hưởng của phép thuật phải Dex save chịu 2d8 bludgeoning damage, fail save nhận một nửa sát thương.<br><br>
+        <span style="font-weight: bold;">At Higher Levels:</span> Khi sử dụng spell slot cấp độ 2 trở lên, quyền thuật sẽ gây thêm 1d8 bludgeoning damage và thêm 5ft bán kính cho mỗi cấp.<br>
+    </p>  
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Thiết Quyên</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level transmutation. (Vô Nhân, Vũ Công)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 60ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một dải lụa)<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Sử dụng quyền thuật này khiên dải lụa trong tay bạn trở nên cứng rắn như sắt thép nếu bạn tấn công một sinh vật mà bạn nhìn thấy trong tầm đánh, khi trúng gây 1d10 magic slashing damage.<br><br>
+        <span style="font-weight: bold;">At Higher Levels:</span> Khi sử dụng spell slot cấp độ 2 trở lên, quyền thuật sẽ gây thêm 1d10 magic slashing damage cho mỗi cấp.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Hoạt Thủy</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level transmutation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> Touch<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một lọ nước suối tinh khiết pha với dầu chu sa)<br>
+        <span style="font-weight: bold;">Duration:</span> Concentration, up to 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Quyền thuật này cho phép bạn tạo hoạt cảnh cho nước, khối nước này có HP gấp đôi một vật thể có cùng kích thước và độ cứng bằng 0.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Xà Tín</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level transmutation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 10ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Răng nanh của rắn hổ mang)<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Sử dụng quyền thuật này khiến nước bọt của bạn biến thành một chất độc cực mạnh mà sau đó bạn phun ra theo hình nón bán kính 10 foot. Các sinh vật bên trong hình nón phải Con save hoặc nhận 2d8 poison damage. Chất độc không ảnh hưởng đến bạn cũng như không tạo ra bất kỳ tác dụng phụ nào hoặc vẫn còn tác dụng sau khi phun.<br>
+        <span style="font-weight: bold;">At Higher Levels:</span> Khi sử dụng spell slot cấp độ 2 trở lên, quyền thuật sẽ gây thêm 1d8 bludgeoning damage cho mỗi cấp.<br>
+    </p>   
+</div> 
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Vụ Tỏa</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level conjuration. (Vô Nhân, Vũ công)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 20ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Một làn hơi sương mù phát sinh xung quanh bạn theo hình cầu bán kinh 20ft. Nó đứng yên khi được tạo ra. Hơi nước che khuất mọi tầm nhìn, kể cả darkvision ngoài 5 feet.<br><br>
+        Gió vừa phải (hơn 11 dặm/giờ), sẽ phân tán sương mù trong 4 round. Gió mạnh (hơn 21 dặm/giờ) sẽ phân tán sương mù trong 1 round.<br><br>
+        Quyền thuật này không hoạt động dưới nước.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Mộc Khôi Lỗi</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level transmutation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> Touch<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Hỗn hợp bột chu sa và hạt đào xay)<br>
+        <span style="font-weight: bold;">Duration:</span> Concentration, up to 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Quyền thuật này làm cho một vật thể bằng gỗ có kích thước small hoặc smaller khả năng di chuyển và trông như có sự sống, sau đó khiến nó ngay lập tức tấn công bất kỳ ai hoặc bất cứ thứ gì bạn chỉ định ban đầu. Các đồ vật bằng gỗ trở thành con rối bằng quyền thuật này sử dụng thuộc tính của Arrowplant. Câu thần chú không thể làm động các đồ vật được mang hoặc đeo bởi một sinh vật.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Yêu Thứ</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level necromancy. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 30ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một con dao găm)<br>
+        <span style="font-weight: bold;">Duration:</span> 1 round<br>
+        <span style="font-weight: bold;">Description:</span> Bạn sử dụng câu thần chú này lên bất kỳ vũ khí hai tay có cán bằng gỗ nào (chẳng hạn như rìu lớn) hoặc bất kỳ vũ khí có cán bằng gỗ nào (chẳng hạn như giáo dài hoặc đao). Lần tiếp theo vũ khí đó được sử dụng để thực hiện một cuộc tấn công cận chiến, vũ khí sẽ tấn công người sử dụng bằng attack của chính người đó.<br><br>
+        Người tấn công không nhận được cảnh báo hoặc biết về tác dụng của pháp thuật đối với vũ khí của mình và sát thương tự gây ra không thể giảm một cách có ý thức hoặc chuyển thành sát thương không gây chết người (non-lethal). Khi vũ khí tấn công người sử dụng nó (dù thành công hay không) thì pháp thuật cũng sẽ hết hiệu lực ngay sau đó.<br><br>        
+        Quyền thuật có thể áp dụng vào một loại vũ khí có kích thước bất kỳ miễn là người chủ thường sử dụng nó.<br><br>        
+        Vũ khí ma thuật (magic weapon) bị nhắm mục tiêu bởi quyền thuật này sẽ được Wis save. Vũ khí sử dụng Wis save của chính nó hoặc của người sử dụng nó, chọn cái cao hơn.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Chuẩn Tính</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level transmutation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> Touch<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Mực viết)<br>
+        <span style="font-weight: bold;">Duration:</span> 10 min<br>
+        <span style="font-weight: bold;">Description:</span> Quyền thuật này cho phép bạn vẽ ký tự thần bí của riêng bạn lên mỗi vũ khí mà bạn muốn cường hóa. Vũ khí được cường hóa bằng cách này có phạm vi hiệu ứng hoặc tầm đánh tăng gấp đôi.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Nhiên Hỏa Tiêu Đao</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">2nd level evocation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 20/60ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Shuriken phủ nhựa thông và lưu huỳnh)<br>
+        <span style="font-weight: bold;">Duration:</span> Instantaneous<br>
+        <span style="font-weight: bold;">Description:</span> Quyền thuật này tạo ra shuriken được bọc trong lửa ma thuật. Bạn có thể ném nó như một đòn tấn công tầm xa thông thường vào bất kỳ mục tiêu nào trong tầm đánh và gây thêm 1d8 fire damage.<br>
+        Bất kỳ damage nào do shuriken lửa gây ra (bao gồm cả STR mod và sneak attack bonuses) cũng là fire damage. Lửa trên shuriken không thể đốt cháy vật liệu dễ cháy hoặc đồ vật nào.<br><br>
+        <span style="font-weight: bold;">At Higher Levels:</span> Quyền thuật này tạo ra thêm 1 chiếc magic shuriken cho mỗi level spell slot. Bạn có thể nhắm vào 1 mục tiêu hoặc vào các mục tiêu khác nhau và tung to hit cho mỗi shuriken một attack riêng.
+    </p>   
+</div> 
+
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Linh Tự</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">5th level necromancy. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> Touch<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một tín vật cầu nguyện nhỏ)<br>
+        <span style="font-weight: bold;">Duration:</span> 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Bạn có thể gửi linh hồn của mình ra bên ngoài cơ thể ở dạng vô hình trong khi vẫn duy trì một số chức năng của sự sống bên trong cơ thể vật chất. Linh hồn của bạn được coi như một sinh vật có thực thể để xác định chuyển động, ưu điểm và nhược điểm của nó, đồng thời có tốc độ 80 feet nhưng không thể di chuyển xa cơ thể bạn hơn 200 feet.<br><br>
+        Ở dạng linh hồn, một spell caster sử dụng Commune with lesser spirit hoặc Commune with greater spirit có thể liên lạc với bạn và bạn có thể sử dụng các phép thuật chỉ có yêu cầu dùng lời nói. Bạn không thể gây ra các tấn công vật lý hoặc tạo ảnh hưởng đến thế giới vật chất, và bạn có thể đưa linh hồn trở lại cơ thể trong lượt của mình bằng một action.<br><br>        
+        Trong khi bạn hoạt động ở dạng linh hồn, cơ thể của bạn ở trạng thái nửa tỉnh nửa mê, nó chỉ có thể move với speed bình thường mỗi turn, mất phần thưởng Dexterity bonus vào AC (nếu có) và cho kẻ thù +1 vào to hit tấn công nó. Trong phạm vi 5 feet tính từ cơ thể bạn, bạn có thể ra lệnh cho nó thực hiện các hành động đơn giản như đi bộ, nói chuyện (theo kiểu chậm chạp, lắp bắp) hoặc ăn uống.<br><br>        
+        Sát thương linh hồn và cơ thể bạn phải chịu sẽ trừ vào tổng HP của bạn. Nếu bạn bị giảm xuống 0 HP hoặc phải chịu sát thương nhiều hơn max HP, bạn sẽ chết. Tương tự như vậy, bạn sẽ chết nếu cơ thể của bạn di chuyển cách xa linh hồn bạn hơn 200 feet và bạn không thể đi theo (ví dụ như khi đang chịu tác dụng của Spirit Needle), hoặc nếu bạn bị ngăn cản trở lại cơ thể của mình khi quyền thuật kết thúc.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Ngạ Quỷ Quang</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level necromancy. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 100ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một ít photpho)<br>
+        <span style="font-weight: bold;">Duration:</span> Concentration, up to 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Bạn tạo ra một vầng hào quang màu xanh lục ma quái ở một điểm mà bạn chọn trong phạm vi. Ánh sáng khiến các sinh vật trong hình cầu bán kính 30 feet bị sợ hãi trừ khi chúng thành công WIS save. Ánh sáng có thể được định hình thành bất kỳ dạng nào có kích thước trung bình hoặc nhỏ và có thể di chuyển với tốc độ 30 feet miễn là bạn duy trì sự tập trung.<br><br>
+        Hình dạng của ánh sáng ma có thể thay đổi bất cứ lúc nào trong thời gian của quyền thuật như một free action.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Hoạt Tác</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level transmutation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 90ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Bạn có thể tạo hiệu ứng động cho một đối tượng giống như dây thừng và không có sự sống. Kích cỡ giả định một sợi dây có đường kính 1 inch.<br><br>
+        Giảm 50% chiều dài tối đa cho mỗi inch độ dày bổ sung và tăng 50% cho mỗi lần giảm một nửa đường kính của dây.<br><br>        
+        Các lệnh có thể là “cuộn” (tạo thành một chồng cuộn gọn gàng), “cuộn và thắt nút”, “vòng”, “vòng và thắt nút”, “buộc và thắt nút” và các lệnh đối lập của tất cả các lệnh trên (ví dụ như “tháo cuộn"). Bạn có thể đưa ra một mệnh lệnh mỗi round dưới dạng move, như thể chỉ đạo một phép thuật đang hoạt động.<br><br>        
+        Sợi dây chỉ có thể quấn quanh một sinh vật hoặc một vật thể trong phạm vi 1 foot so với nó vì vậy nó phải được ném gần mục tiêu đã định. Làm như vậy yêu cầu một tấn công tầm xa thành công (phạm vi tăng thêm 10 feet). Một sợi dây có đường kính 1 inch điển hình có AC 10 và yêu cầu STR check DC 23 để làm đứt nó. Sợi dây không gây sát thương, nhưng nó có thể được sử dụng làm dây nhảy hoặc khiến một đối thủ đơn lẻ không thể DEX save khi trúng phép thuật.<br><br>        
+        Bản thân sợi dây và bất kỳ nút thắt nào buộc trong đó không phải là phép thuật.<br><br>        
+        Quyền thuật này +2 cho bất kỳ lần check nào để sử dụng dây sau khi đã chuyển đổi.<br><br>        
+        Quyền thuật này không thể làm động các đồ vật được mang hoặc đeo bởi một sinh vật.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Loạn Tự Khảo</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level divination. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 30ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> Concentration, up to 10 min<br>
+        <span style="font-weight: bold;">Description:</span> Quyền thuật này cho phép bạn phát hiện ra hào quang của các chaotic creatures, clerics of chaotic deities, chaotic spells, và chaotic magic items. Bạn dễ bị ảnh hưởng bởi hào quang hỗn loạn áp đảo nếu bạn là một sinh vật Law.<br><br>
+        Ngược lại, bạn cũng có thể phát hiện ra các sinh vật, phép thuật, vật phẩm ma thuật thuộc Law và dễ bị ảnh hưởng bởi hào quang nguyên tắc áp đảo nếu bạn là sinh vật chaotic.<br><br>
+        Phạm vi hình nón bán kính 30ft tính từ bạn.<br><br>
+        Quyền thuật có thể xuyên qua hầu hết các rào cản, nhưng nó bị chặn bởi 1 foot đá, 1 inch kim loại thông thường, một tấm chì mỏng hoặc 3 foot gỗ hoặc đất.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Trấn Môn</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level abjuration. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 90ft<br>
+        <span style="font-weight: bold;">Components:</span> V<br>
+        <span style="font-weight: bold;">Duration:</span> 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Câu thần chú này giúp đóng cửa, cổng, cửa sổ hoặc cửa chớp bằng gỗ, kim loại hoặc đá. Phép thuật ảnh hưởng đến cổng như thể nó được đóng an toàn và khóa bình thường. Một knock spell hoặc Dispel magic thành công có thể vô hiệu hóa Trấn Môn.<br><br>
+        Một cổng bị ảnh hưởng bởi Trấn Môn tăng 5 vào DC để buộc mở cổng.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Thôi Miên</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">2nd level enchantment. (Vô Nhân, Vũ Công)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 30ft<br>
+        <span style="font-weight: bold;">Components:</span> V, S<br>
+        <span style="font-weight: bold;">Duration:</span> 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Cử chỉ và thần chú của bạn mê hoặc những sinh vật xung quanh, khiến chúng phải WIS save hoặc dừng lại và ngây người nhìn bạn. Bạn có thể sử dụng sự ngây ngẩn của chúng để làm cho các đề xuất và yêu cầu của bạn nghe có vẻ hợp lý hơn. Roll 4d10 để xem tổng số HP của các sinh vật mà bạn tác động. Sinh vật có ít HP hơn bị ảnh hưởng trước sinh vật có nhiều HP hơn. Chỉ những sinh vật có thể nhìn hoặc nghe thấy bạn mới bị ảnh hưởng, nhưng chúng không cần phải hiểu bạn mới bị thôi miên.<br><br>
+        Nếu bạn sử dụng quyền thuật này trong combat, mỗi mục tiêu sẽ được thêm 1d4 khi save. Nếu quyền thuật chỉ ảnh hưởng đến một sinh vật duy nhất không tham chiến vào thời điểm đó, thì save của nó trừ 1d4.<br><br>
+        Trong khi đối tượng bị mê hoặc bởi quyền thuật này, nó phản ứng như thể nó có thái độ thân thiện hơn với bạn. Điều này cho phép bạn thực hiện một yêu cầu duy nhất đối với sinh vật bị ảnh hưởng (miễn là bạn có thể giao tiếp với nó). Yêu cầu phải ngắn gọn và hợp lý. Ngay cả sau khi quyền thuật kết thúc, sinh vật vẫn giữ thái độ mới đối với bạn, nhưng chỉ áp dụng với yêu cầu cụ thể đó.<br><br>
+        Một sinh vật fail save sẽ không nhớ rằng bạn đã cố gắng thôi miên nó.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Mật Hiệu</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level enchantment. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> 30ft<br>
+        <span style="font-weight: bold;">Components:</span> S<br>
+        <span style="font-weight: bold;">Duration:</span> 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Sử dụng các phương tiện phi ngôn ngữ, bạn có thể truyền đạt một thông điệp đơn giản tới một sinh vật có trí thông minh khác trong phạm vi. Chỉ cần vẫy tay, đặt một cuộn giấy lên bàn, nhướng mày hoặc làm bất kỳ dấu hiệu nào khác, quyền thuật cho phép đối tượng mục tiêu hiểu được bất kỳ ý nghĩ hoàn chỉnh nào gồm 25 từ trở xuống, miễn là bạn và mục tiêu có thể giao tiếp với nhau.<br><br>
+        Bạn không thể gửi tin nhắn bằng lời nói nếu bạn không nói được ngôn ngữ của mục tiêu nhưng có thể truyền tải một cảm xúc đơn giản (chẳng hạn như “giúp đỡ” hoặc “nguy hiểm”).<br><br>
+        Bạn có thể sử dụng câu thần chú này ngay cả khi bạn bị trói và bịt miệng, miễn là sự tập trung vào người của bạn.
+    </p>   
+</div> 
+
+<div class="item-container container divider">
+    <div><h2 style="text-align: left;" onclick="expandContainer(this)">Tích Lân</h2></div>
+    <div class="p-divider"></div>
+    <p>Source: Etar's Manuscript</p>
+    <p style="font-style: italic;">1st level transmutation. (Vô Nhân)</p>
+
+    <p>
+        <span style="font-weight: bold;">Casting time:</span> 1 action<br>
+        <span style="font-weight: bold;">Range:</span> Self<br>
+        <span style="font-weight: bold;">Components:</span> V, S, M (Một hình xăm con thằn lằn trên da của bạn)<br>
+        <span style="font-weight: bold;">Duration:</span> 1 min<br>
+        <span style="font-weight: bold;">Description:</span> Khi bạn sử dụng quyền thuật này, làn da của bạn cứng lại và lấp lánh như thể được bao phủ bởi một lớp vảy. Bạn được +2 AC cho đến khi hết hiệu ứng.<br><br>
+        AC cường hóa do Tích Lân được cộng dồn với lớp giáp tự nhiên của bạn (nếu có), nhưng không cộng dồn với các cường hóa khác cho giáp tự nhiên. Một sinh vật không có nature armor có AC tự nhiên +0, giống như một nhân vật chỉ mặc quần áo bình thường có AC +0.
+    </p>   
+</div> 
+    </main>
+
+    <script src="/script/intro.js"></script>
+    <script src="/script/hide html.js"></script>
+    <script src="/script/scroll to top.js"></script>
+    <script src="/script/search.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="/script/overlay slide.js"></script>
+    <script src="/script/un click in container.js"></script>
+    <script src="/script/slide show.js"></script>
+    <script src="/script/expland container.js"></script>
+    <script src="/script/filter button.js"></script>
+    <script src="/script/slide show.js"></script>
+    
+    <footer>
+        <p style="text-align: center;">&copy; 2024, Etar Ai</p>
+        <a title="Tham gia server discord" href="https://discord.gg/pQK5pCm2hC">
+            <img src="/static/dc.png" alt="Discord" height="30">
+        </a>
+        <a title="Liên hệ: tieuthienbinhngoc@gmail.com">
+            <img src="/static/mail icon.png" alt="Gmail" height="20">
+        </a>
+    </footer>  
+</body>
+</html>

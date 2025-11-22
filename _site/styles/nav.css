@@ -1,0 +1,18 @@
+.nav-wrapper {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử ngang hàng */
+    align-items: center; /* Căn các phần tử theo chiều dọc */
+}
+
+nav {
+    text-align: right;
+    background-color: #8a92c1;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #242652;
+    font-family: 'Nunito';
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}

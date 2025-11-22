@@ -1,0 +1,21 @@
+table {
+    width: 100%; /* Độ rộng của bảng */
+    margin: auto; /* Căn giữa bảng */
+    border-collapse: collapse;
+    margin-bottom: 30px; /* Khoảng cách dưới của bảng */
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ffffff8a;
+}
+
+.container.divider table {
+    border-collapse: collapse;
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+.search-container {
+    float: right;
+    position: relative;
+}
+
+.search-container button {
+    height: 32px;
+    width: 32px;
+    margin-left: -5px;
+    background: LightGrey;
+    font-size: 17px;
+    border: none;
+    margin-top: 14px;
+    margin-right: 16px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    padding-left: 30px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.search-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.highlight {
+    background-color: rgb(181, 110, 209); /* Màu nền */
+    font-weight: bold; /* In đậm */
+}

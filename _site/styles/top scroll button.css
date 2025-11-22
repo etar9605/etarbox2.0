@@ -1,0 +1,24 @@
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 33px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.089);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px; /* Bo góc của nút */
+    backdrop-filter: blur(50%); /* Mức độ mờ */
+    padding: 15px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #6381c2;
+}
+
+.fa-arrow-up {
+    margin-top: 3px;
+}

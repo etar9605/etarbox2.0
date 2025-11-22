@@ -1,0 +1,19 @@
+header {
+    text-align: left;
+    padding: 20px;
+    background-color: #515688;
+    color: #d6d6d6;
+    overflow: hidden;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+}
+
+footer {
+    text-decoration: none;
+    color: #d6d6d6;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,187 @@
+[
+  {
+    "title": "Stream of Enchantment (Dòng Mỵ Vũ)",
+    "intro": "Không ai biết được những Enchanter mong đợi điều gì. Họ có vô số phép thuật và khả năng. Nghệ thuật khiêu vũ rất phức tạp và tinh tế vì vậy khi đối mặt với một Enchanter, những gì bạn thấy chưa chắc đã là cái bạn nhận được.<br> Khi bạn chọn dòng vũ kỹ này, từ level 1, bạn có proficiency với Persuasion và Arcana skills. Nếu bạn đã có proficient với cả 2 skill này, bạn được gấp đôi proficiency với nó.",
+    "features": [
+      {
+        "title": "Aria of Clarity (Khúc Khai Tâm)",
+        "description": "Là một Enchanter, bạn có được cái nhìn sâu sắc về ma thuật. Bạn được thêm 2 cantrips từ spell list của Bard ở level 1 và thêm 1 cantrip ở level 5th, 9th, 14th và 20th. Bạn có thêm 2 spell slots level 1 và bạn học thêm 1 spell của Dancer cũng như một spell bất kì từ spell list của Bard. Charisma vẫn là spellcasting ability của bạn khi cast spells, và những spell này được tính là Dancer spells của bạn."
+      },
+      {
+        "title": "Captivating Dance (Điệu Nhảy Mê Hoặc)",
+        "description": "Trong khi bạn không mặc giáp, không cầm khiên, AC của bạn bằng 10 + Dexterity modifier + Charisma modifier. Bạn có thể sử dụng bất kì spell ritual nào bằng cách thực hiện một điệu nhảy cụ thể để kích hoạt hiệu ứng của nó. Bạn cũng không bị disadvantage khi attack bằng spell tầm xa vào các target trong bán kính 5ft từ bạn."
+      },
+      {
+        "title": "Incantation and Dance Alike (Chú Ngữ Và Vũ Đạo Giống Nhau)",
+        "description": "Ở level 3, bất cứ khi nào bạn sử dụng một spell, bạn có thêm Charisma modifier để gây thêm damage hoặc healing nếu nó chưa được áp dụng để làm vậy (đối các phép nhiều tia ví dụ như Magic Missile, Scorching Ray,... thì áp dụng 1 lần/attack). Ngoài ra, các spell bạn sử dụng từ trường Illusion hoặc Enchantment bây giờ có DCs tăng lên một lượng bằng một nửa proficiency bonus của bạn."
+      },
+      {
+        "title": "Dance on, My Love! (Khiêu Vũ Đi Người Yêu!)",
+        "description": "Ở level 5, bất cứ khi nào bạn cast một spell sử dụng một action, bạn có thể sử dụng một bonus action để di chuyển tối đa 15ft theo bất kì hướng nào. Tính năng này không kích động OA."
+      },
+      {
+        "title": "Unmatched Faith (Đại Tín Vô Song)",
+        "description": "Ở level 9, bạn có thể chọn 2 spell level 1 mà bạn đã biết để sử dụng mà không tốn spell slots. Số lần sử dụng cho cả 2 spell bằng Charisma modifier của bạn (tối thiểu 1 lần). 2 spell đã chọn này không thể được sử dụng bằng bất kì spell slots nào lớn hơn 1. Hoàn lại số lần sau long rest."
+      },
+      {
+        "title": "Radiant Light (Ánh Sáng Chói Lọi)",
+        "description": "Ở level 14, như một action, bạn có thể tạo hào quang với bán kính 15ft tính từ bạn kéo dài 1 phút. Khi các creatures thù địch bước vào hào quang này và bắt đầu turn trong đó, chúng phải thực hiện một Wisdom saving throw với spell save DC của bạn hoặc bị -3 modifier cho tất cả các saving throws, attack rolls và skill checks sau đó miễn là chúng còn ở trong phạm vi của hào quang. Hào quang này yêu cầu concention của bạn như một spell. Bạn có thể loại bỏ hào quang như một bonus action và nếu không thì nó có thể bị giải trừ như một spell level 3 bình thường. Khi hào quang hoạt động, ánh sáng rực rỡ sẽ chiếu khắp khu vực bị ảnh hưởng và ánh sáng mờ sẽ chiếu thêm 15ft."
+      }
+    ]
+  },
+  {
+    "title": "Stream of Emblem (Dòng Hội Huy)",
+    "intro": "Khi bạn chọn dòng vũ kỹ này, từ level 1, bạn được proficiency với medicine check và sử dụng shields. Nếu bạn đã có proficiency với skill medicine trước đó, bạn có thể gấp đôi proficiency.",
+    "features": [
+      {
+        "title": "Compassionate Aid (Viện Trợ Nhân Từ)",
+        "description": "Từ level 1, như một action, bạn có thể hồi phục cho một sinh vật có thể nhìn thấy bạn một số HP bằng 1d4 + Charisma modifier của bạn nếu sinh vật đó đang có ít hơn một phần tư HP tối đa của mình và lớn hơn 0 HP. Ở level 6, bạn có thể heal cho bạn và tối đa 3 đồng minh có thể nhìn thấy bạn trong vòng 30 ft dù đang ở mức HP nào. Bất cứ sinh vật nào đã mất máu và được hồi về max HP bằng cách này sẽ nhận thêm 1d4 Temp HP. Số lần bạn có thể sử dụng khả năng này bằng điểm proficiency của bạn (ít nhất 1 lần), làm mới sau long rest."
+      },
+      {
+        "title": "Lullaby of Renewal (Khúc Chữa Lành)",
+        "description": "Từ level 3, bạn có thể dệt nên những giai điệu chữa lành bằng chuyển động và cảm xúc của mình. Bạn học thêm các spell theo bảng dưới đây và chúng không tính vào số lượng Spells Known trong bảng The Dancer. Bạn tiêu tốn mỗi Fluid Movements thay cho một spell slot của mình khi sử dụng chúng bất kể spell đó là level mấy, với điều kiện bạn đã di chuyển ít nhất 10ft speed trong lượt bạn sử dụng spell đó. Nếu các spell này có thể sử dụng ở các slot cao hơn ban đầu, tính năng này sẽ khiến nó tự động upgrade lên để có hiệu ứng tương đương với spell slot cao nhất mà bạn có hiện tại.",
+        "table": {
+          "headers": [
+            "Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Tích Lân, Mật Hiệu, Cure Wounds"
+            ],
+            [
+              "5",
+              "Đồng Tâm Khiên, Warding Bond"
+            ],
+            [
+              "9",
+              "Nguyên Nhẫn, Calm Emotions"
+            ],
+            [
+              "13",
+              "Beacon of Hope, Aura of Life"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Under the Aegis (Dưới Sự Bảo Hộ)",
+        "description": "Ở level 3, trong khi bạn không mặc giáp, AC của bạn bằng 10 + Dexterity modifier + Charisma modifier. Tính năng này vẫn được áp dụng khi bạn trang bị Shield. Ngoài ra bạn có thể ngay lập tức cản trở đòn tấn công của địch bằng phản ứng nhanh nhẹn của mình, như một reaction, bạn có thể tiêu tốn một Fluid Movements để cộng thêm số Temp AC bằng Charisma modifier của bạn vào bản thân hoặc một đồng đội trong bán kính 10ft, temp AC này tồn tại đến đầu turn tiếp theo của bạn."
+      },
+      {
+        "title": "Symbolic Presence (Dáng Huy Hiện Hữu)",
+        "description": "Ở level 5, chỉ cần có bạn hiện diện thì mọi người đã cảm thấy vô cùng yên tâm. Bất cứ đồng minh nào bắt đầu turn trong 10ft từ bạn đều được chọn + 1 vào một trong những mục sau: to hit, damage, save hoặc check mà họ thực hiện trong turn đó. Phải lựa chọn trước khi tung dice. Số lần tính năng này được áp dụng mỗi turn bằng một nửa proficiency modifier của bạn."
+      },
+      {
+        "title": "Serene Elegance (Phong Thái Bình Lặng)",
+        "description": "Bắt đầu từ level 9, khí tức vững vàng của bạn có thể xoa dịu cảm xúc cho người khác giúp họ lấy lại bình tĩnh và tập trung. Số lần bạn có thể sử dụng khả năng này bằng với điểm proficiency của bạn (ít nhất một lần), làm mới sau long rest. Chọn một lựa chọn:<br><br>- Như một action, bạn có thể chọn 3 creature trong vòng 30ft tính từ bạn mà có thể nhìn thấy bạn để hồi 1d8 + 5 HP và những creature này sẽ resistance frightened và immune charmed trong 1 giờ.<br><br>- Như một reaction khi có một đồng minh phải thực hiện Concentration Save, bạn có thể giúp họ giữ vững tinh thần để chuyên tâm vào thi pháp, giúp Concentration Save của họ auto success."
+      },
+      {
+        "title": "Spirit Upliftment (Khích Lệ Tinh Thần)",
+        "description": "Bắt đầu từ level 14, bạn truyền cảm hứng cho người khác bằng màn biểu diễn của mình. Như một action, bạn có thể chọn tối đa 5 creature trong vòng 30 ft từ bạn mà bạn có thể nhìn thấy để nhận được các hiệu ứng sau: Mỗi creature nhận được 2d8 temporary hit points, có advantage với mọi attack roll trong một turn tiếp theo. Bạn có thể sử dụng khả năng này 1 lần/long rest."
+      }
+    ]
+  },
+  {
+    "title": "Stream of Blade (Dòng Kiếm Vũ)",
+    "intro": "Các vũ công dòng kiếm tự hào về khả năng chiến đấu của họ hơn hầu hết các vũ công khác, xoay người lao tới bằng cơ thể cũng như lưỡi kiếm và đem đến một vũ điệu chết chóc.<br> Khi bạn chọn dòng vũ kĩ này, từ level 1, bạn được proficiency với Light Armor, Medium Armor và các martial weapons.",
+    "features": [
+      {
+        "title": "Silent Pirouette (Tịnh Luân Vũ)",
+        "description": "Bạn có thể dùng DEX thay cho STR trong attack roll và damage roll cho unarmed strike bằng chân, và các cú đá này gây 1d6 sát thương bludgeoning. Khi bạn dùng Attack Action trong lượt của mình và bị hụt 1 attack roll bằng [[Kiếm Khí]] (Umbrella, Dagger, Shortsword, Scimitar, Rapier, Longsword, Falchion, Sabre, Cutlass, Katana, Greatsword và Glaive), bạn có thể tiêu tốn một Fluid Movements để ngay lập tức thực hiện một unarmed strike bằng chân lên mục tiêu đó.<br><br> Ở cấp 6, đòn unarmed strike bằng chân sau khi hụt attack roll đó sẽ khiến địch bị ngã (proned) nếu chúng thất bại Strength save (DC bằng spell DC của bạn). Ở cấp 11, mọi unarmed strike bằng chân của bạn gây thêm dư chấn 1d6 force damage."
+      },
+      {
+        "title": "Blade Mastery (Kiếm Thuật Đại Thành)",
+        "description": "Bạn học được cách sử dụng mọi loại kiếm, kể cả loại nặng nhất. Với sự khéo léo và phong cách của mình, miễn là bạn có strength ability score từ 10 trở lên. Mọi [[Kiếm Khí|Umbrella, Dagger, Shortsword, Scimitar, Rapier, Longsword, Falchion, Sabre, Cutlass, Katana, Greatsword và Glaive]] đều được coi như finesse weapons khi bạn sử dụng chúng. Ngoài ra, mọi vũ khí Two-Handed cận chiến đều có thể được sử dụng bằng một tay, miễn là tay kia bạn không cầm bất kỳ vũ khí Two-Handed nào khác."
+      },
+      {
+        "title": "Fighting Style",
+        "description":"Bắt đầu từ level 3, bạn có thể sử dụng một phong cách chiến đấu cụ thể để nâng cao kỹ năng của mình. Bạn không thể có nhiều hơn một Phong cách Chiến đấu, ngay cả khi bạn có thể chọn Phong cách Chiến đấu từ các nguồn khác.",
+        "styles": [
+          {
+            "name": "Defence",
+            "effect": "Khi không mặc giáp, bạn được +1 bonus vào AC."
+          },
+          {
+            "name": "Dueling",
+            "effect": "Khi bạn cầm một vũ khí cận chiến bằng một tay và tay kia thì không có vũ khí, bạn được +2 bonus vào damage rolls với vũ khí đó và + 1 vào AC của mình."
+          },
+          {
+            "name": "Mariner",
+            "effect": "Miễn là bạn không mặc heavy armor hoặc đang sử dụng khiên, bạn có tốc độ bơi và tốc độ leo trèo bằng tốc độ đi bình thường của mình và được +1 bonus vào AC."
+          },
+          {
+            "name": "Two-Weapon Fighting",
+            "effect": "Khi bạn cầm mỗi vũ khí bằng một tay, bạn có thể sử dụng hành động bổ sung để tấn công hoặc ném bằng vũ khí cận chiến khác mà bạn đang cầm trên tay kia. Bạn có thể thêm ability modifier vào damage rolls của attack thứ 2."
+          },
+          {
+            "name": "Protection",
+            "effect": "Khi một creature bạn có thể nhìn thấy attacks một target không phải là bạn trong vòng 5 feet từ bạn, bạn có thể sử dụng reaction để gây disadvantage cho Attack roll đó. Tính năng này không yêu cầu bạn phải trang bị shield."
+          },
+          {
+            "name": "Great Weapon Fighting",
+            "effect": "Khi bạn roll ra 1 hoặc 2 trong damage die của một attack mà bạn thực hiện bằng melee weapon mà bạn đang sử dụng 2 tay, bạn có thể reroll và phải dùng new roll, kể cả nó là 1 hoặc 2. Weapon phải có đặc tính two-handed hoặc versatile với bạn để có thể áp dụng tính năng này."
+          }
+        ]
+      },
+      {
+        "title": "Refined Sequence (Thứ Thức)",
+        "description": "Bắt đầu từ level 5, trong turn của bạn, bạn có thể thực hiện thêm 1 action để gây damgage nữa nếu action ban đầu của bạn cũng nhằm mục đích gây damage. Nếu có ít nhất hai đòn đánh trúng cùng mục tiêu, bạn gây thêm 1d6 sát thương chất chồng (force damage)."
+      },
+      {
+        "title": "Overdrive Aria (Khúc Dâng Trào)",
+        "description": "Bắt đầu từ level 9, bạn có thể ép dòng chảy ma thuật bùng phát vượt ngưỡng để thực hiện thêm một action trong turn của mình, đẩy bản thân vào trạng thái [[Arcane Overdrive]]. Khi bạn đang ở trong trạng thái này, bạn có thể đổi một spell slot của mình để thực hiện thêm một số weapon attack nữa tương ứng với loại slot mà bạn đã đổi sau khi sử dụng Action trong turn của bạn, các Attack đánh ra bằng khả năng này được coi như một phần trong Action của bạn. Bạn có thể chủ động kết thúc trạng thái [[Arcane Overdrive]] như một free action hoặc nó sẽ tồn tại 10 phút. Sau khi sử dụng tính năng này, bạn phải hoàn thành short rest hoặc long rest mới có thể làm lại lần nữa."
+      },
+      {
+        "title": "Spellbreaker Assault (Công Kích Phá Pháp)",
+        "description": "Ở level 14, khi bạn sử dụng action để thực hiện weapon attack, bạn có thể sử dụng bonus action như một action khác để cast spell, hoặc ngược lại. Nếu action ảnh hưởng đến ít nhất một creature, bonus action (chuyển thành một action khác) sẽ có lợi thế (advantage) và bỏ qua resistance với damage type của nó lên creature đó."
+      }
+    ]
+  },
+
+  {
+    "title": "Stream of Idol (Dòng Thần Tượng)",
+    "intro": "Từ level 1, bạn được proficiency với skill Performance và Athletics. Nếu bạn đã có proficiency với hai skill này bạn có thể gấp đôi proficiency.",
+    "features": [
+      {
+        "title": "Velvet Seduction (Cám Dỗ Tinh Tế)",
+        "description": "Chuyển động của cơ thể bạn khiến kẻ thù của bạn bị phân tâm, bắt đầu từ level 3, AC của bạn bằng 10 + Dexterity modifier + Charisma modifier + Con modifier khi không mặc armor và không cầm shield."
+      },
+      {
+        "title": "In the Spotlight (Trong Ánh Hào Quang)",
+        "description": "Từ level 3, khi bạn tham gia chiến trường, bạn có thể thu hút mọi sự chú ý. Trong turn của mình, như một action, bạn có thể đánh vào một vật thể để thu hút sự chú ý của mọi creature trong vòng 60ft xung quanh và có thể nhìn thấy bạn. Mọi sinh vật thù địch trong phạm vi phải thực hiện một Charisma saving throw với Spell Save DC của bạn. Bất kỳ mục tiêu nào fail save sẽ không thể sử dụng action để hide, stealth, turn invisible và tất cả những hành động với mục đích thoát khỏi tầm nhìn của bạn, miễn là hiệu ứng vẫn còn. Hiệu ứng này kéo dài 1 phút và bạn có thể thực hiện việc này với số lần bằng với điểm proficiency của mình.<br><br>Trong mỗi turn sau đó của bạn, bạn có thể chọn một creature bị ảnh hưởng bởi hiệu ứng ban đầu của In the Spotlight để làm nó awed như một bonus action. Nếu creature fails save, Awed Effect (Hiệu ứng Chấn Nhiếp) ngay lập tức có tác dụng lên mục tiêu. Bắt đầu từ level 5, attacks của bạn có advantage với các targets đang chịu tác dụng của In the Spotlight hoặc bất kỳ Awed Effect nào. Bạn có thể sử dụng Awed Effect với tổng số lần tương đương Charisma modifier của bạn trước long rest. Các Awed Effect bao gồm:",
+        "styles": [
+          {
+            "name": "Gaze of Affection (Ánh Mắt Đưa Tình)",
+            "effect": "Creature phải thực hiện một Charisma saving throw với spell save DC của bạn để chống lại hiệu ứng, nếu fails save creature bị charm bởi bạn. Một sinh vật bị charm bởi hiệu ứng này có thể thực hiện một Wisdom saving throw với Spell Save DC của bạn để chống lại hiệu ứng vào cuối mỗi turn của chúng. Hiệu ứng này kết thúc nếu bạn target vào một creature khác đang có Awed Effect hoặc creature successful Wisdom saving throw."
+          },
+          {
+            "name": "Enchanting Invitation (Lời Mời Mị Hoặc)",
+            "effect": "Creature phải thực hiện một Wisdom saving throw với Spell Save DC của bạn để chống lại hiệu ứng hoặc phải sử dụng tất cả speed của nó để cố gắng di chuyển đến 5ft cạnh bạn. Nếu creature dừng lại trong khoảng cách 5ft với bạn, bạn có thể grapple nó. Creatures bị charm bởi bạn trước đó sẽ automatically fail save graple này, nếu trước đó không bị charm bởi bạn nó có thể thực hiện một Strength check với Strength check của bạn để không bị graple. Nếu bị charm bởi bạn trước đó, creature phải nhận số damage psychic bằng với Charisma modifier của bạn mỗi turn đầu của nó và vẫn bị graple. Bạn có thể kết thúc hiệu ứng này bất cứ lúc nào như một free action. Bạn không thể target một creature bị Awed Effect khác cho đến khi bạn ngừng graple. Nếu cuối turn, creature successful Wisdom saving throw và không còn bị charm bởi bạn, nó có thể Streng check với bạn để thoát khỏi graple ở turn tiếp theo của mình."
+          },
+          {
+            "name": "Intimidating Provocation (Dọa Dẫm Khiêu Khích)",
+            "effect": "Creature phải thực hiện Charisma saving throw với Spell Save DC của bạn ngay cả khi chúng đã save thành công để chống lại hiệu ứng ban đầu của In the Spotlight, nếu failure nó sẽ bị frightened bởi bạn. Hiệu ứng này kéo dài cho đến turn tiếp theo của creature đó. Tuy nhiên, mỗi attack thành công bằng weapon của bạn sẽ kéo dài hiệu ứng frightened thêm một round. Creature bị frightened có thể thực hiện một Charisma saving throw vào cuối turn để thoát khỏi hiệu ứng này."
+          },
+          {
+            "name": "Glorious End (Kết Thúc Huy Hoàng)",
+            "effect": "Sau khi dùng bonus action để kích hoạt Glorious End, một attack cận chiến tiếp theo của bạn chống lại creature được thực hiện bởi weapon hiện tại sẽ có advantage và gây thêm 1d6 thunder damage, đồng thời tất cả các creatures bị ảnh hưởng bởi In the Spotlight trong vòng 10-foot radius tính từ target sẽ phải nhận damage bằng một nửa số thunder damage đó. Tất cả các creatures bị nhận damaged bởi hiệu ứng này phải thực hiện một Charisma saving throw với Spell Save DC của bạn hoặc bị stunned đến khi end turn tiếp theo của chúng. Bạn không thể target bất kì creature nào 2 lần bằng hiệu ứng này trong cùng một encounter."
+          }
+        ]
+      },
+      {
+        "title": "Majestic Aura (Bá Khí Uy Phong)",
+        "description": "Ở level 5, bạn đã học được cách làm nhiều hơn trong khả năng của mình. Bất cứ khi nào bạn thực hiện thành công một attack chống lại một creature bằng vũ khí của mình, nó phải Strength saving throw với Spell Save DC của bạn hoặc bị move 5ft theo ý bạn. Ngoài ra, bạn có thể dùng weapon của mình găm lên cơ thể target (auto hit) và gây thêm 1d4 + Dexterity modifier slashing damage vào cuối mỗi turn của bạn chừng nào bạn còn dùng tay giữ cho weapon còn bị găm ở đó. Bạn không thể attack trong khi còn giữ weapon của mình găm trên cơ thể target (kể cả bạn có khả năng sử dụng phép thuật, attack bằng đòn đánh không cần vũ khí từ chân và sử dụng các attack khác chỉ cần một tay)."
+      },
+      {
+        "title": "Final Curtain (Khúc Hạ Màn)",
+        "description": "Ở level 9, bạn học cách kết thúc màn biểu diễn một cách ngoạn mục để đạt hiệu quả tối đa. Khi bất cứ một creature, allied hoặc hostile nào bị giảm xuống 0 hit points, mọi attack bằng weapon cận chiến ở turn tiếp theo của bạn sẽ có advantage. Nếu bạn tấn công creature đã bị giảm xuống 0 hit points ở round này hoặc round trước, hãy cúi đầu và tận hưởng khoảnh khắc đoạt mạng mục tiêu, bạn nhận được thêm số temporary hit points bằng với số damage bạn gây ra. Nếu attack của bạn khiến target giảm xuống 0 hit points, bạn và mọi đồng minh tham chiến có thể nhận được 1d10 temporary hit points mỗi người. Số này tăng lên 2d10 ở level 13, 3d10 at level 16 và 4d10 ở level 19. Khi trận chiến kết thúc mà bạn vẫn còn tỉnh táo, bạn và tất cả các allies của bạn được heal bằng một nửa số temporary hit points mà họ đang có."
+      },
+      {
+        "title": "Climax Moment (Khoảnh Khắc Đỉnh Cao)",
+        "description": "Ở level 14, bạn làm chủ sân khấu và xử lý được mọi tình huống. Bạn có thể thực hiện [[Uyển Chuyển Như Nước]] mà không cần sử dụng reaction hoặc bonus action của mình tối đa ba lần cho mỗi long rest. Ngoài ra, khi bạn đang sử dụng weapon, bạn có advantage khi Acrobatics và Athletics checks."
+      }
+    ]
+  }
+]
