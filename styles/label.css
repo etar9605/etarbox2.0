@@ -1,0 +1,44 @@
+.new-label {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-image: url('/static/cat-icon-sticker.png');
+    background-size: contain; /* Đảm bảo hình ảnh phù hợp với kích thước của nhãn */
+    background-repeat: no-repeat; /* Ngăn chặn hình ảnh lặp lại */
+    width: 30px; /* Độ rộng của nhãn */
+    height: 60px; /* Độ cao của nhãn */
+    line-height: 30px; /* Đảm bảo văn bản được căn giữa theo chiều dọc */
+    color: white; /* Màu chữ của nhãn */
+    transform: rotate(45deg); /* Xoay nhãn 45 độ */
+    z-index: 1;
+}
+
+.monster-label {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background-image: url('/static/notes.png');
+    background-size: contain; /* Đảm bảo hình ảnh phù hợp với kích thước của nhãn */
+    background-repeat: no-repeat; /* Ngăn chặn hình ảnh lặp lại */
+    width: 40px; /* Độ rộng của nhãn */
+    height: 40px; /* Độ cao của nhãn */
+    line-height: 30px; /* Đảm bảo văn bản được căn giữa theo chiều dọc */
+    color: rgb(247, 234, 255); /* Màu chữ của nhãn */
+    transform: rotate(-30deg); /* Xoay nhãn 45 độ */
+    z-index: 1; /* Đặt z-index của nhãn cao hơn */
+}
+
+.book-label {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background-image: url('/static/bookicon.png');
+    background-size: contain; /* Đảm bảo hình ảnh phù hợp với kích thước của nhãn */
+    background-repeat: no-repeat; /* Ngăn chặn hình ảnh lặp lại */
+    width: 40px; /* Độ rộng của nhãn */
+    height: 40px; /* Độ cao của nhãn */
+    line-height: 30px; /* Đảm bảo văn bản được căn giữa theo chiều dọc */
+    color: rgb(42, 43, 112); /* Màu chữ của nhãn */
+    transform: rotate(30deg); /* Xoay nhãn 45 độ */
+    z-index: 1; /* Đặt z-index của nhãn cao hơn */
+}

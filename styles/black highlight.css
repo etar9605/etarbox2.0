@@ -1,0 +1,6 @@
+.black-highlight {
+    color: rgba(240, 240, 240, 0.719);
+    background-color: rgba(48, 68, 124, 0.726);
+    padding: 2px 4px;
+    border-radius: 2px;
+}

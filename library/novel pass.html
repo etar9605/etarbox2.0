@@ -1,0 +1,32 @@
+---
+layout: base.html
+title: Novel Pass
+---
+    
+<div class="container divider" style="text-align: center;">
+    <h2>Bút danh của Etar cho đến trước khi gọi là Etar là gì?</h2>
+    <input type="password" id="passwordInput" placeholder="Nhập mật khẩu..." class="password-input" onkeypress="handleKeyPress(event)">
+    <button onclick="checkPassword()" class="password-button">Xác nhận</button>
+</div>
+
+<script>
+    function checkPassword() {
+        var password = document.getElementById("passwordInput").value;
+        // Kiểm tra mật khẩu
+        if (password === "akitaneko") {
+            // Nếu mật khẩu đúng, chuyển hướng đến trang mong muốn
+            window.location.href = "/library/novel/";
+        } else {
+            // Nếu mật khẩu sai, thông báo và không chuyển hướng
+            alert("Mật khẩu không đúng. Vui lòng thử lại.");
+        }
+    }
+
+    function handleKeyPress(event) {
+        // Kiểm tra nếu phím được nhấn là phím Enter
+        if (event.key === "Enter") {
+            // Gọi hàm checkPassword
+            checkPassword();
+        }
+    }
+</script>

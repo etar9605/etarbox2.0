@@ -1,0 +1,337 @@
+.magic-circle-effect {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    
+}
+
+.magic-circle-core {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(173, 179, 230, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(173, 179, 230, 0.6);
+    animation: spin-core 5s linear infinite;
+    position: absolute;
+}
+
+.magic-circle-runes-1 {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    border-radius: 50%;
+    font-size: 9px;
+    font-family: 'Script', cursive;
+    text-shadow: 0 0 8px #fff, 0 0 16px #cceeff;
+    color: #bbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin-runes 12s linear infinite reverse;
+}
+
+.magic-circle-runes-1 span {
+    position: absolute;
+    transform-origin: center center;
+}
+
+.magic-circle-inner {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    top: 20%;
+    left: 20%;
+    animation: spin-inner 6s linear infinite reverse;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.magic-circle-inner-2 {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    top: 15%;
+    left: 10%;
+    animation: spin-inner-2 10s linear infinite;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+@keyframes spin-inner-2 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+.magic-circle-middle {
+    position: absolute;
+    width: 82%;
+    height: 82%;
+    top: 9%; /* (100% - 85%) / 2 để căn giữa */
+    left: 9%;
+    border: 2px solid rgba(179, 173, 230, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(173, 177, 230, 0.4);
+    animation: spin-middle 8s linear infinite;
+    
+}
+@keyframes spin-middle {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+@keyframes spin-core {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-runes {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+@keyframes spin-inner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.magic-circle-wrapper {
+    width: 100%;
+    height: 100%;
+    animation: appear-circle 0.4s ease-out forwards;
+}
+
+@keyframes appear-circle {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+        filter: blur(6px);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.magic-triangle-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spin-triangle 8s linear infinite reverse;
+    pointer-events: none;
+}
+
+.magic-triangle-point {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(173, 186, 230, 0.4);
+    border-radius: 50%;
+}
+
+/* Animation tam giác xoay */
+@keyframes spin-triangle {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.magic-triangle-edge {
+    position: absolute;
+    height: 2px;
+    background-color: rgba(173, 174, 230, 0.5);
+    transform-origin: 0 0;
+    box-shadow: 0 0 8px rgba(173, 186, 230, 0.6);
+}
+
+.magic-triangle-mini-edge {
+    position: absolute;
+    height: 2px;
+    background-color: rgba(173, 174, 230, 0.5);
+    box-shadow: 0 0 8px rgba(173, 186, 230, 0.6);
+    pointer-events: none;
+}
+
+.magic-triangle-mini-edge-outer {
+    position: absolute;
+    height: 2px;
+    background-color: rgba(173, 174, 230, 0.5);
+    box-shadow: 0 0 8px rgba(173, 186, 230, 0.6);
+    pointer-events: none;
+}
+
+.magic-pentagram-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: spin-pentagram 12s linear infinite reverse;
+}
+
+.magic-pentagram-line {
+    position: absolute;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform-origin: 0 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.magic-runes-dynamic span {
+    position: absolute;
+    font-size: 9px;
+    font-family: 'Script', cursive;
+    text-shadow: 0 0 6px #fff, 0 0 12px #9cf;
+    color: #ccf;
+    transform-origin: center center;
+}
+
+@keyframes spin-pentagram {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+.magic-runes-dynamic-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(60deg);
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+
+
+@keyframes spin-dynamic-wrapper {
+    0% { transform: rotateX(60deg) rotate(0deg); }
+    100% { transform: rotateX(60deg) rotate(360deg); }
+}
+
+.magic-runes-dynamic-wrapper {
+    animation: spin-dynamic-wrapper 12s linear infinite;
+}
+
+.magic-flower-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spin-flower 8s linear infinite;
+    pointer-events: none;
+}
+
+.magic-flower-petal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(173, 186, 230, 0.4);
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgba(178, 150, 255, 0.6);
+}
+
+@keyframes spin-flower {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+.magic-orbit-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spinGlobal 10s linear infinite;
+}
+
+.magic-orbit {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.magic-orbit-pivot {
+    position: absolute;
+    width: 0;
+    height: 0;
+    animation: spinLocal 4s linear infinite;
+}
+
+.magic-orbit-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(225, 255, 255);
+    position: absolute;
+    top: -6px;
+    left: -6px;
+}
+
+@keyframes spinLocal {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spinGlobal {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+.magic-rune-line {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.magic-rune-line span {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 10px;
+    color: rgb(215, 224, 255);
+    font-family: 'script';
+    animation: appear-letter 0.3s ease-out both;
+}
+
+@keyframes appear-letter {
+    from {opacity: 0;
+        transform: translateX(-50%) translateY(-50%) scale(0.5);}
+    to {opacity: 1;
+        transform: translateX(-50%) translateY(-50%) scale(1);}
+}
+
+.magic-runeline {
+    position: absolute;
+    display: flex;
+    gap: 4px;
+    pointer-events: none;
+}
+
+.magic-rune-char {
+    font-size: 8px;
+    color: rgb(237, 236, 255);
+    font-family: 'script';
+    animation: appear-rune 0.3s ease forwards;
+    opacity: 0;
+}
+
+.magic-rune-char:nth-child(1) { animation-delay: 0s; }
+.magic-rune-char:nth-child(2) { animation-delay: 0.05s; }
+.magic-rune-char:nth-child(3) { animation-delay: 0.1s; }
+.magic-rune-char:nth-child(4) { animation-delay: 0.15s; }
+.magic-rune-char:nth-child(5) { animation-delay: 0.2s; }
+.magic-rune-char:nth-child(6) { animation-delay: 0.25s; }
+.magic-rune-char:nth-child(7) { animation-delay: 0.3s; }
+.magic-rune-char:nth-child(8) { animation-delay: 0.35s; }
+
+@keyframes appear-rune {
+    from {opacity: 0;
+        transform: scale(0.6);}
+    to {opacity: 1;
+        transform: scale(1);}
+}

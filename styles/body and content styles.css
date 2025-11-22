@@ -1,0 +1,96 @@
+* {
+    cursor: none !important;
+  }
+  
+body {
+
+    font-family: 'Nunito', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(69,61,119,1) 0%, rgb(60, 95, 128) 55%, rgb(149, 109, 168) 100%);
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none; 
+    color: #5a0c30;
+}
+
+h2 {
+    color: rgb(7, 26, 88);
+    font-family: 'Patrick Hand', cursive;
+    font-size: Xx-large;
+}
+
+h3 {
+    color: rgb(0, 26, 110);
+    font-family: 'Patrick Hand', cursive;
+    font-size: Xx-large;
+}
+  
+.divider {
+    border-top: 1px solid #999999;
+    margin: 20px 0;
+}
+
+
+.p-divider {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    padding-top: 20px; /* Tăng khoảng cách giữa dòng kẻ và các đoạn văn */
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.magic-circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* Đặt điểm gốc cho hiệu ứng và vị trí */
+    transform-origin: center;
+    /* Đặt vị trí của con trỏ từ tâm của vòng tròn */
+    transform: translate(-50%, -50%);
+}
+
+.magic-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sakura-petal {
+    position: fixed;
+    background-image: url('/static/sakura.png'); /* Đường dẫn ảnh cánh hoa */
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: auto;
+    will-change: transform, opacity;
+    width: 20px;
+    height: 20px;
+    z-index: 9999;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {transform: translate(-50%, -50%) translateX(0) translateY(0) rotate(var(--initial-rotate, 0deg));
+        opacity: 1;}
+    100% {transform: translate(-50%, -50%) translateX(var(--sakura-x, 0px)) translateY(100vh) rotate(var(--sakura-rotate, 360deg));
+        opacity: 0;}
+}
