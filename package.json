@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "node ./node_modules/@11ty/eleventy/cjs/Eleventy.js",
-  "start": "node ./node_modules/@11ty/eleventy/cjs/Eleventy.js --serve",
+  "build": "bash -c 'npx eleventy'",
+  "start": "bash -c 'npx eleventy --serve'",
   "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
