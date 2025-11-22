@@ -1,11 +1,11 @@
 {
   "name": "etarbox-main",
-  "version": "1.0.0",
+  "version": "2.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "node ./node_modules/@11ty/eleventy/cmd.js",
-  "start": "node ./node_modules/@11ty/eleventy/cmd.js --serve",
+  "build": "npx eleventy",
+  "start": "npx eleventy --serve",
   "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
