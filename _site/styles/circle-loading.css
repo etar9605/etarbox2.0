@@ -1,0 +1,60 @@
+/* Căn giữa container chứa SVG và đặt kích thước */
+.circle-animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình để demo */
+    width: 100%;
+    /* margin-top: 50px; nếu không muốn chiếm hết màn hình */
+    /* background-color: #222; Để dễ nhìn */
+}
+
+.circle-svg {
+    width: 200px; /* Chiều rộng thực tế của SVG trên trang */
+    height: 200px; /* Chiều cao thực tế của SVG trên trang */
+}
+
+.circle-path {
+    /* Quan trọng cho hiệu ứng vẽ */
+    stroke-dasharray: 565.48; /* Chu vi hình tròn (2 * PI * R) - Tính toán chi tiết bên dưới */
+    stroke-dashoffset: 565.48; /* Ban đầu ẩn toàn bộ đường nét */
+    animation-fill-mode: forwards; /* Giữ trạng thái cuối cùng của animation */
+}
+
+/* Hoạt ảnh cho vòng tròn ngoài (chiều kim đồng hồ) */
+#outerCircle {
+    animation: drawOuterCircle 4s ease-out forwards; /* 4 giây, từ từ tăng tốc, giữ trạng thái cuối */
+    transform-origin: center; /* Đảm bảo transform xoay quanh tâm */
+}
+
+/* Hoạt ảnh cho vòng tròn trong (ngược chiều kim đồng hồ) */
+#innerCircle {
+    animation: drawInnerCircle 4s ease-out forwards; /* 4 giây, từ từ tăng tốc, giữ trạng thái cuối */
+    transform-origin: center; /* Đảm bảo transform xoay quanh tâm */
+}
+
+/* --- KEYFRAMES --- */
+
+/* Hoạt ảnh vẽ vòng tròn ngoài (chiều kim đồng hồ) */
+@keyframes drawOuterCircle {
+    0% {
+        stroke-dashoffset: 565.48; /* Bắt đầu ẩn */
+        transform: rotate(0deg); /* Bắt đầu từ 12 giờ */
+    }
+    100% {
+        stroke-dashoffset: 0; /* Hiện toàn bộ */
+        transform: rotate(0deg); /* Không xoay thêm, vẽ theo chiều thuận */
+    }
+}
+
+/* Hoạt ảnh vẽ vòng tròn trong (ngược chiều kim đồng hồ) */
+@keyframes drawInnerCircle {
+    0% {
+        stroke-dashoffset: 565.48; /* Bắt đầu ẩn */
+        transform: rotate(360deg); /* Bắt đầu từ 12 giờ nhưng sẽ vẽ ngược chiều */
+    }
+    100% {
+        stroke-dashoffset: 0; /* Hiện toàn bộ */
+        transform: rotate(0deg); /* Không xoay thêm, vẽ theo chiều ngược */
+    }
+}

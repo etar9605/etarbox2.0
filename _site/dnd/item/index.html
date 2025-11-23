@@ -46,7 +46,7 @@
         <a href="/" style="text-decoration: none; color: inherit;">
             <img src="/static/etarheh.png" alt="Etar" height="120">
             <h1>Hộp giấy của Etar</h1>
-            <p style="font-family: 'Allura', cursive; font-style: italic">Loài người thật kỳ quặc</p>
+            <p style="font-family: 'Allura', cursive;">Loài người thật kỳ quặc</p>
         </a>
     </header>
     
@@ -87,8 +87,18 @@
     <h2>Etar's Manuscripts</h2>
 </div>
 
-<div id="dnd-items-container">
-    </div>
+<div id="filter-container" style="text-align: center; margin: 20px 0;">
+    <button class="filter-tag" data-tag="all" onclick="filterItems('all')">Tất Cả</button>
+    <button class="filter-tag" data-tag="weapon" onclick="filterItems('weapon')">Vũ Khí</button>
+    <button class="filter-tag" data-tag="magic item" onclick="filterItems('magic item')">Vật Phẩm</button>
+    <button class="filter-tag" data-tag="book" onclick="filterItems('book')">Sách</button>
+    <button class="filter-tag" data-tag="protection" onclick="filterItems('protection')">Bảo hộ</button>
+    <button class="filter-tag" data-tag="gem" onclick="filterItems('gem')">Đá quý</button>
+    <button class="filter-tag" data-tag="currency" onclick="filterItems('currency')">Tiền tệ</button>
+    <button class="filter-tag" data-tag="material" onclick="filterItems('material')">Nguyên liệu</button>
+</div>
+
+<div id="dnd-items-container"></div>
 
 <script src="/script/item-loader.js"></script> 
 <script>
@@ -99,7 +109,6 @@
     </main>
 
     <script src="/script/intro.js"></script>
-    <script src="/script/hide html.js"></script>
     <script src="/script/scroll to top.js"></script>
     <script src="/script/search.js"></script>
 
@@ -109,10 +118,8 @@
 
     <script src="/script/overlay slide.js"></script>
     <script src="/script/un click in container.js"></script>
-    <script src="/script/slide show.js"></script>
     <script src="/script/expland container.js"></script>
     <script src="/script/filter button.js"></script>
-    <script src="/script/slide show.js"></script>
     
     <footer>
         <p style="text-align: center;">&copy; 2024, Etar Ai</p>

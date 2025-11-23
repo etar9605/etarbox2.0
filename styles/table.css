@@ -8,11 +8,11 @@ table {
 th, td {
     padding: 8px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #5b65928f;
 }
 
 th {
-    background-color: #ffffff8a;
+    background-color: #465c7cab;
 }
 
 .container.divider table {

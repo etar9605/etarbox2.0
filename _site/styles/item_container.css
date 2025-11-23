@@ -1,0 +1,42 @@
+/* CSS cho container khi được mở rộng */
+.item-container.expand {
+    max-height: 500px; /* Kích thước mở rộng của container */
+    overflow: auto; /* Hiển thị thanh cuộn nếu nội dung vượt quá kích thước */
+}
+
+/* CSS để ẩn nội dung của container khi trang được tải */
+.item-container {
+    max-height: 100px; /* Kích thước mặc định khi thu nhỏ */
+    overflow: hidden; /* Ẩn nội dung vượt quá kích thước */
+    transition: max-height 0.3s ease; /* Hiệu ứng khi thay đổi kích thước */
+}
+
+
+/* =======================================================
+ẨN MẶC ĐỊNH CÁC PHẦN TỬ NỘI DUNG (Content)
+  ======================================================= */
+.item-container > .p-divider, /* Ẩn dải phân cách đầu tiên */
+.item-container > div:nth-child(3), /* Ẩn div chứa Grid (Stats, Mô tả & Ảnh) */
+.item-container > p { /* Ẩn p Mô tả thêm (desc_extra) */
+    display: none !important;
+}
+
+
+/* =======================================================
+HIỆN CÁC PHẦN TỬ KHI CÓ CLASS '.expand'
+======================================================= */
+/* Hiển thị dải phân cách và phần mô tả thêm */
+.item-container.expand > .p-divider, 
+.item-container.expand > p {
+    display: block !important;
+}
+
+/* Hiển thị DIV Grid (sử dụng lại display: grid) */
+.item-container.expand > div:nth-child(3) {
+    display: grid !important;
+}
+
+/* Tùy chọn: Thêm hiệu ứng chuột (cursor) cho tiêu đề H2 */
+.item-container h2 {
+    cursor: pointer;
+} 

@@ -8,8 +8,18 @@ title: Dnd Items
     <h2>Etar's Manuscripts</h2>
 </div>
 
-<div id="dnd-items-container">
-    </div>
+<div id="filter-container" style="text-align: center; margin: 20px 0;">
+    <button class="filter-tag" data-tag="all" onclick="filterItems('all')">Tất Cả</button>
+    <button class="filter-tag" data-tag="weapon" onclick="filterItems('weapon')">Vũ Khí</button>
+    <button class="filter-tag" data-tag="magic item" onclick="filterItems('magic item')">Vật Phẩm</button>
+    <button class="filter-tag" data-tag="book" onclick="filterItems('book')">Sách</button>
+    <button class="filter-tag" data-tag="protection" onclick="filterItems('protection')">Bảo hộ</button>
+    <button class="filter-tag" data-tag="gem" onclick="filterItems('gem')">Đá quý</button>
+    <button class="filter-tag" data-tag="currency" onclick="filterItems('currency')">Tiền tệ</button>
+    <button class="filter-tag" data-tag="material" onclick="filterItems('material')">Nguyên liệu</button>
+</div>
+
+<div id="dnd-items-container"></div>
 
 <script src="/script/item-loader.js"></script> 
 <script>

@@ -1,11 +1,15 @@
 .container {
     text-decoration: none;
-    margin: 0 20px; /* Điều chỉnh khoảng cách ở đây */
+    margin: 0 20px;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.342); /* Màu nền mờ */
-    backdrop-filter: blur(80%); /* Mức độ mờ */
-    border-radius: 10px; /* Bo góc container */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng container */
+    /* Màu nền mờ: Rất tối và trong suốt (Màu đen với độ mờ thấp) */
+    background-color: rgba(42, 62, 87, 0.63); 
+    /* Ánh sáng mờ mờ như trong ảnh */
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    /* Viền phát sáng nhẹ */
+    box-shadow: 0 0 10px rgba(100, 128, 184, 0.644), inset 0 0 5px rgba(107, 126, 167, 0.637); 
+    border: 1px solid rgba(128, 162, 234, 0.2); /* Viền mỏng */
     display: block;
     position: relative;
 }
@@ -19,24 +23,11 @@
     display: none;
 }
 
-/* CSS cho container khi được mở rộng */
-.item-container.expand {
-    max-height: 500px; /* Kích thước mở rộng của container */
-    overflow: auto; /* Hiển thị thanh cuộn nếu nội dung vượt quá kích thước */
-}
-
-/* CSS để ẩn nội dung của container khi trang được tải */
-.item-container {
-    max-height: 40px; /* Kích thước mặc định khi thu nhỏ */
-    overflow: hidden; /* Ẩn nội dung vượt quá kích thước */
-    transition: max-height 0.3s ease; /* Hiệu ứng khi thay đổi kích thước */
-}
-
 .empty-box {
     text-decoration: none;
     padding: 40px;
     border: 2px solid rgb(30, 32, 31);
-    background-color: rgba(255, 255, 255, 0.342); /* Màu nền mờ */
+    background-color: rgba(44, 51, 75, 0.644); /* Màu nền mờ */
     display: block;
     position: relative;
     margin-bottom: 30px;
@@ -45,6 +36,109 @@
     gap: 20px;
     text-align: center;
     justify-content: center;
+}
+
+/* CSS cho container khi được mở rộng */
+.item-container.expand {
+    max-height: 500px; /* Kích thước mở rộng của container */
+    overflow: auto; /* Hiển thị thanh cuộn nếu nội dung vượt quá kích thước */
+}
+
+/* CSS để ẩn nội dung của container khi trang được tải */
+.item-container {
+    max-height: 100px; /* Kích thước mặc định khi thu nhỏ */
+    overflow: hidden; /* Ẩn nội dung vượt quá kích thước */
+    transition: max-height 0.3s ease; /* Hiệu ứng khi thay đổi kích thước */
+}
+
+
+/* =======================================================
+ẨN MẶC ĐỊNH CÁC PHẦN TỬ NỘI DUNG (Content)
+  ======================================================= */
+.item-container > .p-divider, /* Ẩn dải phân cách đầu tiên */
+.item-container > div:nth-child(3), /* Ẩn div chứa Grid (Stats, Mô tả & Ảnh) */
+.item-container > p { /* Ẩn p Mô tả thêm (desc_extra) */
+    display: none !important;
+}
+
+
+/* =======================================================
+HIỆN CÁC PHẦN TỬ KHI CÓ CLASS '.expand'
+======================================================= */
+/* Hiển thị dải phân cách và phần mô tả thêm */
+.item-container.expand > .p-divider, 
+.item-container.expand > p {
+    display: block !important;
+}
+
+/* Hiển thị DIV Grid (sử dụng lại display: grid) */
+.item-container.expand > div:nth-child(3) {
+    display: grid !important;
+}
+
+/* Tùy chọn: Thêm hiệu ứng chuột (cursor) cho tiêu đề H2 */
+.item-container h2 {
+    cursor: pointer;
+} 
+
+/* =======================================================
+1. CƠ CHẾ COLLAPSE/EXPAND (Áp dụng cho khối Monster Card chính)
+======================================================= */
+/* Ẩn nội dung chi tiết mặc định */
+.monster-details {
+    display: none; /* Quan trọng: Ẩn toàn bộ khối chi tiết */
+}
+
+.monster-card.expand .monster-details {
+    display: block; /* Hiện toàn bộ khối chi tiết */
+}
+
+/* CSS cho container khi được mở rộng */
+.monster-card.expand {
+    max-height: 3000px; /* Tăng chiều cao để chứa nội dung */
+    overflow: auto;
+}
+
+/* CSS để ẩn nội dung của container khi trang được tải (Hiển thị Name, Type, AC, HP, Speed) */
+.monster-card {
+    max-height: 250px; /* Chỉ đủ cao để thấy phần trên */
+    overflow: hidden; 
+    transition: max-height 0.3s ease; 
+}
+
+
+/* =======================================================
+2. ẨN MẶC ĐỊNH CÁC PHẦN TỬ NỘI DUNG BÊN TRONG `.monster-card`
+======================================================= */
+/* Ẩn các khối detail bên trong .monster-card */
+.monster-card > .p-divider,           /* Ẩn dải phân cách đầu tiên */
+.monster-card > div:nth-child(3),     /* Ẩn div chứa Image và Stats/Saves table */
+.monster-card > div:nth-child(4) {    /* Ẩn div chứa Skills, Features, Spellcasting */
+    display: none !important;
+}
+
+
+/* =======================================================
+3. HIỆN CÁC PHẦN TỬ KHI CÓ CLASS '.expand'
+======================================================= */
+/* Hiển thị dải phân cách và phần mô tả thêm */
+.monster-card.expand > .p-divider {
+    display: block !important;
+}
+
+/* Hiển thị DIV Grid (Stats, Mô tả & Ảnh) */
+.monster-card.expand > div:nth-child(3) {
+    display: grid !important;
+}
+
+/* Hiển thị DIV Skills/Features/Spellcasting */
+.monster-card.expand > div:nth-child(4) {
+    display: block !important; 
+}
+
+/* Tùy chọn: Thêm hiệu ứng chuột (cursor) cho tiêu đề H2 */
+.monster-card h2 {
+    cursor: pointer;
 }
 
 .accordion-header {
@@ -84,36 +178,6 @@
     border-bottom: 1px dotted #999;
     cursor: help;
   }
-
-/* =======================================================
-ẨN MẶC ĐỊNH CÁC PHẦN TỬ NỘI DUNG (Content)
-  ======================================================= */
-.item-container > .p-divider, /* Ẩn dải phân cách đầu tiên */
-.item-container > div:nth-child(3), /* Ẩn div chứa Grid (Stats, Mô tả & Ảnh) */
-.item-container > p { /* Ẩn p Mô tả thêm (desc_extra) */
-    display: none !important;
-}
-
-
-/* =======================================================
-HIỆN CÁC PHẦN TỬ KHI CÓ CLASS '.expand'
-======================================================= */
-
-/* Hiển thị dải phân cách và phần mô tả thêm */
-.item-container.expand > .p-divider, 
-.item-container.expand > p {
-    display: block !important;
-}
-
-/* Hiển thị DIV Grid (sử dụng lại display: grid) */
-.item-container.expand > div:nth-child(3) {
-    display: grid !important;
-}
-
-/* Tùy chọn: Thêm hiệu ứng chuột (cursor) cho tiêu đề H2 */
-.item-container h2 {
-    cursor: pointer;
-} 
 
 /* GRID hiển thị preview */
 .gallery {

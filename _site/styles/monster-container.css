@@ -1,0 +1,59 @@
+/* =======================================================
+1. CƠ CHẾ COLLAPSE/EXPAND (Áp dụng cho khối Monster Card chính)
+======================================================= */
+/* Ẩn nội dung chi tiết mặc định */
+.monster-details {
+    display: none; /* Quan trọng: Ẩn toàn bộ khối chi tiết */
+}
+
+.monster-card.expand .monster-details {
+    display: block; /* Hiện toàn bộ khối chi tiết */
+}
+
+/* CSS cho container khi được mở rộng */
+.monster-card.expand {
+    max-height: 3000px; /* Tăng chiều cao để chứa nội dung */
+    overflow: auto;
+}
+
+/* CSS để ẩn nội dung của container khi trang được tải (Hiển thị Name, Type, AC, HP, Speed) */
+.monster-card {
+    max-height: 250px; /* Chỉ đủ cao để thấy phần trên */
+    overflow: hidden; 
+    transition: max-height 0.3s ease; 
+}
+
+
+/* =======================================================
+2. ẨN MẶC ĐỊNH CÁC PHẦN TỬ NỘI DUNG BÊN TRONG `.monster-card`
+======================================================= */
+/* Ẩn các khối detail bên trong .monster-card */
+.monster-card > .p-divider,           /* Ẩn dải phân cách đầu tiên */
+.monster-card > div:nth-child(3),     /* Ẩn div chứa Image và Stats/Saves table */
+.monster-card > div:nth-child(4) {    /* Ẩn div chứa Skills, Features, Spellcasting */
+    display: none !important;
+}
+
+
+/* =======================================================
+3. HIỆN CÁC PHẦN TỬ KHI CÓ CLASS '.expand'
+======================================================= */
+/* Hiển thị dải phân cách và phần mô tả thêm */
+.monster-card.expand > .p-divider {
+    display: block !important;
+}
+
+/* Hiển thị DIV Grid (Stats, Mô tả & Ảnh) */
+.monster-card.expand > div:nth-child(3) {
+    display: grid !important;
+}
+
+/* Hiển thị DIV Skills/Features/Spellcasting */
+.monster-card.expand > div:nth-child(4) {
+    display: block !important; 
+}
+
+/* Tùy chọn: Thêm hiệu ứng chuột (cursor) cho tiêu đề H2 */
+.monster-card h2 {
+    cursor: pointer;
+}

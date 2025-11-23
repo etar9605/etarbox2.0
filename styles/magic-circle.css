@@ -29,7 +29,7 @@
     border-radius: 50%;
     font-size: 9px;
     font-family: 'Script', cursive;
-    text-shadow: 0 0 8px #fff, 0 0 16px #cceeff;
+    text-shadow: 0 0 8px #fff, 0 0 16px #79aeff;
     color: #bbf;
     display: flex;
     justify-content: center;
@@ -214,7 +214,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: rgb(225, 255, 255);
+    background: rgb(225, 245, 255);
     position: absolute;
     top: -6px;
     left: -6px;
@@ -278,3 +278,4 @@
     to {opacity: 1;
         transform: scale(1);}
 }
+

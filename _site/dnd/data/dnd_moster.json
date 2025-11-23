@@ -1,0 +1,414 @@
+[
+    {
+        "name": "Sharn",
+        "size": "Medium",
+        "type": "aberration",
+        "alignment": "chaotic neutral",
+        "image_src": "/static/sharn.png",
+        "ac": {
+            "value": 18,
+            "description": "natural armor and swiftness"
+        },
+        "hp": {
+            "value": 168,
+            "hit_dice": "16d10 + 80"
+        },
+        "speed": "10 ft. fly 40 ft (Monstrous form, hover)",
+        "stats": {
+            "STR": {"value": 18, "modifier": "+4"},
+            "DEX": {"value": 20, "modifier": "+5"},
+            "CON": {"value": 20, "modifier": "+5"},
+            "INT": {"value": 18, "modifier": "+4"},
+            "WIS": {"value": 18, "modifier": "+4"},
+            "CHA": {"value": 20, "modifier": "+5"}
+        },
+        "saving_throws": "Dex +10, Con +10, Int +9, Cha +10",
+        "skills": "Acrobatics +10, Arcana +9, History +9, Intimidation +10, Persuasion +10",
+        "damage_resistances": "bludgeoning, piercing, slashing, that isn't magic",
+        "condition_immunities": "charmed, frightened",
+        "senses": "truesight 60ft, passive Perception 14",
+        "languages": "Common, Elvish",
+        "challenge": {
+            "value": 16,
+            "xp": 15000
+        },
+        "pb": 5,
+        "features": [
+            {"name": "Archetypical Shape", "description": "The Sharn cannot change shape or have its shape changed, and no other creature can adopt the shape of a Sharn or anything approximating it."},
+            {"name": "Evasion", "description": "If the sharn is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the sharn instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."},
+            {"name": "Magic Resistance", "description": "The sharn has advantage on saving throws against spells and other magical effects."},
+            {"name": "Magic Weapons (Monstrous Form)", "description": "The sharn's weapon attacks are magical."},
+            {"name": "Hex Portal", "description": "As a bonus action, the sharn can open one hex portal at a point the sharn can see within 20 ft. The hex portal remains as long as the sharn concentrates on it. It can have up to three hex portals active at once, and it can use a bonus action to move each hex portal 20 ft. to a point the sharn can see. The sharn can treat the hex portal as its location for purposes of determining what it can see, and it can use the portal as the origin point for any attacks or spells. Other creatures can't penetrate the portal to attack through it, but can ready attacks against the sharn if it attacks or casts spells through the portal. In such a case, the sharn gets a +5 bonus to AC and Dexterity saves due to cover."},
+            {"name": "Regeneration", "description": "If the sharn starts its turn with at least 1 hit point and has no hex portal open, it regains 10 hit points."},
+            {"name": "Swiftness", "description": "The sharn gets a +2 bonus to AC and Dexterity saves (included in the stats above). In addition, on its turn, it can take an extra action. If it takes the Attack action, it can make only one attack. If it takes the Cast a Spell action, it can cast only a cantrip."},
+            {"name": "Stone Camouflage", "description": "Dakini has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."},
+            {"name": "Mind Muddle (Recharge 4-6)", "description": "The sharn cast Dominate Person on a Humanoid or Hold Monster on a creature that isn't a Humanoid. If the saving throws agaisnt Mind Muddle fails by 5 or more, the creature is instead subjected to the feeblemind spell. While under the effect of that feeblemind, the creature is immune to Mind Muddle"},
+            {"name": "Amorphous (Slime Form)", "description": "The sharn can move through a space as narrow as 1 inch without squeezing."},
+            {"name": "Arcane Sense", "description": "The sharn ia aware of the presence of spellcaster magical effect within 2 miles of it. It know the distance and direction to each spellcaster and magical effect, but can't sense anything else about it. A spellcaster or object protected by a mind blank spell, a nondetection spell, or similar magic can't be perceives in this manner."}
+        ],
+        "spellcasting": {
+            "description": "The sharn is a 12th-level spellcaster. The sharn's spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The sharn has the following sorcerer spells prepared:",
+            "levels": {
+                "Cantrip (at will)": {"slots": "at will", "spells": ["diminish pain", "flame bolt", "prestidigitation", "shocking grasp"]},
+                "1st level": {"slots": 4, "spells": ["cure wounds", "magic missile", "shield"]},
+                "2nd level": {"slots": 3, "spells": ["invisibility", "melf's acid arrow", "suggestion"]},
+                "3rd level": {"slots": 3, "spells": ["counterspell", "dispel magic", "fireball", "protection from energy"]},
+                "4th level": {"slots": 3, "spells": ["banishment", "confusion", "dimension door"]},
+                "5th level": {"slots": 2, "spells": ["dominate person", "wall of force"]},
+                "6th level": {"slots": 1, "spells": ["chain lightning", "true seeing"]}
+            }
+        },
+        "actions": [
+            {"name": "Multiattack", "description": "The sharn makes three longsword attacks. If it hits a creature with one of these attacks, it can make a claws attack against it as part of the same attack."},
+            {"name": "Longsword", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +9 to hit, reach 5 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 8 (1d8 + 4) slashing damage."},
+            {"name": "Claws", "description": "+9 to hit, reach 5 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 14 (3d6 + 4) slashing damage."}
+        ],
+        "bonus_actions": [
+            {"name": "Transform", "description": "The sharn transforms into its monstrous form or reverts to its slime form. Any equipment which are merging within its slime form is equipped in its monstrous form."}
+        ]
+    },
+    {
+        "name": "Sú Spores",
+        "size": "Medium",
+        "type": "Plant",
+        "alignment": "Any Neutral Alignment",
+        "image_src": "/static/mushroom.png",
+        "ac": {
+            "value": 16,
+            "description": "natural armor"
+        },
+        "hp": {
+            "value": 133,
+            "hit_dice": "14d10 + 56"
+        },
+        "speed": "Fly 30 ft.",
+        "stats": {
+            "STR": {"value": 7, "modifier": "–2"},
+            "DEX": {"value": 16, "modifier": "+3"},
+            "CON": {"value": 18, "modifier": "+4"},
+            "INT": {"value": 11, "modifier": "+0"},
+            "WIS": {"value": 10, "modifier": "+0"},
+            "CHA": {"value": 14, "modifier": "+2"}
+        },
+        "saving_throws": "Dex +6, Con +7",
+        "skills": "Stealth +6, Animal Handling +3",
+        "damage_vulnerabilities": "fire",
+        "damage_resistances": "cold, necrotic, poison",
+        "damage_immunities": "lightning",
+        "condition_immunities": "blinded, charmed, exhaustion",
+        "senses": "darkvision 120 ft, blindsight 60 ft, passive Perception 10",
+        "languages": "Common, Vegepygmy",
+        "challenge": {
+            "value": 5,
+            "xp": 1800
+        },
+        "pb": 3,
+        "features": [],
+        "actions": [
+            {"name": "Multiattack", "description": "The sus makes three Claw attacks or two Rotting attacks."},
+            {"name": "Slam", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) slashing damage."},
+            {"name": "Rotting", "description": "<span style=\"font-style: italic;\">Melee or Ranged Weapon Attack:</span> +6 to hit, reach 5 ft. or range 30/90 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 5 (1d6 + 4) poison damage with range, or 6 (1d8 + 4) necrotic damage if used with melee attack."},
+            {"name": "Spores (Recharge 5–6)", "description": "A 30-foot-radius cloud of toxic spores extends out from the Sus. The spores spread around corners. Each creature in that area that isn't a Plant must succeed on a DC 15 Constitution saving throw or be poisoned. While poisoned in this way, a target takes 16 (4d8) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cloud of toxic spores still alive even if Sus die."}
+        ]
+    },
+    {
+        "name": "Ếch cộng sinh",
+        "size": "Medium",
+        "type": "Beast",
+        "alignment": "Unaligned",
+        "image_src": "/static/mushroom.png",
+        "ac": {
+            "value": 16,
+            "description": "natural armor"
+        },
+        "hp": {
+            "value": 76,
+            "hit_dice": "8d12 + 24"
+        },
+        "speed": "30 ft. 40 ft. swim",
+        "stats": {
+            "STR": {"value": 17, "modifier": "+3"},
+            "DEX": {"value": 16, "modifier": "+3"},
+            "CON": {"value": 17, "modifier": "+3"},
+            "INT": {"value": 8, "modifier": "-1"},
+            "WIS": {"value": 8, "modifier": "-1"},
+            "CHA": {"value": 10, "modifier": "+0"}
+        },
+        "saving_throws": "Dex +6, Con +6",
+        "skills": "Stealth +6, Animal Handling +3",
+        "damage_vulnerabilities": "fire",
+        "damage_resistances": "cold, necrotic, poison",
+        "damage_immunities": "lightning",
+        "condition_immunities": "blinded, charmed, exhaustion",
+        "senses": "darkvision 120 ft, blindsight 60 ft, passive Perception 10",
+        "languages": "Common, Vegepygmy",
+        "challenge": {
+            "value": 5,
+            "xp": 1800
+        },
+        "pb": 3,
+        "features": [],
+        "actions": [
+            {"name": "Multiattack", "description": "The sus makes three Claw attacks or two Rotting attacks."},
+            {"name": "Slam", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) slashing damage."},
+            {"name": "Rotting", "description": "<span style=\"font-style: italic;\">Melee or Ranged Weapon Attack:</span> +6 to hit, reach 5 ft. or range 30/90 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 5 (1d6 + 4) poison damage with range, or 6 (1d8 + 4) necrotic damage if used with melee attack."},
+            {"name": "Spores (Recharge 5–6)", "description": "A 30-foot-radius cloud of toxic spores extends out from the Sus. The spores spread around corners. Each creature in that area that isn't a Plant must succeed on a DC 15 Constitution saving throw or be poisoned. While poisoned in this way, a target takes 16 (4d8) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The cloud of toxic spores still alive even if Sus die."}
+        ]
+    },
+    {
+        "name": "Sleepy Stone Horse",
+        "size": "Large",
+        "type": "Monstrosity",
+        "alignment": "Unaligned",
+        "image_src": "/static/horse.png",
+        "ac": {
+            "value": 17,
+            "description": "natural armor"
+        },
+        "hp": {
+            "value": 178,
+            "hit_dice": "17d10 + 85"
+        },
+        "speed": "50 ft.",
+        "stats": {
+            "STR": {"value": 22, "modifier": "+6"},
+            "DEX": {"value": 10, "modifier": "+0"},
+            "CON": {"value": 20, "modifier": "+5"},
+            "INT": {"value": 6, "modifier": "–2"},
+            "WIS": {"value": 11, "modifier": "+0"},
+            "CHA": {"value": 5, "modifier": "–3"}
+        },
+        "saving_throws": "Str +9, Con +8",
+        "skills": "Animal Handling +3, Athletics +9",
+        "damage_immunities": "poison, piercing, psychic, bludgeoning, slashing, from nonmagical attacks that aren't misthril",
+        "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned, petrified",
+        "senses": "blindsight 60ft., Darkvision 60ft., passive Perception 10",
+        "languages": "understands the languages of its creator but can't speak",
+        "challenge": {
+            "value": 6,
+            "xp": 2300
+        },
+        "pb": 3,
+        "features": [
+            {"name": "Immutable Form", "description": "the sleepy stone horse is immune to any spell or effect that would alter its form."},
+            {"name": "Magic Resistance", "description": "the sleepy stone horse has advantage on saving throws against spells and other magical effects."},
+            {"name": "Magic Weapons", "description": "the sleepy stone horse's weapon attacks are magical."},
+            {"name": "Immortal Creature", "description": "When the sleepy stone horse's HP drops to 0 for any reason, it will fall asleep. If awakened by a Red Ash Lantern before 7 days have elapsed since the last awakening, when awake, the sleepy stone horse will have twice its previous HP. Each time it wakes up, it will be able to use the following spells an arbitrary number of times: 1st time: *misty step*. Second time: *misty step, banishment*. 3rd time: *misty step, banishment, guardian of faith*. 4th time on: *misty step, banishment, guardian of faith, mordenkainen's faithful hound*."}
+        ],
+        "actions": [
+            {"name": "Slam", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage."},
+            {"name": "Slow (Recharge 5–6)", "description": "The sleepy stone horse targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."}
+        ],
+        "description_footer": "Ngựa đá của Phù Thủy Tro Đỏ"
+    },
+    {
+        "name": "Dakini",
+        "size": "Medium",
+        "type": "Moon Elf",
+        "alignment": "Neutral",
+        "image_src": "/static/dakini.png",
+        "ac": {
+            "value": 16
+        },
+        "hp": {
+            "value": 105,
+            "hit_dice": "14d8 + 42"
+        },
+        "speed": "30 ft.",
+        "stats": {
+            "STR": {"value": 13, "modifier": "+1"},
+            "DEX": {"value": 14, "modifier": "+2"},
+            "CON": {"value": 16, "modifier": "+3"},
+            "INT": {"value": 14, "modifier": "+2"},
+            "WIS": {"value": 12, "modifier": "+1"},
+            "CHA": {"value": 13, "modifier": "+1"}
+        },
+        "saving_throws": "Dex +6, Con +7",
+        "skills": "Acrobatics +6, History +6, Perception +5",
+        "damage_immunities": "radiant, necrotic",
+        "condition_immunities": "charmed, exhaustion",
+        "senses": "Darkvision 60ft., passive Perception 15",
+        "languages": "Common, Elvish",
+        "challenge": {
+            "value": 9,
+            "xp": 5000
+        },
+        "pb": 4,
+        "features": [
+            {"name": "Sense Magic", "description": "Dakini senses magic within 120 feet of it at will. This trait otherwise works like the detect magic spell but isn't itself magical"},
+            {"name": "Fey Ancestry", "description": "Magic can't put Dakini to sleep."},
+            {"name": "Magic Weapons", "description": "Dakini's weapon attacks are magical."},
+            {"name": "Blessing Moonlight", "description": "In the moonlight, Dakini has advantage when she attacks made by longsword."},
+            {"name": "Battle experience", "description": "Dakini's weapon attacks score a critical hit on a roll of 19 or 20."},
+            {"name": "Stone Camouflage", "description": "Dakini has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."}
+        ],
+        "spellcasting": {
+            "description": "Dakini's innate spellcasting ability is Charisma (spell save DC 16, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+            "levels": {
+                "At will": {"slots": "at will", "spells": ["cloud of daggers", "prestidigitation", "identify"]},
+                "3/day": {"slots": 3, "spells": ["magic stone", "charm person"]},
+                "2/day": {"slots": 2, "spells": ["encode thoughts"]},
+                "1/day": {"slots": 1, "spells": ["flesh to stone"]}
+            }
+        },
+        "actions": [
+            {"name": "Multiattack", "description": "Dakini makes two attacks by longsword."},
+            {"name": "Longsword", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +7 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 6) slashing damage, or 13 (2d10 + 6) necrotic damage if used with two hands to make a melee attack."},
+            {"name": "Dance Blade", "description": "If Dakini only makes one attack by longswort and hit, the target must succeed on a DC 15 Wisdom saving throw or be Charmed until Dakini or Dakini's companions do anything harmful to it."}
+        ],
+        "reactions": [
+            {"name": "Shield", "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."}
+        ],
+        "credits": "Ai đó từng có biệt danh discord là Catt"
+    },
+    {
+        "name": "Mizuumi",
+        "size": "Huge",
+        "type": "elemental",
+        "alignment": "unaligned",
+        "image_src": "/static/fish.png",
+        "ac": {
+            "value": 18
+        },
+        "hp": {
+            "value": 110,
+            "hit_dice": "17d8 + 34"
+        },
+        "speed": "30 ft. Swim 40 ft.",
+        "stats": {
+            "STR": {"value": 18, "modifier": "+4"},
+            "DEX": {"value": 14, "modifier": "+2"},
+            "CON": {"value": 15, "modifier": "+2"},
+            "INT": {"value": 8, "modifier": "-1"},
+            "WIS": {"value": 10, "modifier": "+0"},
+            "CHA": {"value": 10, "modifier": "+0"}
+        },
+        "saving_throws": "Dex +6, Con +7",
+        "skills": "Acrobatics +6, History +6, Perception +5",
+        "damage_resistances": "acid, bludgeoning, piercing, and slashing from nonmagical attacks",
+        "damage_immunities": "poison",
+        "condition_immunities": "paralyzed, petrified, poisoned, prone",
+        "senses": "darkvision 60 ft, passive Perception 10",
+        "languages": "Common, Aquan, Celestial",
+        "challenge": {
+            "value": 7,
+            "xp": 2900
+        },
+        "pb": 3,
+        "features": [
+            {"name": "Spirit charmed", "description": "When any creature comes within 5ft of the edge of the mizuumi, it must wis save, if it fails the creature is charmed and enters the middle of the lake."}
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The mizuumi makes three lance attacks."},
+            {"name": "Freezing Lance", "description": "<span style=\"font-style: italic;\">Ranged Weapon Attack:</span> +7 to hit, range 20/120 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 6 (1d8 + 4) force damage."},
+            {"name": "Freezing Strikes (Recharge 6)", "description": "The mizuumi uses Multiattack. Each attack that hits deals an extra 5 (1d10) cold damage. A target that is hit by one or more of these attacks has its speed reduced by 10 feet until the end of the mizuumi's next turn."}
+        ],
+        "bonus_actions": [
+            {"name": "Hugging Water", "description": "As a bonus action, the mizuumi makes a attack and hit, range 15ft cube, the creature in range was submerged in water (grappled)."}
+        ],
+        "description_footer": "Là một cái hồ nước với nhiều đóm đóm bay trên mặt. Hiện thân là một con cá lớn"
+    },
+    {
+        "name": "Hulking Shadow Demon",
+        "size": "Medium",
+        "type": "aberration",
+        "alignment": "chaotic neutral",
+        "image_src": "/static/de.png",
+        "ac": {
+            "value": 14,
+            "description": "natural armor"
+        },
+        "hp": {
+            "value": 133,
+            "hit_dice": "14d10 + 56"
+        },
+        "speed": "30 ft.",
+        "stats": {
+            "STR": {"value": 20, "modifier": "+5"},
+            "DEX": {"value": 9, "modifier": "–1"},
+            "CON": {"value": 18, "modifier": "+4"},
+            "INT": {"value": 3, "modifier": "–4"},
+            "WIS": {"value": 8, "modifier": "–1"},
+            "CHA": {"value": 1, "modifier": "–5"}
+        },
+        "saving_throws": "Dex +10, Con +10, Int +9, Cha +10",
+        "skills": "",
+        "damage_immunities": "acid, poison, psychic, bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine",
+        "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned, petrified",
+        "senses": "darkvision 60 ft, passive Perception 9",
+        "languages": "understands the languages of its creator but can't speak",
+        "challenge": {
+            "value": 6,
+            "xp": 2300
+        },
+        "pb": 4,
+        "features": [
+            {"name": "Acid Absorption", "description": "Whenever the hulking shadow demon is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."},
+            {"name": "Immutable Form", "description": "The hulking shadow demon is immune to any spell or effect that would alter its form."},
+            {"name": "Magic Resistance", "description": "The hulking shadow demon has advantage on saving throws against spells and other magical effects."},
+            {"name": "Magic Weapons", "description": "The hulking shadow demon's weapon attacks are magical."}
+        ],
+        "actions": [
+            {"name": "Slam", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +6 to hit, reach 5 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 16 (2d10 + 5) bludgeoning damage. if the demon had advantage on the attack roll, 22 (4d10 + 5) bludgeoning damage."}
+        ]
+    },
+    {
+        "name": "Shadow Stalker",
+        "size": "Medium",
+        "type": "Moon Elf",
+        "alignment": "Neutral",
+        "image_src": "/static/31cfb3.png",
+        "ac": {
+            "value": 16
+        },
+        "hp": {
+            "value": 190,
+            "hit_dice": "20d12 + 60"
+        },
+        "speed": "fly 50 ft.",
+        "stats": {
+            "STR": {"value": 10, "modifier": "+0"},
+            "DEX": {"value": 18, "modifier": "+4"},
+            "CON": {"value": 17, "modifier": "+3"},
+            "INT": {"value": 16, "modifier": "+3"},
+            "WIS": {"value": 14, "modifier": "+2"},
+            "CHA": {"value": 8, "modifier": "–1"}
+        },
+        "saving_throws": "Dex +7, Con +6",
+        "skills": "Stealth +7, Perception +6",
+        "damage_resistances": "acid, slashing, bludgeoning, necrotic, thunder, fire, cold from magical and nonmagical attacks",
+        "damage_immunities": "piercing, poison",
+        "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
+        "senses": "darkvision 120 ft, Devil's Sight 60ft, passive Perception 16",
+        "languages": "Abyssal, Elvish, telepathy 120 ft, Common",
+        "challenge": {
+            "value": 8,
+            "xp": 3900
+        },
+        "pb": 3,
+        "features": [
+            {"name": "Incorporeal Movement", "description": "The shadow stalker can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."},
+            {"name": "Light Sensitivity", "description": "While in bright light, the shadow stalker has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."},
+            {"name": "Shadow Stealth", "description": "While in dim light or darkness, the shadow stalker can take the Hide action as a bonus action."},
+            {"name": "Lightfooted", "description": "The shadow stalker can take the Dash or Disengage action as a bonus action on each of its turns."},
+            {"name": "Death Burn", "description": "When the shadow stalker dies, nonmagical light flashes out from it in a 10-foot radius as its body and possessions, other than metal or magic objects, burn to ash. Any creature in that area and able to see the bright light must succeed on a DC 15 Constitution saving throw. On a failure, the creature takes 10 (3d6) radiant damage and, if the creature can see the light, is blinded until the end of its next turn. If the saving throw is successful, the creature takes half the damage and isn't blinded."}
+        ],
+        "actions": [
+            {"name": "Claws", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span>+6 to hit, reach 5 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 10 (2d6 + 3) psychic damage or, if the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage."},
+            {"name": "Shadow Step", "description": "The shadow stalker magically teleports up to 30 feet to an unoccupied space of dim light or darkness that it can see. Before or after teleporting, it can make one melee attack."},
+            {"name": "Darkness (Recharges 5-6)", "description": "The shadow stalker casts darkness without any components. Int is its spellcasting ability."},
+            {"name": "Hexblade's Curse (Recharges after a Short or Long Rest)", "description": "As a bonus action, the shadow stalker targets a creature it can see within 30 feet of it. The target is cursed for 1 minute. The curse ends early if the target dies, the shadow stalker dies, or it is incapacitated. Until the curse ends, the gains the following benefits: • It deals an extra 3 damage on damage rolls against the cursed target. • Any attack roll it makes against the cursed target is a critical hit on a roll of 19 or 20 on the d20. • If the cursed target dies, the shadow stalker regains 13 hit points."}
+        ],
+        "reactions": [
+            {"name": "Armor of Hexes", "description": "When hit by an attack roll by a creature cursed by the shadow stalker's Hexblade's Curse, roll a d6. On a roll of 4 or higher, the attack instead misses the demon, regardless of its roll."}
+        ],
+        "legendary_actions": {
+            "description": "The shadow stalker can take 1 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The shadow stalker regains spent legendary actions at the start of its turn.",
+            "actions": [
+                {"name": "Eli's blessings", "description": "Shadow stalker can split into 3 clones, of which 2 clones also have the same health bar as the body, deal half the damage, and other effects are the same as the body."}
+            ]
+        },
+        "description_footer": "Tín đồ trung thành nhất của nữ thần Eilistraee",
+        "credits": "Ai đó từng có biệt danh discord là Catt"
+    }
+]

@@ -35,7 +35,7 @@ for filename in os.listdir(SRC):
 
     base = os.path.splitext(filename)[0]
 
-    thumb_path = os.path.join(DEST_THUMB, base + ".jpg")
+    thumb_path = os.path.join(DEST_THUMB, base + ".webp")
 
     # Bỏ qua nếu đã tạo trước đó (tăng tốc mạnh)
     if os.path.exists(thumb_path):
