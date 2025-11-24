@@ -1,7 +1,11 @@
 * {
     cursor: none !important;
   }
-  
+
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     max-width: 1000px;
@@ -19,6 +23,7 @@ body {
     
     background-blend-mode: overlay; /* Hòa trộn gradient với hình ảnh, tạo hiệu ứng ảo diệu hơn */
     color: #CFD8DC; /* Màu chữ sáng */
+    
 }
 
 a {

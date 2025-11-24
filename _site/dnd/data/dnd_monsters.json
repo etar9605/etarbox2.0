@@ -65,7 +65,8 @@
         ],
         "bonus_actions": [
             {"name": "Transform", "description": "The sharn transforms into its monstrous form or reverts to its slime form. Any equipment which are merging within its slime form is equipped in its monstrous form."}
-        ]
+        ],
+        "credits": "Ai đó từng có biệt danh discord là Catt"
     },
     {
         "name": "Sú Spores",
@@ -262,13 +263,12 @@
         ],
         "reactions": [
             {"name": "Shield", "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."}
-        ],
-        "credits": "Ai đó từng có biệt danh discord là Catt"
+        ]
     },
     {
         "name": "Mizuumi",
         "size": "Huge",
-        "type": "elemental",
+        "type": "Elemental",
         "alignment": "unaligned",
         "image_src": "/static/fish.png",
         "ac": {

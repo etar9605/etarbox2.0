@@ -42,6 +42,8 @@
 .item-container.expand {
     max-height: 500px; /* Kích thước mở rộng của container */
     overflow: auto; /* Hiển thị thanh cuộn nếu nội dung vượt quá kích thước */
+    scrollbar-gutter: stable;
+
 }
 
 /* CSS để ẩn nội dung của container khi trang được tải */
@@ -49,6 +51,7 @@
     max-height: 100px; /* Kích thước mặc định khi thu nhỏ */
     overflow: hidden; /* Ẩn nội dung vượt quá kích thước */
     transition: max-height 0.3s ease; /* Hiệu ứng khi thay đổi kích thước */
+    scrollbar-gutter: stable;
 }
 
 
@@ -97,13 +100,16 @@ HIỆN CÁC PHẦN TỬ KHI CÓ CLASS '.expand'
 .monster-card.expand {
     max-height: 3000px; /* Tăng chiều cao để chứa nội dung */
     overflow: auto;
+    scrollbar-gutter: stable;
+
 }
 
 /* CSS để ẩn nội dung của container khi trang được tải (Hiển thị Name, Type, AC, HP, Speed) */
 .monster-card {
     max-height: 250px; /* Chỉ đủ cao để thấy phần trên */
     overflow: hidden; 
-    transition: max-height 0.3s ease; 
+    transition: max-height 0.3s ease;
+    scrollbar-gutter: stable;
 }
 
 

@@ -1,0 +1,46 @@
+/* Star Container */
+#star-container {
+    position: fixed; /* Giữ container cố định trên màn hình */
+    top: 0;
+    left: 0;
+    width: 100vw;   /* Chiếm toàn bộ chiều rộng viewport */
+    height: 100vh;  /* Chiếm toàn bộ chiều cao viewport */
+    pointer-events: none; /* Cho phép tương tác với các phần tử bên dưới */
+    z-index: -1;    /* Đảm bảo các ngôi sao nằm phía sau nội dung chính */
+    overflow: hidden; /* Ngăn các ngôi sao tràn ra ngoài container */
+}
+
+/* Kiểu dáng của từng ngôi sao */
+.star {
+    position: absolute; /* Vị trí tuyệt đối bên trong #star-container */
+    background-color: #ffffff; /* Màu trắng cho ngôi sao */
+    border-radius: 50%; /* Biến thành hình tròn */
+    opacity: 0; /* Mặc định ẩn, JavaScript sẽ thay đổi */
+    box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.7); /* Hiệu ứng phát sáng nhẹ */
+    animation: fadeAndGlow 3s infinite alternate; /* Hiệu ứng lấp lánh (sẽ được ghi đè bởi JS) */
+}
+
+/* Keyframes cho hiệu ứng lấp lánh (sử dụng làm fallback nếu JS không hoạt động) */
+@keyframes fadeAndGlow {
+    0% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.8); }
+}
+
+/* Các ngôi sao nhỏ hơn */
+.star-small {
+    width: 2px;
+    height: 2px;
+}
+
+/* Các ngôi sao lớn hơn một chút */
+.star-medium {
+    width: 3px;
+    height: 3px;
+}
+
+/* Các ngôi sao lớn nhất */
+.star-large {
+    width: 4px;
+    height: 4px;
+}
