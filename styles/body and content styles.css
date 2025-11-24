@@ -17,10 +17,9 @@ body {
     background-attachment: fixed; /* Giữ nền cố định khi cuộn */
     background-image: url('/static/magic-bg.png'); 
     background-repeat: no-repeat;
-    background-size: cover; /* Đảm bảo hình ảnh phủ hết khu vực nền */
-    
-    background-attachment: fixed; /* Giữ nền (hình ảnh + gradient) cố định khi cuộn */
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-blend-mode: overlay; /* Hòa trộn gradient với hình ảnh, tạo hiệu ứng ảo diệu hơn */
     color: #CFD8DC; /* Màu chữ sáng */
     
