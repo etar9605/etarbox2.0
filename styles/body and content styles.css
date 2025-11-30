@@ -19,7 +19,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-blend-mode: overlay; /* Hòa trộn gradient với hình ảnh, tạo hiệu ứng ảo diệu hơn */
     color: #CFD8DC; /* Màu chữ sáng */
     
