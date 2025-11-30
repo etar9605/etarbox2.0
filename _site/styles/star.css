@@ -6,14 +6,14 @@
     width: 100vw;   /* Chiếm toàn bộ chiều rộng viewport */
     height: 100vh;  /* Chiếm toàn bộ chiều cao viewport */
     pointer-events: none; /* Cho phép tương tác với các phần tử bên dưới */
-    z-index: -1;    /* Đảm bảo các ngôi sao nằm phía sau nội dung chính */
+    z-index: 10001;    /* Đảm bảo các ngôi sao nằm phía trên mọi nội dung */
     overflow: hidden; /* Ngăn các ngôi sao tràn ra ngoài container */
 }
 
 /* Kiểu dáng của từng ngôi sao */
 .star {
     position: absolute; /* Vị trí tuyệt đối bên trong #star-container */
-    background-color: #ffffff; /* Màu trắng cho ngôi sao */
+    background-color: #8ebbff; /* Màu trắng cho ngôi sao */
     border-radius: 50%; /* Biến thành hình tròn */
     opacity: 0; /* Mặc định ẩn, JavaScript sẽ thay đổi */
     box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.7); /* Hiệu ứng phát sáng nhẹ */
