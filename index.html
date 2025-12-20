@@ -30,13 +30,13 @@
     <link rel="stylesheet" href="/styles/body and content styles.css">
     <link rel="stylesheet" href="/styles/top scroll button.css">
     <link rel="stylesheet" href="/styles/filter button.css">
-    <link rel="stylesheet" href="/styles/intro.css">
     <link rel="stylesheet" href="/styles/button large.css">
     <link rel="stylesheet" href="/styles/black highlight.css">
     <link rel="stylesheet" href="/styles/magic-circle.css">
     <link rel="stylesheet" href="/styles/passcheck.css">
     <link rel="stylesheet" href="/styles/list.css">
     <link rel="stylesheet" href="/styles/star.css">
+    <link rel="stylesheet" href="/styles/intro magic.css">
 
 </head>
 
@@ -80,29 +80,45 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+<!-- INTRO OVERLAY -->
+<div id="magic-intro">
+  <svg viewBox="0 0 500 500">
+
+    <!-- Vòng trong -->
+    <circle cx="250" cy="250" r="60"
+            class="draw rotate-ccw d1"/>
+
+    <!-- Tam giác -->
+    <path d="M250 130 L353.92 310 L146.08 310 Z"
+          class="draw rotate-cw d2"/>
+
+    <!-- Vòng giữa -->
+    <circle cx="250" cy="250" r="120"
+            class="draw rune rotate-ccw d3"/>
+
+    <!-- Rune -->
+    <circle cx="250" cy="250" r="150"
+            class="draw rotate-ccw d4"/>
+    <text id="rune-text"
+        class="rune rotate-cw d3">
+        <textPath href="#runePath" startOffset="0%"></textPath>
+    </text>
+    
+    <defs>
+      <path id="runePath"
+        d="M250,250
+           m-160,0
+           a160,160 0 1,1 320,0
+           a160,160 0 1,1 -320,0"/>
+    </defs>
+    <!-- Vòng ngoài -->
+    <circle cx="250" cy="250" r="180"
+            class="draw rotate-cw d4"/>
+
+  </svg>
+</div>
+
 <main>
-
-    <div id="intro-container" class="stage">
-        <div class="wrapper">
-            <div class="slash"></div>
-            <div class="sides">
-            <div class="side"></div>
-            <div class="side"></div>
-            <div class="side"></div>
-            <div class="side"></div>
-            </div>
-            <div class="text">
-            <div class="text--backing">ETAR.AI</div>
-            <div class="text--left">
-                <div class="inner">ETAR.AI</div>
-            </div>
-            <div class="text--right">
-                <div class="inner">ETAR.AI</div>
-            </div>
-            </div>
-        </div>
-        </div>
-
     <div class="main-content" id="main-content">
         <a href="/dnd.html">
         <div class="container divider">
@@ -169,7 +185,6 @@
 
     <script src="/script/star.js"></script>
     <script src="/script/magic-circle.js"></script>
-    <script src="/script/intro.js"></script>
     <script src="/script/scroll to top.js"></script>
     <script src="/script/search.js"></script>
 
@@ -181,7 +196,7 @@
     <script src="/script/un click in container.js"></script>
     <script src="/script/expland container.js"></script>
     <script src="/script/filter button.js"></script>
-    <script src="/script/fix-jum.js"></script>
+    <script src="/script/magic intro.js"></script>
     
     <footer>
         <p style="text-align: center;">&copy; 2024, Etar Ai</p>

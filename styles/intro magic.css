@@ -1,0 +1,110 @@
+/* INTRO OVERLAY */
+#magic-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(circle, #0b1324, #020409);
+
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+#magic-intro.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* SVG */
+#magic-intro svg {
+  width: 420px;
+  height: 420px;
+}
+
+/* DRAW EFFECT */
+.draw {
+  fill: none;
+  stroke: #b7e3ff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: draw 2s ease forwards;
+  filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 20px #ffffff);
+}
+
+/* ROTATION */
+.rotate-cw {
+  animation:
+    draw 2s ease forwards,
+    spin 18s linear infinite;
+  transform-origin: center;
+}
+
+.rotate-ccw {
+  animation:
+    draw 2s ease forwards,
+    spin-rev 18s linear infinite;
+  transform-origin: center;
+}
+
+/* DELAY – từ trong ra ngoài */
+.d1 { animation-delay: 0s, 0s; }
+.d2 { animation-delay: 1s, 1s; }
+.d3 { animation-delay: 2s, 2s; }
+.d4 { animation-delay: 3s, 3s; }
+
+/* RUNE */
+text {
+  stroke: #d8f3ff;
+  stroke-width: 1;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+/* Rune khắc từng ký tự */
+.rune {
+  fill: none;
+  stroke: #d8f3ff;
+  stroke-width: 1;
+  font-size: 14px;
+  letter-spacing: 6px;
+}
+
+/* từng ký tự */
+.rune-char {
+  opacity: 0;
+  animation: rune-engrave 0.1s ease forwards;
+}
+
+@keyframes rune-engrave {
+  from {
+    opacity: 0;
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+/* ANIMATION */
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes spin-rev {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+

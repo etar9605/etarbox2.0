@@ -198,7 +198,7 @@
             {"name": "Immutable Form", "description": "the sleepy stone horse is immune to any spell or effect that would alter its form."},
             {"name": "Magic Resistance", "description": "the sleepy stone horse has advantage on saving throws against spells and other magical effects."},
             {"name": "Magic Weapons", "description": "the sleepy stone horse's weapon attacks are magical."},
-            {"name": "Immortal Creature", "description": "When the sleepy stone horse's HP drops to 0 for any reason, it will fall asleep. If awakened by a Red Ash Lantern before 7 days have elapsed since the last awakening, when awake, the sleepy stone horse will have twice its previous HP. Each time it wakes up, it will be able to use the following spells an arbitrary number of times: 1st time: *misty step*. Second time: *misty step, banishment*. 3rd time: *misty step, banishment, guardian of faith*. 4th time on: *misty step, banishment, guardian of faith, mordenkainen's faithful hound*."}
+            {"name": "Immortal Creature", "description": "When the sleepy stone horse's HP drops to 0 for any reason, it will fall asleep. If awakened by a Red Ash Lantern before 7 days have elapsed since the last awakening, when awake, the sleepy stone horse will have twice its previous HP. Each time it wakes up, it will be able to use the following spells an arbitrary number of times: 1st time: misty step. Second time: *misty step, banishment*. 3rd time: misty step, banishment, guardian of faith. 4th time on: misty step, banishment, guardian of faith, mordenkainen's faithful hound."}
         ],
         "actions": [
             {"name": "Slam", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage."},
@@ -401,7 +401,7 @@
             {"name": "Claws", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span>+6 to hit, reach 5 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 10 (2d6 + 3) psychic damage or, if the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage."},
             {"name": "Shadow Step", "description": "The shadow stalker magically teleports up to 30 feet to an unoccupied space of dim light or darkness that it can see. Before or after teleporting, it can make one melee attack."},
             {"name": "Darkness (Recharges 5-6)", "description": "The shadow stalker casts darkness without any components. Int is its spellcasting ability."},
-            {"name": "Hexblade's Curse (Recharges after a Short or Long Rest)", "description": "As a bonus action, the shadow stalker targets a creature it can see within 30 feet of it. The target is cursed for 1 minute. The curse ends early if the target dies, the shadow stalker dies, or it is incapacitated. Until the curse ends, the gains the following benefits: • It deals an extra 3 damage on damage rolls against the cursed target. • Any attack roll it makes against the cursed target is a critical hit on a roll of 19 or 20 on the d20. • If the cursed target dies, the shadow stalker regains 13 hit points."}
+            {"name": "Hexblade's Curse (Recharges after a Short or Long Rest)", "description": "As a bonus action, the shadow stalker targets a creature it can see within 30 feet of it. The target is cursed for 1 minute. The curse ends early if the target dies, the shadow stalker dies, or it is incapacitated. Until the curse ends, the gains the following benefits:<br><span style=\"margin-left: 20px;\">• It deals an extra 3 damage on damage rolls against the cursed target.</span><br><span style=\"margin-left: 20px;\">• Any attack roll it makes against the cursed target is a critical hit on a roll of 19 or 20 on the d20.</span><br><span style=\"margin-left: 20px;\">• If the cursed target dies, the shadow stalker regains 13 hit points.</span>"}
         ],
         "reactions": [
             {"name": "Armor of Hexes", "description": "When hit by an attack roll by a creature cursed by the shadow stalker's Hexblade's Curse, roll a d6. On a roll of 4 or higher, the attack instead misses the demon, regardless of its roll."}
@@ -412,7 +412,7 @@
                 {"name": "Eli's blessings", "description": "Shadow stalker can split into 3 clones, of which 2 clones also have the same health bar as the body, deal half the damage, and other effects are the same as the body."}
             ]
         },
-        "description_footer": "Tín đồ trung thành nhất của nữ thần Eilistraee",
+        "description_footer": "Tín đồ trung thành nhất của thần.",
         "credits": "Ai đó từng có biệt danh discord là Catt"
     },
     {
