@@ -34,6 +34,23 @@ a:hover {
     color: #495788; /* Màu xanh sáng hơn khi di chuột */
 }
 
+a .tooltip-highlight {
+  text-decoration: none;
+}
+
+.tooltip-highlight {
+    font-style: italic; 
+    font-weight: bold;
+    text-decoration: none;
+    cursor: help;
+    transition: text-shadow 0.2s ease;
+}
+
+.tooltip-highlight:hover {
+  text-shadow: 0 0 6px rgba(200, 220, 255, 0.6);
+}
+
+
 h2 {
     /* Màu tiêu đề: Xanh Cyan phát sáng */
     color: #4fb5f0; 
