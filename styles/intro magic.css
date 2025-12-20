@@ -32,9 +32,9 @@
   stroke-width: 2;
   stroke-linecap: round;
   stroke-dasharray: 1200;
-  stroke-dashoffset: 1200;
+  stroke-dashoffset: -1200;
   animation: draw 2s ease forwards;
-  filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 20px #ffffff);
+  filter: drop-shadow(0 0 10px #afadff) drop-shadow(0 0 20px #afadff);
 }
 
 /* ROTATION */
@@ -53,10 +53,10 @@
 }
 
 /* DELAY – từ trong ra ngoài */
-.d1 { animation-delay: 0s, 0s; }
-.d2 { animation-delay: 1s, 1s; }
-.d3 { animation-delay: 2s, 2s; }
-.d4 { animation-delay: 3s, 3s; }
+.d1 { animation-delay: 0s, 0s; stroke-dashoffset: 1200; }
+.d2 { animation-delay: 0.2s, 0.2s; stroke-dashoffset: -1200; }
+.d3 { animation-delay: 2s, 2s; stroke-dashoffset: 1200; }
+.d4 { animation-delay: 3s, 3s; stroke-dashoffset: -1200; }
 
 /* RUNE */
 text {
