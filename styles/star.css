@@ -17,6 +17,7 @@
     border-radius: 50%; /* Biến thành hình tròn */
     opacity: 0; /* Mặc định ẩn, JavaScript sẽ thay đổi */
     box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.7); /* Hiệu ứng phát sáng nhẹ */
+    filter: blur(1px); /* Thêm hiệu ứng blur cho ngôi sao */
     animation: fadeAndGlow 3s infinite alternate; /* Hiệu ứng lấp lánh (sẽ được ghi đè bởi JS) */
 }
 
