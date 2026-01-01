@@ -198,7 +198,7 @@
             {"name": "Immutable Form", "description": "the sleepy stone horse is immune to any spell or effect that would alter its form."},
             {"name": "Magic Resistance", "description": "the sleepy stone horse has advantage on saving throws against spells and other magical effects."},
             {"name": "Magic Weapons", "description": "the sleepy stone horse's weapon attacks are magical."},
-            {"name": "Immortal Creature", "description": "When the sleepy stone horse's HP drops to 0 for any reason, it will fall asleep. If awakened by a Red Ash Lantern before 7 days have elapsed since the last awakening, when awake, the sleepy stone horse will have twice its previous HP. Each time it wakes up, it will be able to use the following spells an arbitrary number of times: 1st time: misty step. Second time: *misty step, banishment*. 3rd time: misty step, banishment, guardian of faith. 4th time on: misty step, banishment, guardian of faith, mordenkainen's faithful hound."}
+            {"name": "Immortal Creature", "description": "When the sleepy stone horse's HP drops to 0 for any reason, it will fall asleep. If awakened by a Red Ash Lantern before 7 days have elapsed since the last awakening, when awake, the sleepy stone horse will have twice its previous HP. Each time it wakes up, it will be able to use the following spells an arbitrary number of times: 1st time: misty step. Second time: misty step, banishment. 3rd time: misty step, banishment, guardian of faith. 4th time on: misty step, banishment, guardian of faith, mordenkainen's faithful hound."}
         ],
         "actions": [
             {"name": "Slam", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage."},
@@ -459,7 +459,7 @@
         "size": "Medium",
         "type": "Beast",
         "alignment": "Unaligned",
-        "image_src": "/static/31cfb3.png",
+        "image_src": "/static/1h-rabit.png",
         "ac": {
             "value": "15 (natural armor)"
         },
@@ -497,5 +497,73 @@
             {"name": "Multiattack", "description": "The winter rabbit makes two Bite claw."},
             {"name": "Claw", "description": "<span style=\"font-style: italic;\">Melee Weapon Attack:</span> +6 to hit, reach 5 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 3 (2d6 + 3) bludgeoning damage. If had adv then dmg is 4d6 + 3"}
         ]
+    },
+    {
+        "name": "Inky Arbiter",
+        "size": "Gargantuan",
+        "type": "Elemental",
+        "alignment": "Chaotic Neutral",
+        "image_src": "/static/Inky Arbiter.png",
+        "ac": {
+            "value": "20 (natural shield)"
+        },
+        "hp": {
+            "value": 210,
+            "hit_dice": "20d12 + 80"
+        },
+        "speed": "fly 60 ft.",
+        "stats": {
+            "STR": {"value": 17, "modifier": "+3"},
+            "DEX": {"value": 18, "modifier": "+4"},
+            "CON": {"value": 19, "modifier": "+3"},
+            "INT": {"value": 14, "modifier": "+2"},
+            "WIS": {"value": 10, "modifier": "+0"},
+            "CHA": {"value": 11, "modifier": "+0"}
+        },
+        "saving_throws": "Str +6, Con +7",
+        "skills": "Stealth +7",
+        "Damage Vulnerabilities": "cold",
+        "damage_resistances": "psychic",
+        "damage_immunities": "fire, slashing",
+        "condition_immunities": "poisoned, petrified, stunned, unconscious, exhaustion, charmed, incapacitated, paralyzed, sleep (any kind)",
+        "senses": "truesight 10 ft., passive Perception 10",
+        "languages": "—",
+        "challenge": {
+            "value": 9,
+            "xp": 5000
+        },
+        "pb": 3,
+        "features": [
+            {"name": "Nobody Drinks the Ink", "description": "Any creature hit by the Ink’s splash gains the following effects (maximum once per turn). These effects stack and last until the end of the Ink’s next turn: Advantage on all d20 rolls, +10 ft. to its movement speed. In addition, the creature gains 1 level of exhaustion. This exhaustion does not end when the effects expire and can only be removed by finishing a long rest."},
+            {"name": "Ink Jar", "description": "The Ink is encased within a natural ink jar. While the jar is intact, the Ink has AC 20.<br>- Attack roll 20 or higher: the attack hits the Ink.<br>- Attack roll 15–19: the attack hits the ink jar instead.<br>- Attack roll 14 or lower: the attack misses.<br>The ink jar has 50 hit points and AC 15. When the jar is reduced to 0 hit points, it shatters and leaves behind a lingering ink barrier for 2 rounds. During this time, only attack rolls of 20 or higher can hit the Ink; all other attacks miss. After the barrier ends, if the Ink is still alive, its Armor Class becomes 16."},
+            {"name": "Inkstorm Formation", "description": "Shield-breaking sigils appear on the battlefield, with a number equal to the number of player characters. These sigils last for 2 round before Ink Rain occurs. A creature can stand inside a sigil to avoid Ink Rain and deal damage to the ink jar. When the sigils trigger, the ink jar takes 1d8 damage for each creature correctly standing inside a sigil."},
+            {"name": "Ink Rain", "description": "Every 3 rounds, a rain of corrosive ink pours down in a 30-foot-radius centered on the Ink. Each creature in the area must make a DC 18 Dexterity saving throw. On a failure save, the creature takes (number of creatures in the area)d8 poison damage and is poisoned for 2 rounds. Success: The creature takes half damage and isn’t poisoned."},
+            {"name": "Impatient Ink Jar", "description": "If the party exceeds a time limit set by the DM, shield-breaking sigils fail to appear, and the Ink unleashes a catastrophic Ink Rain. Every creature in initiative order automatically takes 5d6 + 8 force damage, with no saving throw. If at least one creature survives this effect, the Ink transforms into its Coffee Form, using the stat block of a Caffeine Scourge."}
+        ],
+        "actions": [
+            {"name": "Multiattack", "description": "The Ink makes two Ink Splash attacks."},
+            {"name": "Ink Splash", "description": "<span style=\"font-style: italic;\">Melee or Ranged Weapon Attack:</span> +7 to hit, reach 10 ft. or range 50/120 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 18 (4d6 + 4) bludgeoning damage in melee, or 20 (3d10 + 4) piercing damage at range, plus 11 (2d10) poison damage."},
+            {"name": "Blackout Splash", "description": "<span style=\"font-style: italic;\">Melee or Ranged Weapon Attack:</span> +7 to hit, reach 5 ft. or range 50/120 ft., one target. <span style=\"font-style: italic;\">Hit:</span> 11 (2d6 + 4) bludgeoning damage in melee, or 8 (1d8 + 4) piercing damage at range."}
+        ],
+        "reactions": [
+            {"name": "England Press", "description": "The Ink conjures the England Press, gaining +1d6 to its AC until the end of its next turn, potentially causing an attack that just hit it to miss. The Ink also regains 3d4 hit points."}
+        ],
+        "legendary_actions": {
+            "description": "The Ink can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Ink regains spent legendary actions at the start of its turn.",
+            "actions": [
+                {"name": "Umbral Inkburst", "description": "The Ink takes 2d4 damage. Each other creature within 30 ft. must succeed on a DC 16 Dexterity saving throw or be blinded and prone. This action can’t be used again until the Ink’s next turn."},
+                {"name": "Evaporate", "description": "The Ink takes 3d4 damage and gains a flying speed of 60 ft. (hover) until the end of its next turn. During this movement, it doesn’t provoke opportunity attacks, and it descends safely at the end of the effect."},
+                {"name": "Inkflask Break", "description": "The Ink makes 1d4 Blackout Splash attacks and reduces its own AC by the same amount."}
+            ]
+        },
+        "lair_actions": {
+            "description": "When fighting inside the Inky Arbiter’s lair, on initiative count 20 (losing initiative ties), the Ink can take one lair action from the options below. The Ink can’t use the same lair action two rounds in a row.",
+            "actions": [
+                {"name": "Crawling Ink Sigils", "description": "Green ink sigils crawl up from the ground. A number of sigils equal to the number of player characters appear at locations the Ink can see within 60 ft. Each sigil is 5 feet in diameter. A creature standing in a sigil must succeed on a DC 15 Dexterity saving throw or become Muted until the end of its next turn. On a success, the creature’s speed is halved until the end of its turn."},
+                {"name": "Falling Ink Drizzle", "description": "Ink begins dripping from above. Each creature not standing inside a shield-breaking sigil must make a DC 16 Dexterity saving throw.<br>- Failure: The creature takes 2 poison damage and becomes Frozen until the end of its next turn.<br>- Success: The creature takes 1 damage and isn’t Frozen."},
+                {"name": "Jar Resonance Pulse", "description": "The ink jar vibrates, releasing a protective pulse. The ink jar regains 2d6 hit points, and the Ink has advantage on all saving throws until the next initiative count 20."},
+                {"name": "Ink Current Shift", "description": "Two flowing ink currents appear on the ground. Each current is 10 feet wide and 30 feet long. Each creature in the area must succeed on a DC 15 Strength saving throw or be pushed 15 feet and knocked prone. On a success, the creature isn’t pushed and isn’t knocked prone. If a creature is pushed out of a shield-breaking sigil, it doesn’t count as standing in a sigil when Ink Rain triggers."}
+            ]
+        }
     }
 ]

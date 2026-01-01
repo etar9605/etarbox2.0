@@ -140,6 +140,19 @@ function renderMonsters(containerId, monstersToRender) {
             ).join('');
         }
 
+        // LAIR ACTIONS 
+        let lairActionsHtml = '';
+        if (monster.lair_actions?.actions?.length) {
+            lairActionsHtml += `
+                <h3>Lair Actions</h3>
+                <div class="p-divider"></div>
+                <p>${monster.lair_actions.description || ''}</p>
+            `;
+            lairActionsHtml += monster.lair_actions.actions.map(action =>
+                `<span style="font-weight: bold;">${action.name}.</span> ${action.description}<br><br>`
+            ).join('');
+        }
+
         // --- Xử lý Footer/Credits ---
         let footerHtml = '';
         if (monster.description_footer || monster.credits) {
@@ -169,8 +182,8 @@ function renderMonsters(containerId, monstersToRender) {
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; text-align: center;">
                     <div>
                         <p> 
-                            <span style="font-weight: bold;">Armor Class.</span> ${monster.ac.value} ${monster.ac.description ? `(${monster.ac.description})` : ''}<br><br>
-                            <span style="font-weight: bold;">Hit Points.</span> ${monster.hp.value} (${monster.hp.hit_dice})<br><br>
+                            <span style="font-weight: bold;">Armor Class.</span> ${monster.ac.value} ${monster.ac.description ? `(${monster.ac.description})` : ''}<br>
+                            <span style="font-weight: bold;">Hit Points.</span> ${monster.hp.value} (${monster.hp.hit_dice})<br>
                             <span style="font-weight: bold;">Speed.</span> ${monster.speed}
                         </p>
                         <table>
@@ -186,7 +199,6 @@ function renderMonsters(containerId, monstersToRender) {
                                 ${statsRow}
                             </tr>
                         </table>
-                        <p><span style="font-weight: bold;">Saving Throws.</span> ${monster.saving_throws || 'N/A'}</p>
                     </div>
                     <div>
                         <img src="${monster.image_src}" alt="${monster.name}" height="200">
@@ -194,14 +206,15 @@ function renderMonsters(containerId, monstersToRender) {
                 </div>
                 <div>
                     <p>
-                        <span style="font-weight: bold;">Skills.</span> ${monster.skills || 'N/A'}<br><br>
-                        ${monster.damage_vulnerabilities ? `<span style="font-weight: bold;">Damage Vulnerabilities.</span> ${monster.damage_vulnerabilities}<br><br>` : ''}
-                        ${monster.damage_resistances ? `<span style="font-weight: bold;">Damage Resistances.</span> ${monster.damage_resistances}<br><br>` : ''}
-                        ${monster.damage_immunities ? `<span style="font-weight: bold;">Damage Immunities.</span> ${monster.damage_immunities}<br><br>` : ''}
-                        <span style="font-weight: bold;">Condition Immunities.</span> ${monster.condition_immunities || 'N/A'}<br><br>
-                        <span style="font-weight: bold;">Senses.</span> ${monster.senses || 'N/A'}<br><br>
-                        <span style="font-weight: bold;">Languages.</span> ${monster.languages || 'N/A'}<br><br>
-                        <span style="font-weight: bold;">Challenge.</span> ${monster.challenge.value} (${monster.challenge.xp} XP)<br><br>
+                        <span style="font-weight: bold;">Saving Throws.</span> ${monster.saving_throws || 'N/A'}<br>
+                        <span style="font-weight: bold;">Skills.</span> ${monster.skills || 'N/A'}<br>
+                        ${monster.damage_vulnerabilities ? `<span style="font-weight: bold;">Damage Vulnerabilities.</span> ${monster.damage_vulnerabilities}<br>` : ''}
+                        ${monster.damage_resistances ? `<span style="font-weight: bold;">Damage Resistances.</span> ${monster.damage_resistances}<br>` : ''}
+                        ${monster.damage_immunities ? `<span style="font-weight: bold;">Damage Immunities.</span> ${monster.damage_immunities}<br>` : ''}
+                        <span style="font-weight: bold;">Condition Immunities.</span> ${monster.condition_immunities || 'N/A'}<br>
+                        <span style="font-weight: bold;">Senses.</span> ${monster.senses || 'N/A'}<br>
+                        <span style="font-weight: bold;">Languages.</span> ${monster.languages || 'N/A'}<br>
+                        <span style="font-weight: bold;">Challenge.</span> ${monster.challenge.value} (${monster.challenge.xp} XP)<br>
                         <span style="font-weight: bold;">Proficiency Bonus.</span> +${monster.pb}
                     </p>
                     <div class="p-divider"></div>
@@ -210,15 +223,23 @@ function renderMonsters(containerId, monstersToRender) {
                 </div>
                 
                 <div class="action-block-wrapper">
-                    <div style="justify-content: center;">
+                    <div style="justify-content: center; text-align: justify;">
                         ${actionBlockHtml}
                     </div>
                 </div>
 
                 ${monster.legendary_actions ? `
                 <div class="legendary-block-wrapper">
-                    <div style="justify-content: center;">
+                    <div style="justify-content: center; text-align: justify;">
                         ${legendaryActionsHtml}
+                    </div>
+                </div>
+                ` : ''}
+
+                ${monster.lair_actions ? `
+                <div class="lair-block-wrapper">
+                    <div style="justify-content: center; text-align: justify;">
+                        ${lairActionsHtml}
                     </div>
                 </div>
                 ` : ''}
