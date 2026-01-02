@@ -37,9 +37,12 @@
     <link rel="stylesheet" href="/styles/passcheck.css">
     <link rel="stylesheet" href="/styles/list.css">
     <link rel="stylesheet" href="/styles/star.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
 
 
+
+    <link rel="stylesheet" href="/styles/book.css">
 </head>
 
 <body>
@@ -82,23 +85,60 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-<main>
+    <main>
+        <div style="text-align: center; background-color: rgba(59, 78, 119, 0.548); backdrop-filter: blur(50%); border-radius: 0px; box-shadow: 0px 0px 0px rgba(50, 78, 129, 0.384); padding: 5px;">
+            <h3>Etar's Manuscripts</h3>
+        </div>
 
-    <div style="text-align: center; background-color: rgba(59, 78, 119, 0.548); backdrop-filter: blur(50%); border-radius: 0px; box-shadow: 0px 0px 0px rgba(50, 78, 129, 0.384); padding: 5px;">
-        <h3>Etar's Manuscripts</h3>
-    </div>
+        <div class="container divider">
+            <div class="book">
+                <div class="page">
+                    <h2>Lời tựa</h2>
+                    <div class="p-divider"></div>
+                    <p style="font-style: italic;">Bản thảo Du Ngữ hay bản thảo của những ngôn từ phiêu đãng. Tập giấy này là ghi chép viết tay cổ xưa - những lời nói không còn chiếc lưỡi nào nhớ nổi, thế nhưng chính thế giới vẫn còn tuân theo.</p>
+                    <div class="p-divider"></div>
+                    <p style="font-style: italic;">Lingervox Scripts or the Chronicle of Wandering Words. This folio is a record of ancient hand-written lore — words no living tongue remembers,yet which the world itself still obeys.</p>
+                    <p class="p-divider page-footer" style="text-align: right; font-family: 'Allura', cursive;">_______________________Lingervox scripts</p>
+                </div>
 
-    <div id="dnd-monsters-container"></div>
+                <div class="page">
+                    <h2>No.6 - Inky Arbiter</h2>
+                    <div class="p-divider"></div>
+                        <p>Inky Arbiter không phải một kẻ địch có thể hạ gục bằng sức mạnh thuần túy. Trận chiến với Inky Arbiter là bài kiểm tra về nhịp độ, vị trí và sự phối hợp của cả đội.</p>
 
-    <script src="/script/monster-loader.js"></script> 
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            loadDndMonsters('dnd-monsters-container', '/dnd/data/dnd_monsters.json'); 
-        });
-    </script>
+                    <p class="p-tittle">Lõi mực được bảo vệ</p>
+                        <p>Inky Arbiter được bao bọc trong một bình mực sống gần như không thể xuyên thủng bằng những đòn đánh thông thường. Trong phần lớn thời gian, các đòn tấn công sẽ không chạm được vào bản thể thật, trừ khi đội hình tìm ra cách phá vỡ lớp bảo vệ này.</p>
+                        <p style="font-style: italic;">Đừng vội dồn sát thương. Quan sát cách cơ chế phòng thủ của nó phản ứng với các đòn đánh.</p>
+                    <p class="p-tittle">Mưa mực ăn mòn</p>
+                        <p>Theo chu kỳ, Inky Arbiter sẽ gọi xuống một cơn mưa mực quy mô lớn, trừng phạt bất kỳ ai đứng sai vị trí. Sát thương của hiện tượng này không cố định và sẽ trở nên nguy hiểm hơn nếu cả đội tụ tập hoặc xử lý kém.</p>
+                        <p style="font-style: italic;">Tách đội hợp lý và chuẩn bị đường rút là chìa khóa sống còn.</p>
 
-</main>
+                    <p class="p-tittle">Ấn ký phá khiên</p>
+                        <p>Trước mỗi đợt mưa mực, những ấn ký phát sáng sẽ xuất hiện rải rác trên chiến trường. Chúng không chỉ là nơi trú ẩn an toàn, mà còn là cơ hội duy nhất để làm suy yếu lớp bảo vệ của Inky Arbiter.</p>
+                        <p style="font-style: italic;">Đứng đúng chỗ, đúng lúc – cả đội phải phối hợp. Một người đứng sai có thể khiến cả nhóm trả giá.</p>
 
+                    <p class="p-tittle">Áp lực thời gian</p>
+                        <p>Trận đấu không cho phép kéo dài vô hạn. Nếu đội hình do dự quá lâu, Inky Arbiter sẽ mất kiên nhẫn và giải phóng toàn bộ năng lượng tích tụ trong một đòn trừng phạt hủy diệt.</p>
+                        <p style="font-style: italic;">Chần chừ đồng nghĩa với tự sát. Đây là cuộc đua với thời gian.</p>
+
+                    <p class="p-tittle">Khi mực sôi sục</p>
+                        <p>Nếu đội hình sống sót sau cao trào, Inky Arbiter sẽ biến đổi. Thứ xuất hiện sau đó không còn là thực thể mực tĩnh lặng ban đầu nữa.</p>
+                        <p style="font-style: italic;">Đừng coi đây là phần thưởng cho chiến thắng – đó là giai đoạn sinh tồn cuối cùng.</p>
+                    <div class="p-divider"></div>
+                    <p class="page-footer" style="text-align: right; font-family: 'Allura', cursive;">_______________________Lingervox scripts</p>
+                </div>    
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: stretch;">
+            <div><button id="prevBtn" title="Xem trang trước" onclick="prevPage()">◀ Trang trước</button></div>
+            <div><button id="nextBtn" title="Xem trang sau" onclick="nextPage()">Trang sau ▶</button></div>
+        </div>
+
+
+    </main>
+
+    <script src="/script/flipbook.js"></script>
     <script src="/script/star.js"></script>
     <script src="/script/magic-circle.js"></script>
     <script src="/script/intro.js"></script>
@@ -108,8 +148,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
     <script src="/script/overlay slide.js"></script>
     <script src="/script/un click in container.js"></script>

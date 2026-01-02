@@ -1,5 +1,15 @@
 .list {
     display: grid;
     grid-template-columns: 100px 1fr;
-    gap: 20px; text-align: justify;
+    gap: 20px;
+    text-align: justify;
+    align-items: center; /* căn giữa theo chiều dọc */
+}
+
+.list img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    object-fit: contain; /* không méo ảnh */
+    justify-self: center; /* căn giữa theo chiều ngang */
 }

@@ -1,0 +1,153 @@
+.book {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    margin: auto;
+    perspective: 2000px;
+    }
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top left, rgba(0,0,0,0.05), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(0,0,0,0.08), transparent 45%),
+        linear-gradient(#c5bfaf, #cabfa5);
+    border-radius: 4px;
+    border: 1px solid rgba(90,70,40,0.4);
+    box-shadow:
+        inset 0 0 60px rgba(0,0,0,0.15),
+        0 10px 30px rgba(0,0,0,0.4);
+
+    transform-origin: left;
+    transition: transform 1.2s cubic-bezier(0.55, 0.06, 0.19, 0.95);
+    transform-style: preserve-3d;
+    padding: 50px 60px;
+    box-sizing: border-box;
+
+    font-family: 'Fondamento', serif;
+    color: #3b2f1e;
+    line-height: 1.6;
+    backface-visibility: hidden;
+    filter: sepia(15%) contrast(1.05);
+    
+
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 100%;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.15),
+        transparent
+    );
+
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+
+.page.flipped {
+    transform:
+        rotateY(-180deg)
+        rotateZ(-1.2deg)
+        skewY(1.5deg)
+        scaleX(0.98);
+}
+
+
+.page.flipped::before {
+    opacity: 1;
+}
+
+/* Hoa văn trang trí */
+.page::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    width: 320px;
+    height: 320px;
+
+    background-image: url("/static/logostarrysea-gold.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    opacity: 0.2;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    filter: blur(1px);
+    z-index: 0;
+}
+
+.page > * {
+    position: relative;
+    z-index: 1;
+}
+
+.page h2 {
+    font-family: 'Grenze Gotisch', serif;
+    letter-spacing: 0.06em;
+    font-size: 42px;
+    color:#3b2f1e;
+    letter-spacing: 1px;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+}
+
+.page p {
+    font-size: 20px;
+    color:#3b2f1e;
+    text-align: justify;
+}
+
+.p-tittle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 16px;
+    color: #3b2f1e;
+    font-family: 'Allura', cursive;
+    margin: 0;
+}
+
+.page:nth-child(1) { z-index: 3; }
+.page:nth-child(2) { z-index: 2; }
+
+#prevBtn, #nextBtn {
+    height: 60px;
+    width: 100%;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.089);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px; /* Bo góc của nút */
+    backdrop-filter: blur(50%); /* Mức độ mờ */
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background-color: #6381c2a8;
+}

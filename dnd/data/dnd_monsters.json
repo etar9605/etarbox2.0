@@ -503,7 +503,7 @@
         "size": "Gargantuan",
         "type": "Elemental",
         "alignment": "Chaotic Neutral",
-        "image_src": "/static/Inky Arbiter.png",
+        "image_src": "/static/ink-monster.png",
         "ac": {
             "value": "20 (natural shield)"
         },
