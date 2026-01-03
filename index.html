@@ -40,6 +40,8 @@
 
 </head>
 
+<canvas id="starfield"></canvas>
+
 <body>
     <div id="star-container"></div>
     <header>
@@ -84,37 +86,99 @@
 <div id="magic-intro">
   <svg viewBox="0 0 500 500">
 
-    <!-- Vòng trong -->
+    <!-- Vòng trong 1 -->
+    <circle cx="269" cy="250" r="40"
+            class="draw rune rotate-ccw d1"/>
+
+    <!-- Vòng trong 2 -->
     <circle cx="250" cy="250" r="60"
-            class="draw rotate-ccw d1"/>
+            class="draw rune rotate-ccw d2"/>
 
     <!-- Tam giác -->
     <path d="M250 130 L353.92 310 L146.08 310 Z"
-          class="draw rotate-cw d2"/>
+          class="draw rotate-cw d3"/>
 
-    <!-- Vòng giữa -->
+    <!-- Vòng giữa 1 -->
     <circle cx="250" cy="250" r="122"
-            class="draw rune rotate-ccw d3"/>
+            class="draw rune rotate-ccw d4"/>
 
-    <!-- Rune -->
-    <circle cx="250" cy="250" r="150"
-            class="draw rotate-ccw d4"/>
-    <text id="rune-text"
-        class="rune rotate-cw d3">
-        <textPath href="#runePath" startOffset="0%"></textPath>
+    <!-- Vòng giữa 2 -->
+    <circle cx="250" cy="250" r="130"
+            class="draw rotate-cw d3"/>
+
+    <!-- Vòng giữa 3 -->
+    <circle cx="250" cy="250" r="175"
+        class="draw rotate-ccw d5"/>
+
+    <!-- Vòng giữa 4 -->
+    <circle cx="280" cy="250" r="90"
+        class="draw rune d5"/>
+
+    <!-- Rune ngoài (câu dài, JS sẽ đổ chữ vào) -->
+    <text id="rune-outer" class="rune rotate-cw d6">
+        <textPath
+            href="#runePathOuter"
+            startOffset="0%"
+            lengthAdjust="spacing">
+        </textPath>
     </text>
-    
-    <defs>
-      <path id="runePath"
-        d="M250,250
-           m-160,0
-           a160,160 0 1,1 320,0
-           a160,160 0 1,1 -320,0"/>
-    </defs>
-    <!-- Vòng ngoài -->
-    <circle cx="250" cy="250" r="180"
-            class="draw rotate-cw d4"/>
 
+    <!-- Rune trong (6 ký tự) -->
+    <text id="rune-inner" class="rune rune-inner rotate-ccw d3">
+        <textPath
+            href="#runePathInner"
+            startOffset="0%"
+            textLength="150%"
+            lengthAdjust="spacing">
+        </textPath>
+    </text>
+
+
+    <defs>
+        <!-- Vòng rune ngoài -->
+        <path id="runePathOuter"
+            d="M250,250
+            m-180,0
+            a180,180 0 1,1 360,0
+            a180,180 0 1,1 -360,0" />
+
+        <!-- Vòng rune trong -->
+        <path id="runePathInner"
+            d="M250,250
+            m-140,0
+            a140,140 0 1,1 280,0
+            a140,140 0 1,1 -280,0" />
+
+        <linearGradient id="neon-magic"
+            gradientUnits="userSpaceOnUse"
+            x1="0" y1="0" x2="500" y2="0">
+            <stop offset="0%"   stop-color="#6cf3ff"/>
+            <stop offset="25%"  stop-color="#8be7ff"/>
+            <stop offset="45%"  stop-color="#9b7bff"/>
+            <stop offset="65%"  stop-color="#7a5cff"/>
+            <stop offset="85%"  stop-color="#6cf3ff"/>
+            <stop offset="100%" stop-color="#6cf3ff"/>
+        </linearGradient>
+
+    </defs>
+
+
+    <!-- Vòng ngoài 1 -->
+    <circle cx="250" cy="250" r="167"
+            class="draw rune rotate-cw d8"/>
+
+    <!-- Vòng ngoài 2 -->
+    <circle cx="250" cy="250" r="200"
+    class="draw rotate-ccw d7"/>
+
+    <!-- Vòng ngoài 3 -->
+    <circle cx="250" cy="250" r="208"
+    class="draw rune rotate-cw d8"/>
+
+    <g id="magic-dust">
+    <!-- bụi sao sinh bằng JS -->
+    </g>
+    
   </svg>
 </div>
 
@@ -183,29 +247,29 @@
 
 </main>
 
-    <script src="/script/star.js"></script>
-    <script src="/script/magic-circle.js"></script>
-    <script src="/script/scroll to top.js"></script>
-    <script src="/script/search.js"></script>
+<script src="/script/star.js"></script>
+<script src="/script/magic-circle.js"></script>
+<script src="/script/scroll to top.js"></script>
+<script src="/script/search.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="/script/overlay slide.js"></script>
-    <script src="/script/un click in container.js"></script>
-    <script src="/script/expland container.js"></script>
-    <script src="/script/filter button.js"></script>
-    <script src="/script/magic intro.js"></script>
-    
-    <footer>
-        <p style="text-align: center;">&copy; 2024, Etar Ai</p>
-        <a title="Tham gia server discord" href="https://discord.gg/pQK5pCm2hC">
-            <img src="/static/dc.png" alt="Discord" height="30">
-        </a>
-        <a title="Liên hệ: tieuthienbinhngoc@gmail.com">
-            <img src="/static/mail icon.png" alt="Gmail" height="20">
-        </a>
-    </footer>  
+<script src="/script/overlay slide.js"></script>
+<script src="/script/un click in container.js"></script>
+<script src="/script/expland container.js"></script>
+<script src="/script/filter button.js"></script>
+<script src="/script/magic intro.js"></script>
+
+<footer>
+    <p style="text-align: center;">&copy; 2024, Etar Ai</p>
+    <a title="Tham gia server discord" href="https://discord.gg/pQK5pCm2hC">
+        <img src="/static/dc.png" alt="Discord" height="30">
+    </a>
+    <a title="Liên hệ: tieuthienbinhngoc@gmail.com">
+        <img src="/static/mail icon.png" alt="Gmail" height="20">
+    </a>
+</footer>  
 </body>
 </html>

@@ -19,6 +19,7 @@
     box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.7); /* Hiệu ứng phát sáng nhẹ */
     filter: blur(1px); /* Thêm hiệu ứng blur cho ngôi sao */
     animation: fadeAndGlow 3s infinite alternate; /* Hiệu ứng lấp lánh (sẽ được ghi đè bởi JS) */
+    mix-blend-mode:overlay ; /* Kết hợp màu sắc với nền */
 }
 
 /* Keyframes cho hiệu ứng lấp lánh (sử dụng làm fallback nếu JS không hoạt động) */
