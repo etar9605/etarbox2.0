@@ -552,7 +552,7 @@
             "description": "The Ink can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Ink regains spent legendary actions at the start of its turn.",
             "actions": [
                 {"name": "Umbral Inkburst", "description": "The Ink takes 2d4 damage. Each other creature within 30 ft. must succeed on a DC 16 Dexterity saving throw or be blinded and prone. This action can’t be used again until the Ink’s next turn."},
-                {"name": "Evaporate", "description": "The Ink takes 3d4 damage and gains a flying speed of 60 ft. (hover) until the end of its next turn. During this movement, it doesn’t provoke opportunity attacks, and it descends safely at the end of the effect."},
+                {"name": "Evaporate", "description": "The Ink takes 3d4 damage and gains a flying speed of 60 ft. (hover). During this movement, it doesn’t provoke opportunity attacks, and it descends safely at the end of the effect."},
                 {"name": "Inkflask Break", "description": "The Ink makes 1d4 Blackout Splash attacks and reduces its own AC by the same amount."}
             ]
         },
