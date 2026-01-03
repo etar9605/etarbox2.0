@@ -118,7 +118,7 @@ window.addEventListener("load", () => {
   });
 });
 
-const MIN_LOADING_TIME = 6000; // ms – thời gian hiển thị tối thiểu
+const MIN_LOADING_TIME = 4500; // ms – thời gian hiển thị tối thiểu
 let loadingStart = performance.now();
 
 function showMagicLoading() {
