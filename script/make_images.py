@@ -8,7 +8,7 @@ import os
 SRC = "static"              # Ảnh gốc
 DEST_THUMB = "static/thumb" # Thumbnails JPG
 
-THUMB_WIDTH = 300           # Chiều rộng thumbnail
+THUMB_WIDTH = 50           # Chiều rộng thumbnail
 QUALITY_JPG = 85            # Chất lượng JPG
 
 # =============================

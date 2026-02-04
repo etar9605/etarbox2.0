@@ -45,13 +45,14 @@ function renderItems(containerId, itemsToRender) {
         allItemsHtml += `
         <div class="item-container container divider" data-tags="${item.tags ? item.tags.join(',') : ''}">
             <div class="list">
-                <div>
-                    <img src="${item.image_src}" alt="${item.image_alt}" height="50">
+                <div class="icon-wrap">
+                    <img src="${item.image_src}" alt="${item.image_alt}" class="item-icon">
                 </div>
                 <div>
                     <h2 style="text-align: left;" onclick="expandContainer(this)">${item.name}</h2>
                 </div>
             </div>
+
             <div class="p-divider"></div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; text-align: center;">
                 <div>
@@ -60,7 +61,7 @@ function renderItems(containerId, itemsToRender) {
                     <p>${item.desc_main}</p>
                 </div>
                 <div>
-                    <img src="${item.image_src}" alt="${item.image_alt}" height="${item.image_height}">
+                    <img src="${item.image_src}" alt="${item.image_alt}" height="${item.image_height}" class="item-image">
                 </div>
             </div>
             ${descExtraHtml}
