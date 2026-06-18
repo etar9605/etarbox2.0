@@ -16,7 +16,7 @@
         radial-gradient(circle at bottom right, rgba(0,0,0,0.12), transparent 55%),
         url("/static/paper-classic.jpg");
         
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 4px;
