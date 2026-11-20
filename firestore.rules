@@ -1,0 +1,169 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default-deny safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // ---------- Shared Security Primitives ----------
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner() {
+      return isSignedIn()
+        && request.auth.token.email is string
+        && request.auth.token.email.lower() in ['etar.9605@gmail.com', 'tieuthienbinhngoc@gmail.com']
+        && request.auth.token.email_verified == true;
+    }
+
+    function isValidId(id) {
+      return id is string
+        && id.size() >= 1
+        && id.size() <= 128
+        && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidPageKey(val) {
+      return val is string
+        && val.size() >= 1
+        && val.size() <= 80
+        && val.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidEmojiId(val) {
+      return val is string
+        && val.size() >= 1
+        && val.size() <= 40
+        && val.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidOptionalEmojiId(val) {
+      return val is string
+        && val.size() <= 40
+        && val.matches('^([a-zA-Z0-9_\\-]+)?$');
+    }
+
+    function isValidPaperTone(val) {
+      return val in ['mist', 'lavender', 'moon', 'teal'];
+    }
+
+    // ---------- Validation Blueprints ----------
+    function isValidPageNote(data) {
+      return data.keys().hasAll([
+          'pageKey',
+          'pageTitle',
+          'pagePath',
+          'nickname',
+          'message',
+          'emojiId',
+          'paperTone',
+          'pinned',
+          'isOwner',
+          'createdAt'
+        ])
+        && data.keys().hasOnly([
+          'pageKey',
+          'pageTitle',
+          'pagePath',
+          'nickname',
+          'message',
+          'emojiId',
+          'paperTone',
+          'pinned',
+          'isOwner',
+          'createdAt'
+        ])
+        && isValidPageKey(data.pageKey)
+        && data.pageTitle is string && data.pageTitle.size() >= 1 && data.pageTitle.size() <= 80
+        && data.pagePath is string && data.pagePath.size() >= 1 && data.pagePath.size() <= 160 && data.pagePath.matches('^/[^\\s]*$')
+        && data.nickname is string && data.nickname.size() >= 1 && data.nickname.size() <= 32
+        && data.message is string && data.message.size() >= 1 && data.message.size() <= 280
+        && isValidOptionalEmojiId(data.emojiId)
+        && isValidPaperTone(data.paperTone)
+        && data.pinned is bool
+        && data.isOwner is bool
+        && data.createdAt is timestamp;
+    }
+
+    function isValidPageReaction(data, reactionId) {
+      return data.keys().hasAll(['pageKey', 'emojiId', 'count', 'updatedAt'])
+        && data.keys().hasOnly(['pageKey', 'emojiId', 'count', 'updatedAt'])
+        && isValidPageKey(data.pageKey)
+        && isValidEmojiId(data.emojiId)
+        && reactionId == data.pageKey + '__' + data.emojiId
+        && data.count is int && data.count >= 0 && data.count <= 1000000
+        && data.updatedAt is timestamp;
+    }
+
+    // ---------- Collection: page_notes ----------
+    // Public anonymous sticky notes + owner moderation (pin & delete).
+    match /page_notes/{noteId} {
+      allow get: if isValidId(noteId);
+      allow list: if request.query.limit != null && request.query.limit <= 100;
+
+      // Anyone can post a note without signing in; only verified owner can set isOwner=true or pinned=true
+      allow create: if isValidId(noteId)
+        && isValidPageNote(incoming())
+        && incoming().createdAt == request.time
+        && (isOwner() || (incoming().isOwner == false && incoming().pinned == false));
+
+      // Only the verified site owner can pin/unpin existing notes; immutable fields cannot change
+      allow update: if isOwner()
+        && isValidId(noteId)
+        && isValidPageNote(incoming())
+        && incoming().diff(existing()).affectedKeys().hasOnly(['pinned'])
+        && incoming().pageKey == existing().pageKey
+        && incoming().pageTitle == existing().pageTitle
+        && incoming().pagePath == existing().pagePath
+        && incoming().nickname == existing().nickname
+        && incoming().message == existing().message
+        && incoming().emojiId == existing().emojiId
+        && incoming().paperTone == existing().paperTone
+        && incoming().isOwner == existing().isOwner
+        && incoming().createdAt == existing().createdAt;
+
+      // Only the verified site owner can delete notes
+      allow delete: if isOwner() && isValidId(noteId);
+    }
+
+    // ---------- Collection: page_reactions ----------
+    // Public per-page custom image emoji counters, strictly bounded to +/-1 per write.
+    match /page_reactions/{reactionId} {
+      allow get: if isValidId(reactionId);
+      allow list: if request.query.limit != null && request.query.limit <= 50;
+
+      // First reaction on a (pageKey, emojiId) pair must start at count == 1
+      allow create: if isValidId(reactionId)
+        && isValidPageReaction(incoming(), reactionId)
+        && incoming().count == 1
+        && incoming().updatedAt == request.time;
+
+      // Public visitors can only increment or decrement count by exactly 1; owner can also reset
+      allow update: if isValidId(reactionId)
+        && isValidPageReaction(incoming(), reactionId)
+        && incoming().diff(existing()).affectedKeys().hasOnly(['count', 'updatedAt'])
+        && incoming().pageKey == existing().pageKey
+        && incoming().emojiId == existing().emojiId
+        && incoming().updatedAt == request.time
+        && (
+          isOwner()
+          || incoming().count == existing().count + 1
+          || incoming().count == existing().count - 1
+        );
+
+      // Only the verified site owner can delete reaction documents
+      allow delete: if isOwner() && isValidId(reactionId);
+    }
+  }
+}

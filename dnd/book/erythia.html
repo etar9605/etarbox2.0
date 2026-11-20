@@ -2,86 +2,75 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Erythia — Sách DnD · Hộp giấy của Etar</title>
+    <meta name="description" content="Hồ sơ lore về Tân Thần Erythia — Kẻ Kế Thừa Ác Ma.">
 
-    <title>Etar Ai</title>
-
-    <meta property="og:title" content="Etar's manuscripts" />
-    <meta property="og:description" content="Hộp giấy có nhiều thứ linh tinh" />
-    <meta property="og:image" content="https://etarbox.onrender.com/static/etarheh.png" />
+    <meta property="og:title" content="Erythia — Sách DnD · Hộp giấy của Etar" />
+    <meta property="og:description" content="Hồ sơ lore về Tân Thần Erythia — Kẻ Kế Thừa Ác Ma." />
+    <meta property="og:image" content="https://etarbox.onrender.com/static/etarheh.webp" />
     <meta property="og:url" content="https://etarbox.onrender.com/" />
     <meta property="og:type" content="website" />
 
-    <link rel="icon" type="image/png" href="/static/etarmm.png" draggable="false" oncontextmenu="return false;">
-    
+    <link rel="icon" type="image/webp" href="/static/etarmm.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito:ital,wght@0,600;0,700;0,800;1,600;1,700&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura&display=swap">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/styles/header and footer.css">
-    <link rel="stylesheet" href="/styles/search-container.css">
-    <link rel="stylesheet" href="/styles/nav.css">
-    <link rel="stylesheet" href="/styles/container.css">
-    <link rel="stylesheet" href="/styles/table.css">
-    <link rel="stylesheet" href="/styles/label.css">
-    <link rel="stylesheet" href="/styles/body and content styles.css">
-    <link rel="stylesheet" href="/styles/top scroll button.css">
-    <link rel="stylesheet" href="/styles/filter button.css">
-    <link rel="stylesheet" href="/styles/intro.css">
-    <link rel="stylesheet" href="/styles/button large.css">
-    <link rel="stylesheet" href="/styles/black highlight.css">
-    <link rel="stylesheet" href="/styles/magic-circle.css">
-    <link rel="stylesheet" href="/styles/passcheck.css">
-    <link rel="stylesheet" href="/styles/list.css">
-    <link rel="stylesheet" href="/styles/star.css">
-
+    <link rel="stylesheet" href="/assets/css/tokens.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/effects.css">
+    <link rel="stylesheet" href="/assets/css/notes-drawer.css">
 </head>
-
 <body>
-    <div id="star-container"></div>
-    <header>
-        <a href="/" style="text-decoration: none; color: inherit;">
-            <img src="/static/etarheh.png" alt="Etar" height="120">
-            <h1>Hộp giấy của Etar</h1>
-            <p style="font-family: 'Allura', cursive;">Loài người thật kỳ quặc</p>
+    <div id="star-container" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a href="/" class="header-brand">
+            <img src="/static/etarheh.webp" alt="Etar" class="header-avatar" width="96" height="96">
+            <div class="header-titles">
+                <h1>Hộp giấy của Etar</h1>
+                <p class="header-tagline">Loài người thật kỳ quặc</p>
+            </div>
         </a>
     </header>
-    
-    <nav>
-        <div class="nav-wrapper navbar-expand-lg navbar-light">
-            <button title="Mở taskbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
+
+    <nav class="site-nav" aria-label="Điều hướng chính">
+        <div class="nav-wrapper">
+            <button type="button" class="nav-toggle" title="Mở menu" aria-label="Mở menu" aria-expanded="false" data-toggle="collapse" data-target="#navbar">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
-    
-            <div class="collapse navbar-collapse" id="navbar">
+
+            <div class="nav-links-collapse" id="navbar">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="home" href="/">Home</a>
-                    <a class="nav-item nav-link" id="commission" href="/commission/">Commission</a>
-                    <a class="nav-item nav-link" id="dnd" href="/dnd/">DnD</a>
-                    <a class="nav-item nav-link" id="library" href="/library/">Thư viện</a>
-                    <a class="nav-item nav-link" id="bot" href="/bot/">Discord bot</a>
+                    <a class="nav-link" id="home" href="/">Home</a>
+                    <a class="nav-link" id="commission" href="/commission.html">Commission</a>
+                    <a class="nav-link" id="dnd" href="/dnd.html">DnD</a>
+                    <a class="nav-link" id="library" href="/library.html">Thư viện</a>
+                    <a class="nav-link" id="bot" href="/bot.html">Discord bot</a>
                 </div>
-                
             </div>
+
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Tìm trong trang..." title="Nếu không tìm được thì thử click nút A-Z để sắp xếp rồi tìm lại">
-                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Tìm gì nào..." title="Tìm kiếm toàn trang web (nhấn / để mở nhanh)" autocomplete="off">
+                <i class="fas fa-search" aria-hidden="true"></i>
             </div>
         </div>
     </nav>
- 
-    <div class="magic-cursor" id="magic-cursor"></div>
-    <script src="/script/mousemove.js"></script>
+    <div class="site-breadcrumbs" aria-label="Điều hướng"><a href="/">Trang chủ</a><span class="crumb-sep" aria-hidden="true">/</span><a href="/dnd.html">DnD 5e</a><span class="crumb-sep" aria-hidden="true">/</span><a href="/dnd/book.html">Sách</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-current">Erythia</span></div>
 
-    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Trượt về đầu trang">
-        <i class="fas fa-arrow-up"></i>
+    <div class="magic-cursor" id="magic-cursor" aria-hidden="true"></div>
+
+    <button type="button" onclick="scrollToTop()" id="scrollToTopBtn" title="Trượt về đầu trang" aria-label="Trượt về đầu trang">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
-<main>
 
+    <main>
+    <div class="manuscript-sheet">
     <div class="container divider" style="justify-content: center;">
         <h2>Erythia</h2>
         <div class="p-divider"></div>
@@ -125,33 +114,26 @@
     <div>
         <p>Tạo bởi: Ai đó từng có biệt danh discord là Catt</p>
     </div>
-
+    </div>
 </main>
 
-    <script src="/script/star.js"></script>
-    <script src="/script/magic-circle.js"></script>
-    <script src="/script/intro.js"></script>
-    <script src="/script/scroll to top.js"></script>
-    <script src="/script/search.js"></script>
+    <footer class="site-footer">
+        <p class="footer-copy">&copy; 2024, Etar Ai</p>
+        <div class="footer-links">
+            <a class="footer-icon-link" title="Tham gia server discord" href="https://discord.gg/pQK5pCm2hC">
+                <img src="/static/dc.webp" alt="Discord" height="20">
+                <span>Discord</span>
+            </a>
+            <a class="footer-icon-link" title="Liên hệ: etar.9605@gmail.com" href="mailto:etar.9605@gmail.com">
+                <img src="/static/mail icon.webp" alt="Gmail" height="18">
+                <span>Email</span>
+            </a>
+        </div>
+    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <script src="/script/overlay slide.js"></script>
-    <script src="/script/un click in container.js"></script>
-    <script src="/script/expland container.js"></script>
-    <script src="/script/filter button.js"></script>
-    <script src="/script/fix-jum.js"></script>
-    
-    <footer>
-        <p style="text-align: center;">&copy; 2024, Etar Ai</p>
-        <a title="Tham gia server discord" href="https://discord.gg/pQK5pCm2hC">
-            <img src="/static/dc.png" alt="Discord" height="30">
-        </a>
-        <a title="Liên hệ: tieuthienbinhngoc@gmail.com">
-            <img src="/static/mail icon.png" alt="Gmail" height="20">
-        </a>
-    </footer>  
+    <script src="/assets/js/core.js"></script>
+    <script src="/assets/js/effects.js"></script>
+    <script src="/assets/js/search.js"></script>
+    <script type="module" src="/assets/js/notes-drawer.js"></script>
 </body>
 </html>

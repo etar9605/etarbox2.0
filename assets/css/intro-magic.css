@@ -1,0 +1,156 @@
+/* ==========================================================================
+   ETARBOX — Home Arcane Ritual Circle Intro (#magic-intro)
+   ========================================================================== */
+
+#magic-intro {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-intro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  background:
+    radial-gradient(circle at center, #132860 0%, #071433 44%, #020510 100%);
+  overflow: hidden;
+  transition: opacity 720ms var(--ease-out), visibility 720ms ease;
+}
+
+#magic-intro.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#magic-intro svg {
+  width: min(440px, 84vw);
+  height: min(440px, 84vw);
+  overflow: visible;
+}
+
+.intro-skip-hint {
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(138, 196, 255, 0.28);
+  background: rgba(14, 24, 52, 0.56);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity var(--dur-fast) ease, border-color var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+
+.intro-skip-hint:hover {
+  opacity: 1;
+  border-color: var(--accent-cyan);
+  color: #ffffff;
+}
+
+/* Draw Effect */
+#magic-intro .draw {
+  fill: none;
+  stroke: url(#neon-magic);
+  stroke-width: 0.6;
+  filter: drop-shadow(0 0 6px #6cf3ff) drop-shadow(0 0 14px #9b7bff);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: -3000;
+  animation: magicDraw 1.8s ease forwards;
+}
+
+#magic-intro .rotate-cw {
+  animation:
+    magicDraw 1.8s ease forwards,
+    magicSpin 18s linear infinite;
+  transform-origin: center;
+}
+
+#magic-intro .rotate-ccw {
+  animation:
+    magicDraw 1.8s ease forwards,
+    magicSpinRev 18s linear infinite;
+  transform-origin: center;
+}
+
+/* Staggered delays — inner to outer */
+#magic-intro .d1 { animation-delay: 0s, 0s; stroke-dashoffset: -3000; }
+#magic-intro .d2 { animation-delay: 0.15s, 0.15s; stroke-dashoffset: 3000; }
+#magic-intro .d3 { animation-delay: 0.35s, 0.35s; stroke-dashoffset: -3000; }
+#magic-intro .d4 { animation-delay: 0.65s, 0.65s; stroke-dashoffset: 3000; }
+#magic-intro .d5 { animation-delay: 1s, 1s; stroke-dashoffset: -3000; }
+#magic-intro .d6 { animation-delay: 1.35s, 1.35s; stroke-dashoffset: -3000; }
+#magic-intro .d7 { animation-delay: 1.65s, 1.65s; stroke-dashoffset: 3000; }
+#magic-intro .d8 { animation-delay: 2s, 2s; stroke-dashoffset: -3000; }
+
+#magic-intro .rune {
+  fill: none;
+  stroke: #9cecff;
+  stroke-width: 1;
+  font-size: 18px;
+  letter-spacing: 6px;
+  filter: drop-shadow(0 0 6px #6cf3ff) drop-shadow(0 0 14px #9b7bff);
+}
+
+#magic-intro .rune-inner {
+  font-size: 26px;
+  letter-spacing: 10px;
+  stroke-width: 1.3;
+}
+
+#magic-intro .rune-char {
+  opacity: 0;
+  animation: runeEngrave 0.12s ease forwards;
+}
+
+@keyframes runeEngrave {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes magicDraw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes magicSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes magicSpinRev {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+/* Magic dust particles */
+#magic-dust circle {
+  opacity: 0;
+}
+
+@keyframes dust-bloom {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.3);
+  }
+  65% {
+    opacity: 1;
+    transform: translate(calc(var(--bx) * 0.65), calc(var(--by) * 0.65)) scale(1.1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate(var(--bx), var(--by)) scale(1);
+  }
+}
+
+@keyframes dust-float {
+  0% { transform: translate(var(--bx), var(--by)); }
+  100% { transform: translate(calc(var(--bx) + var(--fx)), calc(var(--by) + var(--fy))); }
+}
+
+@keyframes dust-blink {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 0.35; }
+}

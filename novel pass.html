@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cổng Tiểu thuyết — Thư viện · Hộp giấy của Etar</title>
+    <meta name="description" content="Khu vực tiểu thuyết yêu cầu mật khẩu.">
+
+    <meta property="og:title" content="Cổng Tiểu thuyết — Thư viện · Hộp giấy của Etar" />
+    <meta property="og:description" content="Khu vực tiểu thuyết yêu cầu mật khẩu." />
+    <meta property="og:image" content="https://etarbox.onrender.com/static/etarheh.webp" />
+    <meta property="og:url" content="https://etarbox.onrender.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/webp" href="/static/etarmm.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito:ital,wght@0,600;0,700;0,800;1,600;1,700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/tokens.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/effects.css">
+</head>
+<body>
+    <div id="star-container" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a href="/" class="header-brand">
+            <img src="/static/etarheh.webp" alt="Etar" class="header-avatar" width="96" height="96">
+            <div class="header-titles">
+                <h1>Hộp giấy của Etar</h1>
+                <p class="header-tagline">Loài người thật kỳ quặc</p>
+            </div>
+        </a>
+    </header>
+
+    <nav class="site-nav" aria-label="Điều hướng chính">
+        <div class="nav-wrapper">
+            <button type="button" class="nav-toggle" title="Mở menu" aria-label="Mở menu" aria-expanded="false" data-toggle="collapse" data-target="#navbar">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <div class="nav-links-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-link" id="home" href="/">Home</a>
+                    <a class="nav-link" id="commission" href="/commission.html">Commission</a>
+                    <a class="nav-link" id="dnd" href="/dnd.html">DnD</a>
+                    <a class="nav-link" id="library" href="/library.html">Thư viện</a>
+                    <a class="nav-link" id="bot" href="/bot.html">Discord bot</a>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Tìm gì nào..." title="Tìm kiếm toàn trang web (nhấn / để mở nhanh)" autocomplete="off">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="site-breadcrumbs" aria-label="Điều hướng"><a href="/">Trang chủ</a><span class="crumb-sep" aria-hidden="true">/</span><a href="/library.html">Thư viện</a><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-current">Tiểu thuyết</span></div>
+
+    <div class="magic-cursor" id="magic-cursor" aria-hidden="true"></div>
+
+    <button type="button" onclick="scrollToTop()" id="scrollToTopBtn" title="Trượt về đầu trang" aria-label="Trượt về đầu trang">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+
+    <main>
+    
+    <div class="container divider" style="text-align: center;">
+        <h2>Bút danh của Etar cho đến trước khi gọi là Etar là gì?</h2>
+        <div class="password-gate-form"><input type="password" id="passwordInput" placeholder="Nhập mật khẩu..." class="password-input" onkeypress="handleKeyPress(event)"><button onclick="checkPassword()" class="password-button">Xác nhận</button></div>
+        <p id="passwordError" style="color: #ff8a8a; text-align: center; margin-top: 10px; display: none;"></p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordInput").value;
+            var errorEl = document.getElementById("passwordError");
+            // Kiểm tra mật khẩu
+            if (password === "akitaneko") {
+                if (errorEl) errorEl.style.display = "none";
+                // Nếu mật khẩu đúng, chuyển hướng đến trang mong muốn
+                window.location.href = "/library/novel.html";
+            } else {
+                // Nếu mật khẩu sai, thông báo và không chuyển hướng
+                if (errorEl) {
+                    errorEl.textContent = "Mật khẩu không đúng. Vui lòng thử lại.";
+                    errorEl.style.display = "block";
+                }
+            }
+        }
+
+        function handleKeyPress(event) {
+            // Kiểm tra nếu phím được nhấn là phím Enter
+            if (event.key === "Enter") {
+                // Gọi hàm checkPassword
+                checkPassword();
+            }
+        }
+    </script>
+
+</main>
+
+    <footer class="site-footer">
+        <p class="footer-copy">&copy; 2024, Etar Ai</p>
+        <div class="footer-links">
+            <a class="footer-icon-link" title="Tham gia server discord" href="https://discord.gg/pQK5pCm2hC">
+                <img src="/static/dc.webp" alt="Discord" height="20">
+                <span>Discord</span>
+            </a>
+            <a class="footer-icon-link" title="Liên hệ: etar.9605@gmail.com" href="mailto:etar.9605@gmail.com">
+                <img src="/static/mail icon.webp" alt="Gmail" height="18">
+                <span>Email</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="/assets/js/core.js"></script>
+    <script src="/assets/js/effects.js"></script>
+    <script src="/assets/js/search.js"></script>
+</body>
+</html>

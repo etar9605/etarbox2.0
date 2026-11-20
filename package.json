@@ -1,0 +1,21 @@
+{
+  "name": "etarbox",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "sync:layout": "node scripts/sync-layout.js",
+    "verify": "node scripts/verify-integrity.js",
+    "build": "node scripts/build-search-index.js && node scripts/verify-integrity.js && node --check server.js",
+    "lint": "node --check server.js && node --check scripts/build-search-index.js && node --check scripts/site-shell.js && node --check scripts/sync-layout.js && node --check scripts/verify-integrity.js && node --check assets/js/core.js && node --check assets/js/effects.js && node --check assets/js/search.js && node --check assets/js/collapsible.js && node --check assets/js/lightbox.js && node --check assets/js/dnd-items.js && node --check assets/js/dnd-monsters.js && node --check assets/js/dnd-dancer.js && node --check assets/js/flipbook.js && node --check assets/js/intro-magic.js && node --check assets/js/intro-bot.js && node --check assets/js/notes-drawer.js && npx eslint firestore.rules"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@firebase/eslint-plugin-security-rules": "^0.0.2",
+    "eslint": "^10.15.0"
+  }
+}

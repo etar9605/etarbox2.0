@@ -1,0 +1,125 @@
+{
+  "entities": {
+    "PageNote": {
+      "title": "PageNote",
+      "description": "An anonymous or owner-authored sticky note attached to a page on Hộp giấy của Etar.",
+      "type": "object",
+      "properties": {
+        "pageKey": {
+          "type": "string",
+          "description": "Normalized identifier of the page this note belongs to.",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "pageTitle": {
+          "type": "string",
+          "description": "Human-readable title of the page for display in the all-pages feed.",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "pagePath": {
+          "type": "string",
+          "description": "Internal relative URL path of the page starting with '/'.",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^/[^\\s]*$"
+        },
+        "nickname": {
+          "type": "string",
+          "description": "Optional reader nickname, defaults to 'Khách ghé thăm'.",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "message": {
+          "type": "string",
+          "description": "The sticky note message text.",
+          "minLength": 1,
+          "maxLength": 280
+        },
+        "emojiId": {
+          "type": "string",
+          "description": "Optional custom image emoji ID stamped on the note, or empty string.",
+          "minLength": 0,
+          "maxLength": 40,
+          "pattern": "^([a-zA-Z0-9_\\-]+)?$"
+        },
+        "paperTone": {
+          "type": "string",
+          "description": "Celestial paper tint theme for the sticky note.",
+          "enum": ["mist", "lavender", "moon", "teal"]
+        },
+        "pinned": {
+          "type": "boolean",
+          "description": "Whether the site owner pinned this note to the top."
+        },
+        "isOwner": {
+          "type": "boolean",
+          "description": "True only when posted by the authenticated site owner."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the note was posted."
+        }
+      },
+      "required": [
+        "pageKey",
+        "pageTitle",
+        "pagePath",
+        "nickname",
+        "message",
+        "emojiId",
+        "paperTone",
+        "pinned",
+        "isOwner",
+        "createdAt"
+      ]
+    },
+    "PageReaction": {
+      "title": "PageReaction",
+      "description": "Aggregated counter for a single custom image emoji on a specific page.",
+      "type": "object",
+      "properties": {
+        "pageKey": {
+          "type": "string",
+          "description": "Normalized page identifier.",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "emojiId": {
+          "type": "string",
+          "description": "Custom image emoji identifier.",
+          "minLength": 1,
+          "maxLength": 40,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "count": {
+          "type": "integer",
+          "description": "Non-negative total reaction count for this emoji on this page."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of the latest reaction update."
+        }
+      },
+      "required": ["pageKey", "emojiId", "count", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/page_notes/{noteId}": {
+      "schema": {
+        "$ref": "#/entities/PageNote"
+      },
+      "description": "Public sticky notes left by visitors and the site owner across public pages."
+    },
+    "/page_reactions/{reactionId}": {
+      "schema": {
+        "$ref": "#/entities/PageReaction"
+      },
+      "description": "Per-page custom image emoji reaction counters keyed by '{pageKey}__{emojiId}'."
+    }
+  }
+}

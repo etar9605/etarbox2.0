@@ -4,7 +4,7 @@
         "size": "Medium",
         "type": "aberration",
         "alignment": "chaotic neutral",
-        "image_src": "/static/sharn.png",
+        "image_src": "/static/sharn.webp",
         "ac": {
             "value": 18,
             "description": "natural armor and swiftness"
@@ -73,7 +73,7 @@
         "size": "Medium",
         "type": "Plant",
         "alignment": "Any Neutral Alignment",
-        "image_src": "/static/mushroom.png",
+        "image_src": "/static/mushroom.webp",
         "ac": {
             "value": 16,
             "description": "natural armor"
@@ -117,7 +117,7 @@
         "size": "Medium",
         "type": "Beast",
         "alignment": "Unaligned",
-        "image_src": "/static/mushroom.png",
+        "image_src": "/static/mushroom.webp",
         "ac": {
             "value": 16,
             "description": "natural armor"
@@ -165,7 +165,7 @@
         "size": "Large",
         "type": "Monstrosity",
         "alignment": "Unaligned",
-        "image_src": "/static/horse.png",
+        "image_src": "/static/horse.webp",
         "ac": {
             "value": 17,
             "description": "natural armor"
@@ -211,7 +211,7 @@
         "size": "Medium",
         "type": "Moon Elf",
         "alignment": "Neutral",
-        "image_src": "/static/dakini.png",
+        "image_src": "/static/dakini.webp",
         "ac": {
             "value": 16
         },
@@ -270,7 +270,7 @@
         "size": "Huge",
         "type": "Elemental",
         "alignment": "unaligned",
-        "image_src": "/static/fish.png",
+        "image_src": "/static/fish.webp",
         "ac": {
             "value": 18
         },
@@ -317,7 +317,7 @@
         "size": "Medium",
         "type": "aberration",
         "alignment": "chaotic neutral",
-        "image_src": "/static/de.png",
+        "image_src": "/static/de.webp",
         "ac": {
             "value": 14,
             "description": "natural armor"
@@ -361,7 +361,7 @@
         "size": "Medium",
         "type": "Moon Elf",
         "alignment": "Neutral",
-        "image_src": "/static/31cfb3.png",
+        "image_src": "/static/31cfb3.webp",
         "ac": {
             "value": 16
         },
@@ -459,7 +459,7 @@
         "size": "Medium",
         "type": "Beast",
         "alignment": "Unaligned",
-        "image_src": "/static/1h-rabit.png",
+        "image_src": "/static/1h-rabit.webp",
         "ac": {
             "value": "15 (natural armor)"
         },
@@ -503,7 +503,7 @@
         "size": "Gargantuan",
         "type": "Elemental",
         "alignment": "Chaotic Neutral",
-        "image_src": "/static/ink-monster.png",
+        "image_src": "/static/ink-monster.webp",
         "ac": {
             "value": "20 (natural shield)"
         },

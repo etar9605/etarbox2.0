@@ -1,0 +1,162 @@
+/* ==========================================================================
+   ETARBOX — Discord Bot Slash Intro (#intro-container)
+   Scoped cleanly so it never leaks global styles onto other pages
+   ========================================================================== */
+
+#intro-container.stage {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-intro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: radial-gradient(circle at center, #14224a 0%, #091024 55%, #03060f 100%);
+  transition: opacity 550ms var(--ease-out), visibility 550ms ease;
+}
+
+#intro-container.stage.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#intro-container .wrapper {
+  position: relative;
+  color: #eef6ff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.32rem;
+  padding: 0.7rem 1.2rem 0.45rem;
+  text-shadow: 0 0 20px rgba(108, 224, 255, 0.45);
+}
+
+#intro-container .slash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-24deg) scaleY(0);
+  transform-origin: center center;
+  width: 0.16rem;
+  height: 150%;
+  z-index: 4;
+  animation: botSlash 4.2s ease-in infinite;
+}
+
+#intro-container .slash::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #6ce0ff, #b694ff);
+  box-shadow: 0 0 14px #6ce0ff;
+}
+
+#intro-container .sides {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+#intro-container .sides .side {
+  position: absolute;
+  background: linear-gradient(90deg, #6ce0ff, #b694ff);
+  box-shadow: 0 0 10px rgba(108, 224, 255, 0.5);
+}
+
+#intro-container .sides .side:nth-child(1) {
+  top: 0; left: 0; width: 100%; height: 2px;
+  transform: translateX(-101%);
+  animation: botSideTop 4.2s ease infinite;
+}
+
+#intro-container .sides .side:nth-child(2) {
+  top: 0; right: 0; width: 2px; height: 100%;
+  transform: translateY(-101%);
+  animation: botSideRight 4.2s ease infinite;
+}
+
+#intro-container .sides .side:nth-child(3) {
+  left: 0; bottom: 0; width: 100%; height: 2px;
+  transform: translateX(101%);
+  animation: botSideBottom 4.2s ease infinite;
+}
+
+#intro-container .sides .side:nth-child(4) {
+  top: 0; left: 0; width: 2px; height: 100%;
+  transform: translateY(101%);
+  animation: botSideLeft 4.2s ease infinite;
+}
+
+#intro-container .text { position: relative; }
+#intro-container .text--backing { opacity: 0; }
+
+#intro-container .text--left {
+  position: absolute;
+  top: 0; left: 0;
+  width: 51%; height: 100%;
+  overflow: hidden;
+}
+
+#intro-container .text--left .inner {
+  transform: translateX(100%);
+  animation: botTextLeft 4.2s ease-in-out infinite;
+}
+
+#intro-container .text--right {
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%; height: 100%;
+  overflow: hidden;
+}
+
+#intro-container .text--right .inner {
+  transform: translateX(-200%);
+  animation: botTextRight 4.2s ease-in-out infinite;
+}
+
+@keyframes botSlash {
+  0% { transform: translate(-50%, -50%) rotate(-24deg) scaleY(0); }
+  8% { transform: translate(-50%, -50%) rotate(-24deg) scaleY(1); }
+  16% { transform: translate(-50%, -50%) rotate(-24deg) scaleY(1); }
+  22%, 100% { transform: translate(-50%, -50%) rotate(-24deg) scaleY(0); }
+}
+
+@keyframes botTextLeft {
+  0% { transform: translateX(100%); }
+  14%, 64% { transform: translateX(0); }
+  78%, 100% { transform: translateX(-200%); }
+}
+
+@keyframes botTextRight {
+  0% { transform: translateX(-200%); }
+  14%, 64% { transform: translateX(-100%); }
+  78%, 100% { transform: translateX(-300%); }
+}
+
+@keyframes botSideTop {
+  0%, 14% { transform: translateX(-101%); }
+  26%, 58% { transform: translateX(0); }
+  70%, 100% { transform: translateX(101%); }
+}
+
+@keyframes botSideRight {
+  0%, 22% { transform: translateY(-101%); }
+  32%, 64% { transform: translateY(0); }
+  76%, 100% { transform: translateY(101%); }
+}
+
+@keyframes botSideBottom {
+  0%, 28% { transform: translateX(101%); }
+  38%, 70% { transform: translateX(0); }
+  82%, 100% { transform: translateX(-101%); }
+}
+
+@keyframes botSideLeft {
+  0%, 34% { transform: translateY(101%); }
+  44%, 76% { transform: translateY(0); }
+  88%, 100% { transform: translateY(-101%); }
+}

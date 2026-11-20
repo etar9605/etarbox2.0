@@ -1,0 +1,230 @@
+/* ==========================================================================
+   ETARBOX — Base Styles, Reset, Typography & Arcane Library Backdrop
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-gutter: stable;
+  background-color: var(--bg-deep);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: var(--content-max);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.68;
+  color: var(--text-primary);
+  background: transparent !important;
+  position: relative;
+  z-index: var(--z-base);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+/* Fixed GPU-composited arcane library background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: var(--z-bg);
+  pointer-events: none;
+  background-image:
+    radial-gradient(ellipse at 50% 30%, rgba(12, 22, 48, 0.08) 0%, rgba(7, 12, 28, 0.52) 100%),
+    url('/static/magic-bg.webp?v=2');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(0);
+}
+
+/* Hide system cursor only on fine-pointer desktop devices where magic cursor runs */
+@media (hover: hover) and (pointer: fine) {
+  body.has-magic-cursor,
+  body.has-magic-cursor * {
+    cursor: none !important;
+  }
+}
+
+/* Custom subtle arcane scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 17, 34, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(122, 168, 232, 0.36);
+  border-radius: 99px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(108, 224, 255, 0.62);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Focus accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4 {
+  margin-top: 0;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.85rem, 3.3vw, 2.45rem);
+  letter-spacing: 0.01em;
+  color: #f2f7ff;
+  text-shadow: 0 2px 18px rgba(108, 224, 255, 0.28);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.22rem, 1.9vw, 1.48rem);
+  color: var(--accent-cyan);
+  letter-spacing: 0.005em;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 18px rgba(108, 224, 255, 0.22);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.06rem, 1.55vw, 1.24rem);
+  color: var(--accent-violet);
+  letter-spacing: 0.005em;
+  margin-top: 1.15rem;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 0 14px rgba(182, 148, 255, 0.2);
+}
+
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.96rem;
+  color: var(--accent-periwinkle);
+  margin-top: 1.05rem;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.005em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+  line-height: 1.74;
+  text-align: justify;
+  color: var(--text-primary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0.9rem;
+  padding-left: 1.35rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+  line-height: 1.68;
+}
+
+/* Links — luminous arcane cyan, overriding legacy dark inline colors */
+a {
+  color: #8fd4ff;
+  text-decoration: none;
+  transition: color var(--dur-fast) ease, text-shadow var(--dur-fast) ease;
+}
+
+a:hover {
+  color: #c8ecff;
+  text-decoration: none;
+}
+
+main p a,
+main td a,
+main li a {
+  color: var(--accent-cyan) !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(108, 224, 255, 0.35);
+  text-underline-offset: 3px;
+}
+
+main p a:hover,
+main td a:hover,
+main li a:hover {
+  color: #ffffff !important;
+  text-decoration-color: var(--accent-cyan);
+  text-shadow: 0 0 10px rgba(108, 224, 255, 0.45);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+img:not([height]) {
+  height: auto;
+}
+
+/* Tooltips (Dancer wiki highlights) */
+.tooltip-highlight {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--accent-periwinkle);
+  border-bottom: 1px dashed rgba(169, 184, 255, 0.58);
+  padding-bottom: 1px;
+  cursor: help;
+  transition: color var(--dur-fast) ease, text-shadow var(--dur-fast) ease;
+}
+
+.tooltip-highlight:hover {
+  color: #e4f0ff;
+  text-shadow: 0 0 10px rgba(169, 184, 255, 0.58);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "etar_bantim",
+    "label": "Bắn tim",
+    "src": "/static/emojis/etarbantim.webp"
+  },
+  {
+    "id": "etar_cheer",
+    "label": "Cổ vũ",
+    "src": "/static/etar grow stick.webp"
+  },
+  {
+    "id": "etar_smite",
+    "label": "Smite!",
+    "src": "/static/emojis/etarsmite.webp"
+  },
+  {
+    "id": "etar_canloi",
+    "label": "Cạn lời",
+    "src": "/static/emojis/etarcanloi.webp"
+  },
+  {
+    "id": "etar_loading",
+    "label": "Loading...",
+    "src": "/static/emojis/etarloading.webp"
+  },
+  {
+    "id": "etar_reee",
+    "label": "Reee!",
+    "src": "/static/etarreee.webp"
+  }
+]

@@ -1,0 +1,90 @@
+/* ==========================================================================
+   ETARBOX — Design Tokens (Starry Arcane Library Theme)
+   ========================================================================== */
+
+:root {
+  /* Color Palette — harmonized with /static/magic-bg.webp */
+  --bg-deep: #0b1122;
+  --bg-midnight: #121c36;
+  --surface-glass: rgba(14, 24, 48, 0.58);
+  --surface-glass-strong: rgba(12, 20, 42, 0.76);
+  --surface-glass-soft: rgba(20, 34, 66, 0.48);
+  --surface-hover: rgba(24, 40, 76, 0.68);
+  --surface-table-head: rgba(30, 50, 92, 0.64);
+  --surface-table-stripe: rgba(130, 185, 255, 0.04);
+
+  /* Hairline Borders & Specular Highlights */
+  --border-subtle: rgba(138, 196, 255, 0.28);
+  --border-bright: rgba(110, 224, 255, 0.55);
+  --border-violet: rgba(178, 146, 255, 0.42);
+  --border-divider: rgba(148, 198, 255, 0.26);
+  --specular-top: rgba(200, 232, 255, 0.18);
+
+  /* Ink & Text Contrast (WCAG AA/AAA on dark celestial glass) */
+  --text-primary: #e6effa;
+  --text-secondary: #b9cbe2;
+  --text-muted: #8ea6c7;
+  --text-inverse: #0c1428;
+
+  /* Arcane Accents */
+  --accent-cyan: #6ce0ff;
+  --accent-cyan-soft: rgba(108, 224, 255, 0.16);
+  --accent-violet: #b694ff;
+  --accent-violet-soft: rgba(182, 148, 255, 0.18);
+  --accent-periwinkle: #a9b8ff;
+  --accent-periwinkle-glow: rgba(145, 165, 255, 0.44);
+  --accent-danger: #ff8e96;
+
+  /* Typography */
+  --font-display: 'Nunito', 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+  --font-body: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+  --font-script: 'Allura', cursive;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Layout & Spacing */
+  --content-max: 1040px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Shadows & Subtle Luminous Frame Glow */
+  --shadow-glow-frame:
+    0 0 12px rgba(108, 196, 255, 0.16),
+    0 0 24px rgba(126, 178, 255, 0.08),
+    inset 0 0 8px rgba(138, 206, 255, 0.07);
+  --shadow-card:
+    0 0 12px rgba(108, 196, 255, 0.16),
+    0 0 26px rgba(126, 178, 255, 0.08),
+    0 10px 28px rgba(4, 9, 22, 0.38),
+    inset 0 0 8px rgba(138, 206, 255, 0.07),
+    inset 0 1px 0 var(--specular-top);
+  --shadow-card-hover:
+    0 0 16px rgba(108, 224, 255, 0.26),
+    0 0 34px rgba(169, 184, 255, 0.14),
+    0 14px 36px rgba(4, 9, 22, 0.5),
+    inset 0 0 10px rgba(138, 214, 255, 0.1),
+    inset 0 1px 0 rgba(200, 238, 255, 0.24);
+  --shadow-nav:
+    0 0 12px rgba(108, 196, 255, 0.15),
+    0 0 24px rgba(126, 178, 255, 0.07),
+    0 8px 26px rgba(4, 9, 22, 0.42);
+  --shadow-glow-cyan: 0 0 16px rgba(108, 224, 255, 0.35);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur-med: 260ms;
+  --dur-slow: 420ms;
+
+  /* Z-index Scale */
+  --z-bg: -1;
+  --z-base: 1;
+  --z-nav: 800;
+  --z-fab: 850;
+  --z-modal: 9200;
+  --z-intro: 9600;
+  --z-circle: 9800;
+  --z-cursor: 9900;
+  --z-stars: 100;
+}

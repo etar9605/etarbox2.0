@@ -1,0 +1,327 @@
+/* ==========================================================================
+   ETARBOX — Effects: Starlight Field, Reactive Arcane Cursor, Magic Circle
+   ========================================================================== */
+
+/* ---------- Low-Density Ambient Starlight Field (28 stars, GPU composited) ---------- */
+#star-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: var(--z-stars);
+  overflow: hidden;
+  contain: strict;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  will-change: opacity, transform;
+  background: radial-gradient(
+    circle,
+    rgba(244, 252, 255, 0.92) 0%,
+    rgba(168, 222, 255, 0.56) 44%,
+    rgba(124, 198, 255, 0) 100%
+  );
+  animation: starTwinkle 4s ease-in-out infinite alternate;
+}
+
+.star-small { width: 3.5px; height: 3.5px; }
+.star-medium { width: 5.5px; height: 5.5px; }
+.star-large { width: 7.5px; height: 7.5px; }
+
+@keyframes starTwinkle {
+  0% { opacity: 0.08; transform: scale(0.75); }
+  50% { opacity: 0.82; transform: scale(1.1); }
+  100% { opacity: 0.12; transform: scale(0.8); }
+}
+
+/* ---------- Reactive Arcane Cursor (Desktop Fine Pointer Only) ---------- */
+.magic-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 1px solid rgba(148, 216, 255, 0.5);
+  box-shadow: 0 0 14px rgba(108, 224, 255, 0.28), inset 0 0 10px rgba(182, 148, 255, 0.16);
+  transform-origin: center;
+  transform: translate3d(-100px, -100px, 0) translate(-50%, -50%);
+  will-change: transform;
+  z-index: var(--z-cursor);
+  opacity: 0;
+  transition:
+    width 180ms var(--ease-out),
+    height 180ms var(--ease-out),
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 220ms ease;
+}
+
+.magic-cursor.is-ready {
+  opacity: 1;
+}
+
+.magic-cursor::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px #6ce0ff, 0 0 14px rgba(182, 148, 255, 0.8);
+  transition: transform 160ms var(--ease-out), background-color 160ms ease;
+}
+
+.magic-cursor.is-hover {
+  width: 54px;
+  height: 54px;
+  border-color: rgba(108, 224, 255, 0.85);
+  box-shadow: 0 0 20px rgba(108, 224, 255, 0.42), inset 0 0 14px rgba(108, 224, 255, 0.18);
+}
+
+.magic-cursor.is-hover::before {
+  transform: translate(-50%, -50%) scale(1.35);
+  background: #c8f5ff;
+}
+
+.magic-cursor.active {
+  width: 30px;
+  height: 30px;
+  border-color: rgba(182, 148, 255, 0.9);
+  box-shadow: 0 0 22px rgba(182, 148, 255, 0.55);
+}
+
+.magic-cursor.active::before {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+@media (hover: none), (pointer: coarse) {
+  .magic-cursor {
+    display: none !important;
+  }
+}
+
+/* ---------- Quick Click Arcane Ripple ---------- */
+.magic-click-ripple {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(108, 224, 255, 0.72);
+  box-shadow: 0 0 14px rgba(182, 148, 255, 0.45);
+  pointer-events: none;
+  z-index: var(--z-circle);
+  animation: arcaneRipple 460ms var(--ease-out) forwards;
+}
+
+@keyframes arcaneRipple {
+  0% {
+    opacity: 0.9;
+    transform: translate3d(var(--rx), var(--ry), 0) translate(-50%, -50%) scale(0.25);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--rx), var(--ry), 0) translate(-50%, -50%) scale(1.35);
+  }
+}
+
+/* ---------- Signature Runic Magic Circle (Hold / Press Effect) ---------- */
+.magic-circle-effect {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  transform: translate3d(-300px, -300px, 0) translate(-50%, -50%);
+  will-change: transform, opacity;
+  z-index: var(--z-circle);
+  transition: opacity 220ms ease;
+}
+
+.magic-circle-effect.is-closing {
+  opacity: 0;
+}
+
+.magic-circle-wrapper {
+  width: 100%;
+  height: 100%;
+  animation: appearCircle 320ms var(--ease-out) forwards;
+}
+
+@keyframes appearCircle {
+  0% {
+    transform: scale(0.38);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.magic-circle-core {
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid rgba(116, 222, 255, 0.42);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(108, 224, 255, 0.36);
+  animation: spinCw 6s linear infinite;
+}
+
+.magic-circle-middle {
+  position: absolute;
+  width: 82%;
+  height: 82%;
+  top: 9%;
+  left: 9%;
+  border: 1.5px solid rgba(182, 148, 255, 0.38);
+  border-radius: 50%;
+  box-shadow: 0 0 14px rgba(182, 148, 255, 0.32);
+  animation: spinCcw 9s linear infinite;
+}
+
+.magic-circle-inner {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  border: 1.5px solid rgba(230, 245, 255, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 0 16px rgba(108, 224, 255, 0.28);
+  animation: spinCw 7s linear infinite reverse;
+}
+
+.magic-circle-inner-2 {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+  border: 1px dashed rgba(169, 184, 255, 0.45);
+  border-radius: 50%;
+  animation: spinCcw 11s linear infinite;
+}
+
+.magic-circle-runes-1 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 50%;
+  font-size: 9px;
+  color: #cfe9ff;
+  text-shadow: 0 0 8px rgba(108, 224, 255, 0.85), 0 0 14px rgba(182, 148, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spinCcw 14s linear infinite reverse;
+}
+
+.magic-circle-runes-1 span {
+  position: absolute;
+  transform-origin: center center;
+}
+
+.magic-triangle-wrapper {
+  position: absolute;
+  inset: 0;
+  animation: spinCw 9s linear infinite reverse;
+  pointer-events: none;
+}
+
+.magic-triangle-point {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(116, 222, 255, 0.42);
+  border-radius: 50%;
+}
+
+.magic-triangle-edge {
+  position: absolute;
+  height: 1.5px;
+  background: linear-gradient(90deg, rgba(108, 224, 255, 0.65), rgba(182, 148, 255, 0.55));
+  transform-origin: 0 0;
+  box-shadow: 0 0 8px rgba(108, 224, 255, 0.45);
+}
+
+.magic-flower-wrapper {
+  position: absolute;
+  inset: 0;
+  animation: spinCcw 8s linear infinite;
+  pointer-events: none;
+}
+
+.magic-flower-petal {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid rgba(182, 148, 255, 0.46);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(182, 148, 255, 0.5);
+}
+
+.magic-orbit-wrapper {
+  position: absolute;
+  inset: 0;
+  animation: spinCcw 10s linear infinite;
+}
+
+.magic-orbit {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.magic-orbit-pivot {
+  position: absolute;
+  width: 0;
+  height: 0;
+  animation: spinCw 4s linear infinite;
+}
+
+.magic-orbit-circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e6f7ff;
+  box-shadow: 0 0 10px #6ce0ff;
+  position: absolute;
+  top: -4.5px;
+  left: -4.5px;
+}
+
+@keyframes spinCw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinCcw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+/* ---------- Subtle Scroll Entrance for Cards ---------- */
+.reveal-target {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 420ms var(--ease-out), transform 420ms var(--ease-out);
+}
+
+.reveal-target.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -2,7 +2,7 @@
     {
         "name": "Vân Tự Cát Ngữ",
         "type_stats": "Magic weapon",
-        "image_src": "/static/etherila_tatoo.png",
+        "image_src": "/static/etherila_tatoo.webp",
         "image_alt": "Vân Tự Cát Ngữ",
         "image_height": 300,
         "desc_main": "Hình xăm này xuất hiện trên vị trí bất kì nào mà bạn chọn trên cơ thể. Là lời chúc phúc âm thầm của Etherila.<br><br>Vân Tự Cát Ngữ sẽ tự động kích hoạt trong lần đầu tiên bị fail 3 death save sau mỗi long rest, giúp bạn được stable.<br><br><span style=\"font-style: italic;\">Etherila công nhận lòng tốt cao cả của bạn, nguyện bạn mãi bình an...</span>",
@@ -12,7 +12,7 @@
     {
         "name": "Tư Niên",
         "type_stats": "Magic weapon",
-        "image_src": "/static/tunien.png",
+        "image_src": "/static/tunien.webp",
         "image_alt": "Tư Niên",
         "image_height": 400,
         "desc_main": "Có đầy đủ thuộc tính của một vũ khí loại ô, vì vậy yêu cầu proficiency với ô, đồng thời những dòng cổ ngữ do Dakini yểm trên kiếm giúp nó đạt được những nội tại sau:<br><br><span style=\"font-weight: bold;\">Qili Waltz:</span> Khi cầm Tư Niên trên một tay, bạn có thể chiến đấu hai vũ khí bằng bất kỳ vũ khí cận chiến nào khác trên tay còn lại, kể cả vũ khí hai tay. Bạn có proficiency với vũ khí đó khi chiến đấu theo cách này.<br><br><span style=\"font-weight: bold;\">Magic Weapon:</span> Sát thương bạn gây ra bằng vũ khí này là magic piercing damage.<br><br><span style=\"font-weight: bold;\">Revel Sunian:</span> Nếu bạn là một Dancer, bạn có thể sử dụng tán ô như một chiếc khiên tạm thời. Tán ô sẽ bay lơ lửng gần bạn cho đến khi bạn dùng nó (không nhất định phải dùng tay cầm) như một reaction để hỗ trợ + 3 AC cho đến turn tiếp theo của bạn. Bạn có thể sử dụng tính năng này 3 lần mỗi ngày. Nếu dùng hết 3 lần mà vẫn tiếp tục dùng tính năng này, tán ô vẫn giúp bạn + 3 AC lần cuối và ô sẽ hỏng, mất toàn bộ tác dụng ngay lập tức, không thể sửa chữa.",
@@ -22,7 +22,7 @@
     {
         "name": "Tư Ngữ",
         "type_stats": "Magic weapon",
-        "image_src": "/static/ohhh.png",
+        "image_src": "/static/ohhh.webp",
         "image_alt": "Tư Ngữ",
         "image_height": 400,
         "desc_main": "Có đầy đủ thuộc tính của một vũ khí loại ô, vì vậy yêu cầu proficiency với ô, đồng thời những dòng cổ ngữ do Dakini yểm trên kiếm giúp nó đạt được những nội tại sau:<br><br><span style=\"font-weight: bold;\">Master Dakini:</span> Khi cầm Tư Ngữ trên một tay, bạn có thể chiến đấu hai vũ khí bằng bất kỳ vũ khí cận chiến nào khác trên tay còn lại, kể cả vũ khí hai tay. Bạn có proficiency với vũ khí đó khi chiến đấu theo cách này.<br><br><span style=\"font-weight: bold;\">Magic Weapon:</span> Sát thương bạn gây ra bằng vũ khí này là magic piercing damage.",
@@ -32,7 +32,7 @@
     {
         "name": "Dấu vết bảo hộ",
         "type_stats": "Ma thuật",
-        "image_src": "/static/dd.png",
+        "image_src": "/static/dd.webp",
         "image_alt": "Dấu vết bảo hộ",
         "image_height": 300,
         "desc_main": "Hình xăm này xuất hiện như một sự bảo hộ của Phù Thủy Tro Đỏ, viết lên bằng tro xám và giọt trăng, sẽ mờ sau 7 ngày.<br><br>- Cho phép bạn + 1 AC.<br><br>- Từ hoàng hôn đến bình minh mỗi ngày, bạn resistants với <span style=\"font-weight: bold;\">Local Creature:</span> Thay vì trực tiếp bị tìm thấy, bạn có thể yêu cầu DM check với disvantage, DC bằng DC của bạn.",
@@ -42,7 +42,7 @@
     {
         "name": "Nước Mắt Thần Mưa",
         "type_stats": "Weapon (longsword), Truyền thuyết (requires attunement), melee weapon, 1d8 slashing - versatile (1d10)",
-        "image_src": "/static/ken.png",
+        "image_src": "/static/ken.webp",
         "image_alt": "Nước Mắt Thần Mưa",
         "image_height": 400,
         "desc_main": "Nước Mắt Thần Mưa là một thanh kiếm có tri giác, độ sắc bén trung lập với lưỡi kiếm màu hổ phách và những viên đá quý quý được gắn ở chuôi kiếm. Nó chỉ là một thanh kiếm bình thường cho đến khi gặp người có duyên.<br><br>Những sinh vật evil không thể attunement với Nước Mắt Thần Mưa, bất kỳ sinh vật evil nào cố gắng làm như vậy sẽ phải chịu 20 psychic damage. Lưỡi kiếm màu hổ phách của vũ khí không thể bị cùn hoặc hư hỏng và thanh kiếm không thể dịch chuyển đến bất cứ đâu nếu không có người sử dụng nó trong khi cả hai liên kết với nhau.",
@@ -52,7 +52,7 @@
     {
         "name": "Bóng tối mù sương",
         "type_stats": "Magic item, Hiếm (yêu cầu attunement)",
-        "image_src": "/static/CgacTG.png",
+        "image_src": "/static/CgacTG.webp",
         "image_alt": "Bóng tối mù sương",
         "image_height": 200,
         "desc_main": "Chiếc nhẫn đơn sắc, đơn giản dường như không bao giờ lấp lánh. Khi đeo chiếc nhẫn này, bạn có thể làm mờ ánh sáng trong khối lập phương 15 foot xung quanh mình. Bạn có thể làm cho ánh sáng mặt trời trở thành ánh sáng bình thường, ánh sáng bình thường thành ánh sáng mờ, ánh sáng mờ trở thành bóng tối. Bạn không thể làm cho mức ánh sáng sáng hơn, chỉ có thể làm ánh sáng tối hơn và ánh sáng nonmagical không thể chiếu sáng khu vực này.",
@@ -62,7 +62,7 @@
     {
         "name": "Áo choàng ẩn náu",
         "type_stats": "Magic item, Không phổ biến (yêu cầu attunement)",
-        "image_src": "/static/aaa.png",
+        "image_src": "/static/aaa.webp",
         "image_alt": "Áo choàng ẩn náu",
         "image_height": 300,
         "desc_main": "Bộ trang phục trang nhã này được làm bằng lụa sẫm màu đan xen với những sợi màu hổ phách nhạt. Khi mặc chiếc áo choàng này, bạn có thể kéo mũ trùm qua đầu che giấu hoàn toàn khuôn mặt của mình. Cố gắng nhìn vào để xem mặt của bạn sẽ chỉ thấy một khoảng bóng tối. Ngoài ra, khi đội mũ trùm đầu lên, bạn có thể ẩn khỏi phép thuật Divination và bạn không thể bị nhắm mục tiêu bởi phép thuật đó hoặc bị phát hiện thông qua các cảm biến bói toán ma thuật.",
@@ -72,7 +72,7 @@
     {
         "name": "Áo choàng bóng râm",
         "type_stats": "Magic item, Không phổ biến (yêu cầu attunement)",
-        "image_src": "/static/kkgg.png",
+        "image_src": "/static/kkgg.webp",
         "image_alt": "Áo choàng bóng râm",
         "image_height": 200,
         "desc_main": "Chiếc áo choàng có thiết kế kỳ lạ này được làm bằng lụa đen đan xen với những sợi bạc mờ. Khi mặc chiếc áo choàng này, bạn có thể kéo mũ trùm qua đầu để giúp bản thân miễn nhiễm với tác động của ánh nắng mặt trời.",
@@ -82,7 +82,7 @@
     {
         "name": "Đá thạch anh tím",
         "type_stats": "Magic item, Hiếm (yêu cầu attunement)",
-        "image_src": "/static/ston.png",
+        "image_src": "/static/ston.webp",
         "image_alt": "Đá thạch anh tím",
         "image_height": 350,
         "desc_main": "Khối thạch anh tím có kích thước bằng nắm tay này được truyền khả năng bẻ cong trọng lực của loài rồng thạch anh tím. Trong khi bạn đang attune với viên đá này, bạn có adv trong những str save. Viên đá có 6 charges cho các thuộc tính sau, bạn có thể sử dụng chúng khi đang attune. Đá lấy lại 1d6 charges hàng ngày vào lúc bình minh.<br><br><span style=\"font-weight: bold;\">- Flight.</span> Là một hành động bổ sung, bạn có thể sử dụng 3 charges để có được khả năng bay trong 10 phút. Trong thời gian này, bạn đạt được tốc độ bay bằng với tốc độ đi bộ và bạn có thể bay lơ lửng.",
@@ -92,7 +92,7 @@
     {
         "name": "Bản tóm tắt giả kim thuật",
         "type_stats": "Sách, Hiếm (yêu cầu attunement bởi một wizard), 3 lb",
-        "image_src": "/static/add.png",
+        "image_src": "/static/add.webp",
         "image_alt": "Bản tóm tắt giả kim thuật",
         "image_height": 300,
         "desc_main": "Mùi ẩm mốc bám vào cuốn sách nặng và ố vàng. Các hoa văn kim loại trên bìa làm bằng đồng, sắt, chì, bạc và vàng, một số bị rỉ sét trong quá trình chuyển đổi từ kim loại này sang kim loại khác. Khi được tìm thấy, cuốn sách chứa các phép thuật sau: <span style=\"font-weight: bold;\">shillelagh, druidcraft, enlarge/reduce, feather fall, flesh to stone, gaseous form, magic weapon và fabricate</span>. Nó hoạt động như một spellbook và spellcasting focus cho những phép thuật wizard của bạn.",
@@ -102,7 +102,7 @@
     {
         "name": "Ngọn nến tín hiệu",
         "type_stats": "Magic item, Phổ biến, 10 GP",
-        "image_src": "/static/candle.png",
+        "image_src": "/static/candle.webp",
         "image_alt": "Ngọn nến tín hiệu",
         "image_height": 150,
         "desc_main": "Mỗi ngọn nến cháy được tối đa 10 phút. Trong khi cháy sẽ tạo ra cột sáng chiếu thẳng lên trời. Ánh nến là ánh sáng đơn thuần và vẫn bị chặn bởi chướng ngại vật.",
@@ -112,7 +112,7 @@
     {
         "name": "Red Ash Lantern",
         "type_stats": "Magic item, Hiếm",
-        "image_src": "/static/redashlantern.png",
+        "image_src": "/static/redashlantern.webp",
         "image_alt": "Red Ash Lantern",
         "image_height": 150,
         "desc_main": "Đèn lồng cổ kính tỏa ra ánh sáng xanh lam khi ở trong phạm vi bán kính 120ft gần những <a href=\"/dnd/monster/sleepy-stone-horse\" style=\"color: #040836;\">Sleepy Stone Horse</a> (xem thuộc tính tại <a href=\"/dnd/monster\" style=\"color: #040836;\">Etar's Bestiary Book</a>). Ra khỏi 120ft sẽ tỏa ra ánh sáng tím xanh như bầu trời đêm, rất xinh đẹp.",
@@ -122,7 +122,7 @@
     {
         "name": "Mộc Tán (Wood Umbrella)",
         "type_stats": "Weapon: Simple, Melee, 50gp, 2 lb. --- 1d8 piercing -- versatile (1d10 bludgeoning), thrown (20/60) - finesse",
-        "image_src": "/static/umbrela.png",
+        "image_src": "/static/umbrela.webp",
         "image_alt": "Mộc Tán (Wood Umbrella)",
         "image_height": 400,
         "desc_main": "Một thanh kiếm ẩn sau cán ô, rút kiếm từ cán được tính là free action.<br><br>Thành thạo với Ô cho phép bạn thêm proficiency bonus của bạn vào bất cứ attack nào bạn thực hiện bằng Ô.<br><br><span style=\"font-weight: bold;\">Prerequisites:</span> Bạn phải có Proficiency với Ô và Dexterity tối thiểu là 13 để có thể sử dụng vũ khí này.<br><br><span style=\"font-weight: bold;\">Finesse:</span> Khi attack bằng finesse weapon, bạn có thể chọn sử dụng Strength hoặc Dexterity modifier cho attack và damage rolls. Bạn phải dùng cùng modifier cho cả 2 rolls.",
@@ -132,7 +132,7 @@
     {
         "name": "Chiết phiến (Fan)",
         "type_stats": "Weapon: Simple, Melee, 25gp, 1 lb. 1d4 piercing, dancer weapon, finesse, sharp fan, light fan, nick, thrown (20/60)",
-        "image_src": "/static/fan.png",
+        "image_src": "/static/fan.webp",
         "image_alt": "Chiết phiến (Hand holding fan)",
         "image_height": 400,
         "desc_main": "<span style=\"font-weight: bold;\">Dancer Weapon:</span> Bạn phải là một dancer thuần túy để có thể thành thạo với Chiết Phiến, điều này cho phép bạn thêm proficiency bonus của bạn vào bất cứ attack nào bạn thực hiện bằng Chiết Phiến.<br><br><span style=\"font-weight: bold;\">Finesse:</span> Khi attack bằng finesse weapon, bạn có thể chọn sử dụng Strength hoặc Dexterity modifier cho attack và damage rolls. Bạn phải dùng cùng modifier cho cả 2 rolls.<br><br><span style=\"font-weight: bold;\">Light Fan:</span> Vũ khí nhẹ, nhỏ nhưng không dễ điều khiển (yêu cầu Proficiency với Chiết phiến và Dexterity 13 trở lên), lý tưởng để sử dụng khi chiến đấu với hai loại vũ khí.",
@@ -142,7 +142,7 @@
     {
         "name": "Sa Thiết Lãnh Mỹ A (Silk ribbon)",
         "type_stats": "Weapon: Martial, Melee, 50gp, 0.1 lb. --- 1d4 slashing - grapple silk, light fan, reach",
-        "image_src": "/static/sathiet.png",
+        "image_src": "/static/sathiet.webp",
         "image_alt": "Sa Thiết Lãnh Mỹ A (Silk ribbon)",
         "image_height": 200,
         "desc_main": "Thành thạo với việc sử dụng những dải lụa cho phép bạn thêm proficiency bonus của bạn vào bất cứ attack nào bạn thực hiện bằng vũ khí này.",
@@ -162,7 +162,7 @@
     {
         "name": "Chủy Thủ Huyền Thiết",
         "type_stats": "Weapon: Simple, Melee, 2gp, 1 lb. --- 1d4 magic piercing - finesse, light, thrown (20/60) -- Special",
-        "image_src": "/static/dao.png",
+        "image_src": "/static/dao.webp",
         "image_alt": "Chủy Thủ Huyền Thiết",
         "image_height": 200,
         "desc_main": "Thanh dao găm rèn được rèn từ vật liệu huyền thuyết nổi tiếng đã thất truyền trăm năm. Sau khi được gia công bằng lõi của Kẻ theo dõi bóng tối đã trở thành màu tím xanh quỷ dị.",
@@ -172,7 +172,7 @@
     {
         "name": "Nguyệt Tự Bí Ngân",
         "type_stats": "Weapon (shortbow), Legendary (requires attunement), Simple weapon, ranged weapon, 1d6 magic piercing - ammunition (80/320 ft.), two-handed",
-        "image_src": "/static/bw.png",
+        "image_src": "/static/bw.webp",
         "image_alt": "Nguyệt Tự Bí Ngân",
         "image_height": 400,
         "desc_main": "Tỏa ra ánh sáng tím mờ ảo và huyền bí, không có ống tên đi kèm. Chủ nhân của cây cung có thể trực tiếp kéo cung và mũi tên ánh sáng sẽ hiện ra, lao vút đi như cách ánh trăng xuyên qua kẽ lá của những tán đại thụ.<br>    Mang trên mình cổ văn của chủng tộc Moon Elf, cây cung trực tiếp ảnh hưởng bởi người đã viết những ký tự này - Dakini Elviquia, một moon elf tôn thờ nữ thần Erythia.",
@@ -182,7 +182,7 @@
     {
         "name": "Tiểu thuyết 6,66",
         "type_stats": "Sách, Không phổ biến",
-        "image_src": "/static/467.png",
+        "image_src": "/static/467.webp",
         "image_alt": "Tiểu thuyết 6,66",
         "image_height": 300,
         "desc_main": "Tiểu thuyết tình yêu thiếu nữ, bên trong ghi chép những câu chuyện của những nhân vật kỳ lạ. Với những người không thích đọc sách, chúng đều là những câu chuyện lãng mạn dài dòng và quái gở.<br><br>Khi đọc nó, chỉ mình bạn có thể nhìn thấy những chuyện xảy ra trong đó dưới dạng hình ảnh.",
@@ -192,7 +192,7 @@
     {
         "name": "Thuyết thế giới ngang",
         "type_stats": "Sách, Không phổ biến",
-        "image_src": "/static/b8f6.png",
+        "image_src": "/static/b8f6.webp",
         "image_alt": "Thuyết thế giới ngang",
         "image_height": 200,
         "desc_main": "Cuốn sách cổ rất dày trông có vẻ cũ kỹ nhưng được bảo quản khá tốt. Các gáy sách và trang bìa vuông vắn bọc bằng da thuộc từ bàn tay khéo léo của người thợ thủ công còn vô cùng chắc chắn.",
@@ -202,7 +202,7 @@
     {
         "name": "Lý luận thời gian vuông góc",
         "type_stats": "Sách, Không phổ biến",
-        "image_src": "/static/98f3.png",
+        "image_src": "/static/98f3.webp",
         "image_alt": "Lý luận thời gian vuông góc",
         "image_height": 200,
         "desc_main": "Cuốn sách cổ rất dày trông có vẻ cũ kỹ nhưng được bảo quản khá tốt. Các gáy sách và trang bìa vuông vắn bọc bằng da thuộc từ bàn tay khéo léo của người thợ thủ công còn vô cùng chắc chắn.",
@@ -212,7 +212,7 @@
     {
         "name": "PRa",
         "type_stats": "Tiền tệ, Vật liệu",
-        "image_src": "/static/pra.png",
+        "image_src": "/static/pra.webp",
         "image_alt": "PRa",
         "image_height": 200,
         "desc_main": "Đồng xu bằng chất liệu đặc biệt màu vàng sáng hoặc bạc ánh xanh. Dùng làm chất xúc tác trong chế tạo.",
@@ -222,7 +222,7 @@
     {
         "name": "Tờ nháp của Ayin",
         "type_stats": "Giấy, Không phổ biến",
-        "image_src": "/static/kraf.png",
+        "image_src": "/static/kraf.webp",
         "image_alt": "Tờ nháp của Ayin",
         "image_height": 200,
         "desc_main": "Tờ giấy cũ kỹ như được xé ra từ một quyển sổ làm bằng vật liệu đặc biệt, tỏa ra hương trà thơm lạ. Trên đó vẽ đầy những nét loằng ngoằng như vẽ bùa cùng những hàng ghi chú như vẽ đồng cỏ.",
@@ -232,7 +232,7 @@
     {
         "name": "Sự bảo vệ của Erythia",
         "type_stats": "Đá quý, Hiếm, Equires attunement",
-        "image_src": "/static/tttt6 (2).png",
+        "image_src": "/static/tttt6 (2).webp",
         "image_alt": "Sự bảo vệ của Erythia",
         "image_height": 150,
         "desc_main": "Tổng cộng gồm 8 viên tinh thể. Nếu bạn là một spellcaster, bạn có thể dùng viên tinh thể như một spellcasting focus. Mỗi viên sẽ phòng ngự trước một thuộc tính.",
@@ -242,7 +242,7 @@
     {
         "name": "Sự bảo hộ của Toru",
         "type_stats": "Đá quý, Thần thoại",
-        "image_src": "/static/subaohotoru.png",
+        "image_src": "/static/subaohotoru.webp",
         "image_alt": "Sự bảo vệ của Erythia",
         "image_height": 200,
         "desc_main": "Cho một nhân vật có thể đi từ thế giới (arc) này sang thế giới khác mà không cần phải hoàn thành nhiệm vụ ở thế giới trước đó, cũng không tổn hao bất cứ vật phẩm hay sức mạnh nào.<br><br>Chỉ dùng được một lần.",
